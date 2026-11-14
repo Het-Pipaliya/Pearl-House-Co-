@@ -6,13 +6,14 @@ const esc = (s: unknown) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "
 
 export type SendResult = "sent" | "not_configured" | `failed: ${string}`;
 
-async function send(to: string, subject: string, html: string, replyTo?: string): Promise<SendResult> {
+export interface Attachment { filename: string; content: string /* base64 */ }
+async function send(to: string, subject: string, html: string, replyTo?: string, attachments?: Attachment[]): Promise<SendResult> {
   if (!cfg.resendKey || !to) return "not_configured"; // never pretend: status is stored on the inquiry and shown in the admin
   try {
-    const res = await fetch("https://api.resend.com/emails", {
+    const res = await fetch(process.env.RESEND_API_URL || "https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${cfg.resendKey}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ from: cfg.fromEmail, to: [to], subject, html, ...(replyTo ? { reply_to: replyTo } : {}) }),
+      body: JSON.stringify({ from: cfg.fromEmail, to: [to], subject, html, ...(replyTo ? { reply_to: replyTo } : {}), ...(attachments?.length ? { attachments } : {}) }),
     });
     if (!res.ok) return `failed: ${res.status} ${(await res.text()).slice(0, 160)}`;
     return "sent";
@@ -29,10 +30,10 @@ function itemsTable(i: Inquiry) {
     `<tr><td style="border-top:1px solid #F1DAD5;padding:10px 0"><strong>${esc(it.name)}</strong> × ${it.quantity}<br><span style="color:#8a6f68">SKU ${esc(it.productId)}</span><br>${[it.size && `Size: ${esc(it.size)}`, it.metal && `Metal: ${esc(it.metal)}`, it.gemstone && `Gemstone: ${esc(it.gemstone)}`].filter(Boolean).join(" · ")}${it.customization ? `<br>Customization: ${esc(it.customization)}` : ""}</td></tr>`).join("")}</table>`;
 }
 
-export async function sendInquiryEmails(i: Inquiry) {
+export async function sendInquiryEmails(i: Inquiry, attachments?: Attachment[]) {
   const c = i.customer;
   const when = new Date(i.createdAt).toUTCString();
-  const customBlock = i.custom ? `<h3 style="font-family:Georgia,serif;color:#B76E62;margin:24px 0 8px">Custom design request</h3><table>${row("Jewelry type", i.custom.jewelryType)}${row("Preferred metal", i.custom.metal)}${row("Gemstone", i.custom.gemstone)}${row("Budget", i.custom.budget)}${row("Description", i.custom.description)}${row("Reference images", i.custom.referenceImages.length ? `${i.custom.referenceImages.length} attached — view in admin dashboard` : "None")}</table>` : "";
+  const customBlock = i.custom ? `<h3 style="font-family:Georgia,serif;color:#B76E62;margin:24px 0 8px">Custom design request</h3><table>${row("Jewelry type", i.custom.jewelryType)}${row("Preferred metal", i.custom.metal)}${row("Gemstone", i.custom.gemstone)}${row("Budget", i.custom.budget)}${row("Description", i.custom.description)}${row("Reference images", attachments?.length ? `${attachments.length} image(s) attached to this email` : i.custom.referenceImages.length ? `${i.custom.referenceImages.length} saved — view in admin dashboard` : "None")}</table>` : "";
   const label = i.type === "custom" ? "Custom Design Request" : "Order Request";
   const business = await send(
     cfg.businessEmail,
@@ -42,6 +43,7 @@ export async function sendInquiryEmails(i: Inquiry) {
 ${itemsTable(i)}${customBlock}<table style="margin-top:16px;font-size:14px">${row("Additional instructions", i.instructions)}${row("Order notes", i.notes)}</table>
 <p style="margin-top:24px;font-size:12px;color:#8a6f68">This is an inquiry, not a confirmed purchase. No payment has been taken.</p>`),
     c.email,
+    attachments,
   );
   const customer = await send(
     c.email,
