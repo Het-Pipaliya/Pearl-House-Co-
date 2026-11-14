@@ -14,7 +14,7 @@ export default function Login() {
   return (
     <div className="container-x flex min-h-[70vh] items-center justify-center py-16">
       <form onSubmit={go} className="w-full max-w-sm border border-blush bg-white p-8 text-center">
-        <div className="flex justify-center"><Logo className="h-9" /></div>
+        <div className="flex justify-center"><Logo className="h-12" /></div>
         <h1 className="mt-4 text-2xl">Admin Sign In</h1>
         <label htmlFor="pw" className="label mt-6 text-left">Password</label>
         <input id="pw" type="password" autoComplete="current-password" required className="input" value={pw} onChange={(e) => setPw(e.target.value)} />

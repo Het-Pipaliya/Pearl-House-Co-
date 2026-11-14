@@ -34,7 +34,7 @@ export default function HeroCollage() {
         const tl = gsap.timeline({
           defaults: { ease: "power3.out" },
           scrollTrigger: {
-            trigger: el, start: `top ${desk ? 112 : 56}px`, /* = height of the sticky header once scrolled */ end: () => `+=${Math.round(window.innerHeight * (desk ? 2.9 : 2.5))}`,
+            trigger: el, start: () => `top ${document.querySelector("header")?.getBoundingClientRect().height ?? (desk ? 112 : 56)}px`, /* = height of the sticky header */ end: () => `+=${Math.round(window.innerHeight * (desk ? 2.9 : 2.5))}`,
             pin: true, scrub: 0.8, anticipatePin: 1, invalidateOnRefresh: true,
           },
         });
