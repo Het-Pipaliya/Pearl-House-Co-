@@ -5,3 +5,4 @@ node_modules
 .data
 public/uploads
 next-env.d.ts
+*.tsbuildinfo
