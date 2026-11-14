@@ -18,7 +18,7 @@ export default function ProductCard({ p, i = 0 }: { p: Product; i?: number }) {
   };
   return (
     <article className="rv group transition-transform duration-500 hover:-translate-y-1.5" style={{ "--i": i % 4 } as React.CSSProperties}>
-      <div className="relative aspect-[9/5] overflow-hidden bg-blush/40 shadow-[0_0_0_rgba(73,48,43,0)] transition-shadow duration-500 group-hover:shadow-[0_18px_40px_-18px_rgba(73,48,43,0.35)]">
+      <div className="relative aspect-[4/3] overflow-hidden bg-blush/40 shadow-[0_0_0_rgba(73,48,43,0)] transition-shadow duration-500 group-hover:shadow-[0_18px_40px_-18px_rgba(73,48,43,0.35)]">
         <Link href={`/shop/${p.slug}`} aria-label={p.name}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={p.images[0]} alt={p.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.08]" />

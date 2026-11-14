@@ -1,0 +1,691 @@
+{
+ "products": [
+  {
+   "name": "Six-Prong Solitaire",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/six-prong-solitaire.webp",
+   "source": "rings/ring01"
+  },
+  {
+   "name": "Cushion Halo Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/cushion-halo-ring.webp",
+   "source": "rings/ring02"
+  },
+  {
+   "name": "Oval Three-Stone Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/oval-three-stone-ring.webp",
+   "source": "rings/ring03"
+  },
+  {
+   "name": "Solitaire Bridal Set",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/solitaire-bridal-set.webp",
+   "source": "rings/ring06"
+  },
+  {
+   "name": "Emerald-Cut Solitaire",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/emerald-cut-solitaire.webp",
+   "source": "rings/ring07"
+  },
+  {
+   "name": "Rosé Pear Halo Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/rose-pear-halo-ring.webp",
+   "source": "rings/ring10"
+  },
+  {
+   "name": "Round Halo Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/round-halo-ring.webp",
+   "source": "rings/ring13"
+  },
+  {
+   "name": "Trilogy Brilliant Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/trilogy-brilliant-ring.webp",
+   "source": "rings/ring19"
+  },
+  {
+   "name": "Petite Solitaire Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/petite-solitaire-ring.webp",
+   "source": "rings/ring20"
+  },
+  {
+   "name": "Pavé Cushion Halo Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/pave-cushion-halo-ring.webp",
+   "source": "engagement-rings/engagement-ring02"
+  },
+  {
+   "name": "Cathedral Solitaire",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/cathedral-solitaire.webp",
+   "source": "engagement-rings/engagement-ring03"
+  },
+  {
+   "name": "Three-Stone Round Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/three-stone-round-ring.webp",
+   "source": "engagement-rings/engagement-ring04"
+  },
+  {
+   "name": "Dainty Solitaire Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/dainty-solitaire-ring.webp",
+   "source": "engagement-rings/engagement-ring06"
+  },
+  {
+   "name": "Solitaire Stacked Set",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/solitaire-stacked-set.webp",
+   "source": "engagement-rings/engagement-ring07"
+  },
+  {
+   "name": "Pear Halo Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/pear-halo-ring.webp",
+   "source": "engagement-rings/engagement-ring13"
+  },
+  {
+   "name": "Pavé Cathedral Solitaire",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/pave-cathedral-solitaire.webp",
+   "source": "engagement-rings/engagement-ring14"
+  },
+  {
+   "name": "Vintage Halo Ring",
+   "category": "Engagement Rings",
+   "image": "/images/catalog/vintage-halo-ring.webp",
+   "source": "engagement-rings/engagement-ring17"
+  },
+  {
+   "name": "Infinity Twist Ring",
+   "category": "Rings",
+   "image": "/images/catalog/infinity-twist-ring.webp",
+   "source": "rings/ring05"
+  },
+  {
+   "name": "Floral Cluster Ring",
+   "category": "Rings",
+   "image": "/images/catalog/floral-cluster-ring.webp",
+   "source": "rings/ring11"
+  },
+  {
+   "name": "Open Bypass Ring",
+   "category": "Rings",
+   "image": "/images/catalog/open-bypass-ring.webp",
+   "source": "rings/ring17"
+  },
+  {
+   "name": "Heart Solitaire Ring",
+   "category": "Rings",
+   "image": "/images/catalog/heart-solitaire-ring.webp",
+   "source": "rings/ring18"
+  },
+  {
+   "name": "Infinity Pavé Ring",
+   "category": "Rings",
+   "image": "/images/catalog/infinity-pave-ring.webp",
+   "source": "engagement-rings/engagement-ring09"
+  },
+  {
+   "name": "Sapphire Halo Ring",
+   "category": "Rings",
+   "image": "/images/catalog/sapphire-halo-ring.webp",
+   "source": "engagement-rings/engagement-ring10"
+  },
+  {
+   "name": "Gold Oval Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/gold-oval-eternity-band.webp",
+   "source": "rings/ring04"
+  },
+  {
+   "name": "Marquise Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/marquise-eternity-band.webp",
+   "source": "rings/ring08"
+  },
+  {
+   "name": "Brushed Gold Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/brushed-gold-band.webp",
+   "source": "rings/ring09"
+  },
+  {
+   "name": "Baguette Channel Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/baguette-channel-band.webp",
+   "source": "rings/ring12"
+  },
+  {
+   "name": "Milgrain Filigree Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/milgrain-filigree-band.webp",
+   "source": "rings/ring14"
+  },
+  {
+   "name": "Classic Gold Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/classic-gold-band.webp",
+   "source": "rings/ring15"
+  },
+  {
+   "name": "Oval Stone Eternity Ring",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/oval-stone-eternity-ring.webp",
+   "source": "rings/ring16"
+  },
+  {
+   "name": "Round Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/round-eternity-band.webp",
+   "source": "engagement-rings/engagement-ring05"
+  },
+  {
+   "name": "Baguette Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/baguette-pave-band.webp",
+   "source": "engagement-rings/engagement-ring08"
+  },
+  {
+   "name": "Marble Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/marble-eternity-band.webp",
+   "source": "engagement-rings/engagement-ring11"
+  },
+  {
+   "name": "Twisted Stack Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/twisted-stack-band.webp",
+   "source": "engagement-rings/engagement-ring15"
+  },
+  {
+   "name": "Brushed Platinum Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/brushed-platinum-band.webp",
+   "source": "engagement-rings/engagement-ring16"
+  },
+  {
+   "name": "Curved Contour Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/curved-contour-band.webp",
+   "source": "engagement-rings/engagement-ring18"
+  },
+  {
+   "name": "Chevron Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/chevron-pave-band.webp",
+   "source": "engagement-rings/engagement-ring19"
+  },
+  {
+   "name": "Slim Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/slim-pave-band.webp",
+   "source": "engagement-rings/engagement-ring20"
+  },
+  {
+   "name": "Gold Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/gold-eternity-band.webp",
+   "source": "wedding-bands/wedding-band01"
+  },
+  {
+   "name": "Twist Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/twist-pave-band.webp",
+   "source": "wedding-bands/wedding-band02"
+  },
+  {
+   "name": "Platinum Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/platinum-eternity-band.webp",
+   "source": "wedding-bands/wedding-band03"
+  },
+  {
+   "name": "Baguette Half-Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/baguette-half-eternity-band.webp",
+   "source": "wedding-bands/wedding-band04"
+  },
+  {
+   "name": "Satin Gold Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/satin-gold-band.webp",
+   "source": "wedding-bands/wedding-band05"
+  },
+  {
+   "name": "Wave Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/wave-pave-band.webp",
+   "source": "wedding-bands/wedding-band06"
+  },
+  {
+   "name": "Vintage Milgrain Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/vintage-milgrain-band.webp",
+   "source": "wedding-bands/wedding-band07"
+  },
+  {
+   "name": "Triple Row Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/triple-row-pave-band.webp",
+   "source": "wedding-bands/wedding-band08"
+  },
+  {
+   "name": "Hammered Gold Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/hammered-gold-band.webp",
+   "source": "wedding-bands/wedding-band10"
+  },
+  {
+   "name": "Wide Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/wide-pave-band.webp",
+   "source": "wedding-bands/wedding-band11"
+  },
+  {
+   "name": "Two-Tone Brushed Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/two-tone-brushed-band.webp",
+   "source": "wedding-bands/wedding-band12"
+  },
+  {
+   "name": "Bezel Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/bezel-eternity-band.webp",
+   "source": "wedding-bands/wedding-band13"
+  },
+  {
+   "name": "Crossover Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/crossover-pave-band.webp",
+   "source": "wedding-bands/wedding-band14"
+  },
+  {
+   "name": "Baguette Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/baguette-eternity-band.webp",
+   "source": "wedding-bands/wedding-band15"
+  },
+  {
+   "name": "Filigree Gold Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/filigree-gold-band.webp",
+   "source": "wedding-bands/wedding-band16"
+  },
+  {
+   "name": "Princess Channel Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/princess-channel-band.webp",
+   "source": "wedding-bands/wedding-band17"
+  },
+  {
+   "name": "Tri-Colour Stack",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/tri-colour-stack.webp",
+   "source": "wedding-bands/wedding-band18"
+  },
+  {
+   "name": "Petite Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/petite-pave-band.webp",
+   "source": "wedding-bands/wedding-band19"
+  },
+  {
+   "name": "Diamond Profile Band",
+   "category": "Wedding Bands",
+   "image": "/images/catalog/diamond-profile-band.webp",
+   "source": "wedding-bands/wedding-band20"
+  },
+  {
+   "name": "Diamond Tennis Necklace",
+   "category": "Necklaces",
+   "image": "/images/catalog/diamond-tennis-necklace.webp",
+   "source": "necklaces/necklace08"
+  },
+  {
+   "name": "Layered Chain Necklace",
+   "category": "Necklaces",
+   "image": "/images/catalog/layered-chain-necklace.webp",
+   "source": "necklaces/necklace09"
+  },
+  {
+   "name": "Floral Diamond Necklace",
+   "category": "Necklaces",
+   "image": "/images/catalog/floral-diamond-necklace.webp",
+   "source": "necklaces/necklace12"
+  },
+  {
+   "name": "Ribbed Gold Collar",
+   "category": "Necklaces",
+   "image": "/images/catalog/ribbed-gold-collar.webp",
+   "source": "necklaces/necklace13"
+  },
+  {
+   "name": "Diamond Station Necklace",
+   "category": "Necklaces",
+   "image": "/images/catalog/diamond-station-necklace.webp",
+   "source": "necklaces/necklace14"
+  },
+  {
+   "name": "Diamond Lariat Necklace",
+   "category": "Necklaces",
+   "image": "/images/catalog/diamond-lariat-necklace.webp",
+   "source": "necklaces/necklace16"
+  },
+  {
+   "name": "Marquise Leaf Necklace",
+   "category": "Necklaces",
+   "image": "/images/catalog/marquise-leaf-necklace.webp",
+   "source": "necklaces/necklace17"
+  },
+  {
+   "name": "Round Solitaire Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/round-solitaire-pendant.webp",
+   "source": "necklaces/necklace03"
+  },
+  {
+   "name": "Pear Diamond Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/pear-diamond-pendant.webp",
+   "source": "necklaces/necklace04"
+  },
+  {
+   "name": "Emerald Halo Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/emerald-halo-pendant.webp",
+   "source": "necklaces/necklace05"
+  },
+  {
+   "name": "Ruby Halo Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/ruby-halo-pendant.webp",
+   "source": "necklaces/necklace06"
+  },
+  {
+   "name": "Sapphire Halo Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/sapphire-halo-pendant.webp",
+   "source": "necklaces/necklace07"
+  },
+  {
+   "name": "Rosé Heart Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/rose-heart-pendant.webp",
+   "source": "necklaces/necklace10"
+  },
+  {
+   "name": "Art Deco Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/art-deco-pendant.webp",
+   "source": "necklaces/necklace11"
+  },
+  {
+   "name": "Bezel Solitaire Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/bezel-solitaire-pendant.webp",
+   "source": "necklaces/necklace15"
+  },
+  {
+   "name": "Emerald-Cut Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/emerald-cut-pendant.webp",
+   "source": "necklaces/necklace18"
+  },
+  {
+   "name": "Round Halo Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/round-halo-pendant.webp",
+   "source": "necklaces/necklace19"
+  },
+  {
+   "name": "Pearl Blossom Pendant",
+   "category": "Pendants",
+   "image": "/images/catalog/pearl-blossom-pendant.webp",
+   "source": "necklaces/necklace20"
+  },
+  {
+   "name": "Classic Diamond Studs",
+   "category": "Earrings",
+   "image": "/images/catalog/classic-diamond-studs.webp",
+   "source": "earrings/earring01"
+  },
+  {
+   "name": "Halo Diamond Studs",
+   "category": "Earrings",
+   "image": "/images/catalog/halo-diamond-studs.webp",
+   "source": "earrings/earring02"
+  },
+  {
+   "name": "Classic Pearl Studs",
+   "category": "Earrings",
+   "image": "/images/catalog/classic-pearl-studs.webp",
+   "source": "earrings/earring03"
+  },
+  {
+   "name": "Floral Diamond Studs",
+   "category": "Earrings",
+   "image": "/images/catalog/floral-diamond-studs.webp",
+   "source": "earrings/earring04"
+  },
+  {
+   "name": "Princess-Cut Studs",
+   "category": "Earrings",
+   "image": "/images/catalog/princess-cut-studs.webp",
+   "source": "earrings/earring05"
+  },
+  {
+   "name": "Pavé Huggie Hoops",
+   "category": "Earrings",
+   "image": "/images/catalog/pave-huggie-hoops.webp",
+   "source": "earrings/earring06"
+  },
+  {
+   "name": "Gold Huggie Hoops",
+   "category": "Earrings",
+   "image": "/images/catalog/gold-huggie-hoops.webp",
+   "source": "earrings/earring07"
+  },
+  {
+   "name": "Twisted Gold Hoops",
+   "category": "Earrings",
+   "image": "/images/catalog/twisted-gold-hoops.webp",
+   "source": "earrings/earring08"
+  },
+  {
+   "name": "Inside-Out Diamond Hoops",
+   "category": "Earrings",
+   "image": "/images/catalog/inside-out-diamond-hoops.webp",
+   "source": "earrings/earring09"
+  },
+  {
+   "name": "Pearl Drop Earrings",
+   "category": "Earrings",
+   "image": "/images/catalog/pearl-drop-earrings.webp",
+   "source": "earrings/earring10"
+  },
+  {
+   "name": "Emerald-Cut Drops",
+   "category": "Earrings",
+   "image": "/images/catalog/emerald-cut-drops.webp",
+   "source": "earrings/earring12"
+  },
+  {
+   "name": "Floral Drop Earrings",
+   "category": "Earrings",
+   "image": "/images/catalog/floral-drop-earrings.webp",
+   "source": "earrings/earring13"
+  },
+  {
+   "name": "Cushion Halo Drops",
+   "category": "Earrings",
+   "image": "/images/catalog/cushion-halo-drops.webp",
+   "source": "earrings/earring14"
+  },
+  {
+   "name": "Triple Diamond Drops",
+   "category": "Earrings",
+   "image": "/images/catalog/triple-diamond-drops.webp",
+   "source": "earrings/earring15"
+  },
+  {
+   "name": "Chandelier Diamond Earrings",
+   "category": "Earrings",
+   "image": "/images/catalog/chandelier-diamond-earrings.webp",
+   "source": "earrings/earring16"
+  },
+  {
+   "name": "Pearl Chandelier Earrings",
+   "category": "Earrings",
+   "image": "/images/catalog/pearl-chandelier-earrings.webp",
+   "source": "earrings/earring17"
+  },
+  {
+   "name": "Art Deco Statement Earrings",
+   "category": "Earrings",
+   "image": "/images/catalog/art-deco-statement-earrings.webp",
+   "source": "earrings/earring18"
+  },
+  {
+   "name": "Infinity Statement Earrings",
+   "category": "Earrings",
+   "image": "/images/catalog/infinity-statement-earrings.webp",
+   "source": "earrings/earring19"
+  },
+  {
+   "name": "Blossom Statement Earrings",
+   "category": "Earrings",
+   "image": "/images/catalog/blossom-statement-earrings.webp",
+   "source": "earrings/earring20"
+  },
+  {
+   "name": "Classic Diamond Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/classic-diamond-tennis-bracelet.webp",
+   "source": "bracelets/bracelet01"
+  },
+  {
+   "name": "Baguette Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/baguette-tennis-bracelet.webp",
+   "source": "bracelets/bracelet03"
+  },
+  {
+   "name": "Floral Diamond Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/floral-diamond-bracelet.webp",
+   "source": "bracelets/bracelet04"
+  },
+  {
+   "name": "Sapphire Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/sapphire-tennis-bracelet.webp",
+   "source": "bracelets/bracelet05"
+  },
+  {
+   "name": "Ruby Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/ruby-tennis-bracelet.webp",
+   "source": "bracelets/bracelet06"
+  },
+  {
+   "name": "Emerald Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/emerald-tennis-bracelet.webp",
+   "source": "bracelets/bracelet07"
+  },
+  {
+   "name": "Multi-Gemstone Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/multi-gemstone-bracelet.webp",
+   "source": "bracelets/bracelet08"
+  },
+  {
+   "name": "Classic Pearl Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/classic-pearl-bracelet.webp",
+   "source": "bracelets/bracelet09"
+  },
+  {
+   "name": "Double-Strand Pearl Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/double-strand-pearl-bracelet.webp",
+   "source": "bracelets/bracelet10"
+  },
+  {
+   "name": "Gold Diamond Bangle",
+   "category": "Bracelets",
+   "image": "/images/catalog/gold-diamond-bangle.webp",
+   "source": "bracelets/bracelet11"
+  },
+  {
+   "name": "Pavé Diamond Bangle",
+   "category": "Bracelets",
+   "image": "/images/catalog/pave-diamond-bangle.webp",
+   "source": "bracelets/bracelet12"
+  },
+  {
+   "name": "Twist Diamond Bangle",
+   "category": "Bracelets",
+   "image": "/images/catalog/twist-diamond-bangle.webp",
+   "source": "bracelets/bracelet13"
+  },
+  {
+   "name": "Open Cuff Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/open-cuff-bracelet.webp",
+   "source": "bracelets/bracelet14"
+  },
+  {
+   "name": "Blossom Diamond Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/blossom-diamond-bracelet.webp",
+   "source": "bracelets/bracelet15"
+  },
+  {
+   "name": "Clover Charm Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/clover-charm-bracelet.webp",
+   "source": "bracelets/bracelet16"
+  },
+  {
+   "name": "Paperclip Chain Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/paperclip-chain-bracelet.webp",
+   "source": "bracelets/bracelet17"
+  },
+  {
+   "name": "Rope Chain Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/rope-chain-bracelet.webp",
+   "source": "bracelets/bracelet18"
+  },
+  {
+   "name": "Bezel Diamond Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/bezel-diamond-bracelet.webp",
+   "source": "bracelets/bracelet19"
+  },
+  {
+   "name": "Heart Charm Bracelet",
+   "category": "Bracelets",
+   "image": "/images/catalog/heart-charm-bracelet.webp",
+   "source": "bracelets/bracelet20"
+  }
+ ],
+ "tiles": {
+  "engagement-rings": "/images/catalog/tile-engagement-rings.webp",
+  "rings": "/images/catalog/tile-rings.webp",
+  "wedding-bands": "/images/catalog/tile-wedding-bands.webp",
+  "necklaces": "/images/catalog/tile-necklaces.webp",
+  "pendants": "/images/catalog/tile-pendants.webp",
+  "earrings": "/images/catalog/tile-earrings.webp",
+  "bracelets": "/images/catalog/tile-bracelets.webp"
+ }
+}
