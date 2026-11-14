@@ -113,6 +113,15 @@ export async function createInquiryResilient(build: (id: string) => Inquiry): Pr
   }
 }
 export const getInquiries = async () => (await list<Inquiry & Row>("inquiries")).sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+/** A signed-in customer's own requests (newest first). */
+export async function getInquiriesForUser(userId: string): Promise<Inquiry[]> {
+  if (usingSupabase()) {
+    const { data, error } = await client().from("inquiries").select("data").eq("data->>userId", userId).order("created_at", { ascending: false }).limit(200);
+    if (error) throw new Error(error.message);
+    return (data ?? []).map((r) => r.data as Inquiry);
+  }
+  return (await getInquiries()).filter((i) => i.userId === userId);
+}
 export const getInquiry = (id: string) => get<Inquiry & Row>("inquiries", id);
 export const saveInquiry = (i: Inquiry) => put("inquiries", i as unknown as Row);
 
