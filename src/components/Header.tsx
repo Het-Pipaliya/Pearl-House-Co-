@@ -30,13 +30,13 @@ export default function Header() {
   const go = (e: React.FormEvent) => { e.preventDefault(); router.push(q.trim() ? `/shop?q=${encodeURIComponent(q.trim())}` : "/shop"); setSearching(false); setOpen(false); };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-blush/70 bg-ivory/95 backdrop-blur">
+    <header className={`sticky top-0 z-40 border-b bg-ivory/95 backdrop-blur transition-shadow duration-300 ${scrolled ? "border-blush shadow-[0_8px_30px_-20px_rgba(73,48,43,0.4)]" : "border-blush/70"}`}>
       <div className="container-x grid grid-cols-[1fr_auto_1fr] items-center py-2 sm:py-3">
         <div className="flex items-center">
           <button className="p-2 lg:hidden" aria-label="Open menu" aria-expanded={open} onClick={() => setOpen(true)}><MenuIcon /></button>
           <button className="hidden p-2 text-cocoa hover:text-rose lg:block" aria-label="Search" onClick={() => setSearching((s) => !s)}><SearchIcon /></button>
         </div>
-        <Link href="/" aria-label="Pearl House & Co — home" className="justify-self-center"><Logo className={scrolled ? "h-14 sm:h-16" : "h-16 sm:h-24"} /></Link>
+        <Link href="/" aria-label="Pearl House & Co — home" className="justify-self-center"><Logo className={scrolled ? "h-7 sm:h-9" : "h-8 sm:h-12"} /></Link>
         <div className="flex items-center justify-end gap-1">
           <button className="p-2 hover:text-rose lg:hidden" aria-label="Search" onClick={() => setSearching((s) => !s)}><SearchIcon /></button>
           <Link href="/wishlist" className="relative p-2 hover:text-rose" aria-label={`Wishlist, ${wishlist.length} items`}><HeartIcon />{wishlist.length > 0 && <span className="absolute right-0 top-0 h-2 w-2 rounded-full bg-rose" />}</Link>
@@ -55,7 +55,7 @@ export default function Header() {
       )}
       {open && (
         <div className="fixed inset-0 z-50 bg-ivory lg:hidden" role="dialog" aria-modal="true" aria-label="Menu">
-          <div className="flex items-center justify-between border-b border-blush px-5 py-4"><Logo className="h-10" /><button className="p-2" aria-label="Close menu" onClick={() => setOpen(false)}><CloseIcon /></button></div>
+          <div className="flex items-center justify-between border-b border-blush px-5 py-4"><Logo className="h-7" /><button className="p-2" aria-label="Close menu" onClick={() => setOpen(false)}><CloseIcon /></button></div>
           <ul className="px-6 py-6">
             {NAV.map((n) => <li key={n.label} className="border-b border-blush/60"><Link href={n.href} onClick={() => setOpen(false)} className="block py-4 font-serif text-2xl">{n.label}</Link></li>)}
             <li className="border-b border-blush/60"><Link href="/wishlist" onClick={() => setOpen(false)} className="block py-4 font-serif text-2xl">Wishlist</Link></li>

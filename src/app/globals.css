@@ -21,4 +21,23 @@
   .prose-p h2 { @apply mb-3 mt-10 text-2xl; }
 }
 .reveal { animation: fadeUp .9s ease both; }
+
+/* Scroll reveal: only hidden once JS has confirmed it can reveal them (class "js" set by ScrollEffects) */
+.js .rv { opacity: 0; transform: translateY(28px); transition: opacity .9s cubic-bezier(.2,.65,.2,1), transform .9s cubic-bezier(.2,.65,.2,1); transition-delay: calc(var(--i, 0) * 90ms); will-change: opacity, transform; }
+.js .rv.rv-l { transform: translateX(-36px); }
+.js .rv.rv-r { transform: translateX(36px); }
+.js .rv.rv-in { opacity: 1; transform: none; }
+/* once revealed, hover transforms on cards must stay snappy */
+.js article.rv.rv-in { transition: transform .5s ease, opacity .9s ease; transition-delay: 0s; }
+
+/* Buttons: soft light sweep on hover */
+.btn, .btn-outline { position: relative; overflow: hidden; isolation: isolate; }
+.btn::after, .btn-outline::after { content: ""; position: absolute; inset: 0; z-index: -1; transform: translateX(-120%) skewX(-20deg); background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent); transition: transform .8s ease; }
+.btn:hover::after, .btn-outline:hover::after { transform: translateX(120%) skewX(-20deg); }
+.btn:active, .btn-outline:active { transform: scale(.98); }
+.btn, .btn-outline { transition-property: background-color, border-color, color, transform, box-shadow; }
+.btn:hover { box-shadow: 0 10px 24px -12px rgba(183,110,98,.7); }
+
+/* Gentle image fade-in as photos load */
+img { transition: opacity .6s ease; }
 @media (prefers-reduced-motion: reduce) { *, .reveal { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

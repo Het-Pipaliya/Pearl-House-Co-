@@ -12,9 +12,9 @@ function Row({ title, eyebrow, items, href }: { title: string; eyebrow: string; 
   if (!items.length) return null;
   return (
     <section className="container-x py-16">
-      <header className="mb-10 text-center"><p className="eyebrow">{eyebrow}</p><h2 className="mt-2 text-4xl sm:text-5xl">{title}</h2></header>
-      <div className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-4 lg:gap-x-7">{items.slice(0, 4).map((p) => <ProductCard key={p.id} p={p} />)}</div>
-      <div className="mt-10 text-center"><Link href={href} className="btn-outline">View All</Link></div>
+      <header className="rv mb-10 text-center"><p className="eyebrow">{eyebrow}</p><h2 className="mt-2 text-4xl sm:text-5xl">{title}</h2></header>
+      <div className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-4 lg:gap-x-7">{items.slice(0, 4).map((p, i) => <ProductCard key={p.id} p={p} i={i} />)}</div>
+      <div className="rv mt-10 text-center"><Link href={href} className="btn-outline">View All</Link></div>
     </section>
   );
 }
@@ -26,7 +26,7 @@ export default async function Home() {
       <section className="relative isolate overflow-hidden bg-ivory">
         {/* Full-width image: stacked on phones, full-bleed behind the text from md up */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/hero-full.webp" alt="Diamond bracelet, solitaire ring, pendant and drop earrings on cream marble" className="block aspect-[16/10] w-full object-cover object-[72%_center] md:absolute md:inset-0 md:-z-10 md:aspect-auto md:h-full" />
+        <img src="/images/hero-full.webp" alt="Diamond bracelet, solitaire ring, pendant and drop earrings on cream marble" data-parallax className="block aspect-[16/10] w-full object-cover object-[72%_center] md:absolute md:inset-0 md:-z-10 md:aspect-auto md:h-full" />
         {/* Soft ivory gradient keeps the text readable and fades into the next section */}
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 hidden md:block bg-[linear-gradient(90deg,rgba(252,248,246,0.96)_0%,rgba(252,248,246,0.85)_30%,rgba(252,248,246,0.35)_52%,rgba(252,248,246,0)_68%)]" />
         <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 hidden h-32 md:block bg-gradient-to-t from-ivory to-transparent" />
@@ -42,11 +42,11 @@ export default async function Home() {
       </section>
 
       <section className="container-x py-20">
-        <header className="mb-10 text-center"><p className="eyebrow">Collections</p><h2 className="mt-2 text-4xl sm:text-5xl">Shop by Category</h2></header>
+        <header className="rv mb-10 text-center"><p className="eyebrow">Collections</p><h2 className="mt-2 text-4xl sm:text-5xl">Shop by Category</h2></header>
         <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-6">
           {CATEGORIES.map((c) => (
-            <li key={c}><Link href={`/shop?category=${encodeURIComponent(c)}`} className="group block">
-              <div className="aspect-square overflow-hidden bg-blush/40">{/* eslint-disable-next-line @next/next/no-img-element */}<img src={`/images/${catImg[c]}.webp`} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" /></div>
+            <li key={c} className="rv" style={{ "--i": CATEGORIES.indexOf(c) % 4 } as React.CSSProperties}><Link href={`/shop?category=${encodeURIComponent(c)}`} className="group block">
+              <div className="aspect-square overflow-hidden bg-blush/40">{/* eslint-disable-next-line @next/next/no-img-element */}<img src={`/images/${catImg[c]}.webp`} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.08]" /></div>
               <p className="mt-3 text-center font-serif text-xl group-hover:text-rose">{c}</p>
             </Link></li>
           ))}
@@ -60,34 +60,34 @@ export default async function Home() {
       <section className="bg-blush/50 py-20">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/homepage/home-05.webp" alt="Ring design sketches beside a rose-gold ring" loading="lazy" className="aspect-square w-full object-cover" />
-          <div><p className="eyebrow">Custom Jewelry</p><h2 className="mt-3 text-4xl sm:text-5xl">Your Vision. Our Craftsmanship.</h2>
+          <img src="/images/homepage/home-06.webp" alt="Ring design sketches beside a rose-gold ring" loading="lazy" className="rv rv-l aspect-square w-full object-cover" />
+          <div className="rv rv-r"><p className="eyebrow">Custom Jewelry</p><h2 className="mt-3 text-4xl sm:text-5xl">Your Vision. Our Craftsmanship.</h2>
             <p className="mt-5 text-cocoa/80">Have a design in mind? Share your ideas and inspiration with us. Our team will work with you and our manufacturing partners to explore what&apos;s possible.</p>
             <Link href="/custom" className="btn mt-8">Begin Your Design</Link></div>
         </div>
       </section>
 
       <section className="container-x grid items-center gap-12 py-24 lg:grid-cols-2">
-        <div><p className="eyebrow">Our Story</p><h2 className="mt-3 text-4xl sm:text-5xl">Jewelry, personally arranged</h2>
+        <div className="rv rv-l"><p className="eyebrow">Our Story</p><h2 className="mt-3 text-4xl sm:text-5xl">Jewelry, personally arranged</h2>
           <p className="mt-5 text-cocoa/80">Pearl House &amp; Co pairs a thoughtfully curated collection with a personal, unhurried service. We work with skilled independent manufacturers to bring each piece to life — and we guide you every step of the way.</p>
           <Link href="/about" className="link-u mt-6 inline-block text-rose">Read our story →</Link></div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/homepage/home-07.webp" alt="A pearl necklace beside a blush ring box" loading="lazy" className="aspect-square w-full object-cover" />
+        <img src="/images/homepage/home-07.webp" alt="A pearl necklace beside a blush ring box" loading="lazy" className="rv rv-r aspect-square w-full object-cover" />
       </section>
 
       <section className="container-x py-24">
-        <header className="mb-12 text-center"><p className="eyebrow">Simple &amp; Personal</p><h2 className="mt-2 text-4xl sm:text-5xl">How It Works</h2></header>
+        <header className="rv mb-12 text-center"><p className="eyebrow">Simple &amp; Personal</p><h2 className="mt-2 text-4xl sm:text-5xl">How It Works</h2></header>
         <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {[["Choose", "Browse the collection and pick the pieces and options you love."], ["Submit a request", "Send your order request. No payment is taken online."], ["Personal consultation", "Our team contacts you to confirm availability, details and pricing."], ["Confirm & make", "Once agreed, your piece is made to order by our manufacturing partner."], ["Delivery", "Your finished jewelry is shipped to you."]].map(([t, d], i) => (
-            <li key={t} className="text-center"><span className="font-serif text-4xl text-rose">{i + 1}</span><h3 className="mt-1 text-xl">{t}</h3><p className="mt-2 text-sm text-cocoa/70">{d}</p></li>
+            <li key={t} className="rv text-center" style={{ "--i": i } as React.CSSProperties}><span className="font-serif text-4xl text-rose">{i + 1}</span><h3 className="mt-1 text-xl">{t}</h3><p className="mt-2 text-sm text-cocoa/70">{d}</p></li>
           ))}
         </ol>
       </section>
 
       <section className="bg-white py-20"><div className="container-x"><h2 className="mb-12 text-center text-4xl sm:text-5xl">Why Choose Pearl House &amp; Co</h2>
-        <ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">{why.map(([t, d]) => <li key={t} className="text-center"><div className="mx-auto mb-4 h-px w-10 bg-rose" /><h3 className="text-2xl">{t}</h3><p className="mt-2 text-sm text-cocoa/70">{d}</p></li>)}</ul></div></section>
+        <ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">{why.map(([t, d]) => <li key={t} className="rv text-center" style={{ "--i": why.findIndex((w) => w[0] === t) } as React.CSSProperties}><div className="mx-auto mb-4 h-px w-10 bg-rose transition-all duration-500 hover:w-20" /><h3 className="text-2xl">{t}</h3><p className="mt-2 text-sm text-cocoa/70">{d}</p></li>)}</ul></div></section>
 
-      <section className="container-x py-24 text-center"><h2 className="text-4xl sm:text-5xl">Let&apos;s find something extraordinary</h2><p className="mx-auto mt-4 max-w-xl text-cocoa/75">Send us an order request or ask a question. No payment is needed — we&apos;ll be in touch personally.</p>
+      <section className="rv container-x py-24 text-center"><h2 className="text-4xl sm:text-5xl">Let&apos;s find something extraordinary</h2><p className="mx-auto mt-4 max-w-xl text-cocoa/75">Send us an order request or ask a question. No payment is needed — we&apos;ll be in touch personally.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-4"><Link href="/shop" className="btn">Browse Jewelry</Link><Link href="/contact" className="btn-outline">Contact Us</Link></div></section>
     </>
   );

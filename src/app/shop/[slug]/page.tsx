@@ -19,7 +19,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
     <div className="container-x py-10 sm:py-14">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld).replace(/</g, "\\u003c") }} />
       <ProductView p={p} />
-      <section className="mt-24"><h2 className="mb-10 text-center text-3xl">You May Also Love</h2><div className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-4 lg:gap-x-7">{related.map((r) => <ProductCard key={r.id} p={r} />)}</div></section>
+      <section className="mt-24"><h2 className="mb-10 text-center text-3xl">You May Also Love</h2><div className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-4 lg:gap-x-7">{related.map((r, i) => <ProductCard key={r.id} p={r} i={i} />)}</div></section>
     </div>
   );
 }
