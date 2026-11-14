@@ -34,7 +34,6 @@ export default async function Home() {
           <p className="mx-auto mt-6 max-w-xl text-lg text-cocoa/80">Choose from our collection or share your own design. We’ll create the jewelry just the way you want it.</p>
           <Link href="/shop" className="btn mt-9">Explore Collections</Link>
         </div>
-        <p className="mt-16 border-t border-blush/60 bg-champagne/60 py-2 text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Imagery shown is illustrative — not Pearl House inventory</p>
       </section>
 
 
