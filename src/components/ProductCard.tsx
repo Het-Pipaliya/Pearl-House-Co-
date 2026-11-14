@@ -8,7 +8,7 @@ import { HeartIcon } from "./Icons";
 
 export const needsOptions = (p: Product) => p.sizes.length > 0 || p.metals.length > 0;
 
-export default function ProductCard({ p }: { p: Product }) {
+export default function ProductCard({ p, i = 0 }: { p: Product; i?: number }) {
   const { wishlist, toggleWish, add } = useCart();
   const [added, setAdded] = useState(false);
   const wished = wishlist.includes(p.id);
@@ -17,11 +17,11 @@ export default function ProductCard({ p }: { p: Product }) {
     setAdded(true); setTimeout(() => setAdded(false), 1800);
   };
   return (
-    <article className="group">
-      <div className="relative aspect-square overflow-hidden bg-blush/40">
+    <article className="rv group transition-transform duration-500 hover:-translate-y-1.5" style={{ "--i": i % 4 } as React.CSSProperties}>
+      <div className="relative aspect-[9/5] overflow-hidden bg-blush/40 shadow-[0_0_0_rgba(73,48,43,0)] transition-shadow duration-500 group-hover:shadow-[0_18px_40px_-18px_rgba(73,48,43,0.35)]">
         <Link href={`/shop/${p.slug}`} aria-label={p.name}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={p.images[0]} alt={p.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <img src={p.images[0]} alt={p.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.08]" />
           {p.images[1] && /* eslint-disable-next-line @next/next/no-img-element */ <img src={p.images[1]} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100" />}
         </Link>
         <button onClick={() => toggleWish(p.id)} aria-pressed={wished} aria-label={wished ? `Remove ${p.name} from wishlist` : `Save ${p.name} to wishlist`} className="absolute right-3 top-3 rounded-full bg-white/85 p-2 text-rose transition hover:bg-white"><HeartIcon filled={wished} /></button>

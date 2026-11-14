@@ -12,7 +12,7 @@ export default function About() {
             <p>We curate timeless designs and work with skilled independent manufacturing partners who make each piece to order. We are not a workshop and we don&apos;t claim to be — our role is to guide you, coordinate every detail, and make sure the piece that arrives is the one you imagined.</p>
             <p>Whether it&apos;s an engagement, an anniversary, or a gift that simply says thank you, we&apos;re here to help you celebrate it.</p></div></div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/homepage/home-07.webp" alt="A pearl necklace beside a blush jewelry box" className="aspect-square w-full object-cover" />
+        <img src="/images/homepage/home-08.webp" alt="A pearl necklace beside a blush jewelry box" className="aspect-square w-full object-cover" />
       </section>
       <section className="bg-white py-20"><div className="container-x"><h2 className="mb-12 text-center text-4xl">What we value</h2><ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">{values.map(([t, d]) => <li key={t} className="text-center"><h3 className="text-2xl text-rose">{t}</h3><p className="mt-3 text-sm text-cocoa/75">{d}</p></li>)}</ul></div></section>
       <section className="container-x py-20 text-center"><h2 className="text-4xl">Our partners</h2><p className="mx-auto mt-4 max-w-2xl text-cocoa/75">We collaborate with independent jewelry manufacturers whose craftsmanship we trust. This lets us offer a wide range of designs and customization while keeping the experience personal.</p><Link href="/custom" className="btn mt-8">Start a Custom Design</Link></section>
