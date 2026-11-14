@@ -68,6 +68,15 @@ async function remove(t: Table, id: string) {
 }
 
 /* ---------- products ---------- */
+/** Removes the old "sample collection / sample product" wording from descriptions already stored in the database. */
+const tidy = <T extends Product>(p: T): T => ({
+  ...p,
+  description: p.description
+    .replace(/ from our sample collection\./, " from our collection.")
+    .replace(/\s*Sample (product|entry) shown for demonstration\./g, "")
+    .trim(),
+});
+
 let lastSeedTry = 0;
 /** Puts the sample catalogue into an empty products table: ONE request (not 114). Throws if the database refuses. */
 async function seedCatalogue() {
@@ -95,6 +104,7 @@ export async function getProducts(): Promise<Product[]> {
     try { await seedCatalogue(); rows = await list<Product & Row>("products"); } catch (e) { console.error("products: seeding failed —", (e as Error).message); }
   }
   if (!rows.length) rows = SEED_PRODUCTS as (Product & Row)[];
+  rows = rows.map(tidy);
   return [...rows].sort((a, b) => b.createdAt.localeCompare(a.createdAt) || a.name.localeCompare(b.name));
 }
 
@@ -110,7 +120,7 @@ export async function databaseStatus() {
   } catch (e) { out.write = "error: " + (e as Error).message.slice(0, 160); }
   return out;
 }
-export const getProduct = async (id: string) => (await get<Product & Row>("products", id).catch(() => null)) ?? (SEED_PRODUCTS.find((p) => p.id === id) as (Product & Row) | undefined) ?? null;
+export const getProduct = async (id: string) => { const r = (await get<Product & Row>("products", id).catch(() => null)) ?? (SEED_PRODUCTS.find((p) => p.id === id) as (Product & Row) | undefined) ?? null; return r && tidy(r); };
 export async function getProductBySlug(slug: string) { return (await getProducts()).find((p) => p.slug === slug) ?? null; }
 export const saveProduct = (p: Product) => put("products", p as Product & Row);
 export const createProduct = (p: Product) => insertNew("products", p as Product & Row);

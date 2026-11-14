@@ -34,7 +34,7 @@ const products = ordered.map((r, i) => {
   const code = CODE[r.category]; counters[code] = (counters[code] ?? 0) + 1; const s = stone(r.name);
   return {
     id: `PH-${code}-${String(counters[code]).padStart(3, "0")}`, slug: slugify(r.name), name: r.name, category: r.category,
-    description: `${r.name} — ${blurb[r.category]} from our sample collection. Metal, size and stone options are confirmed with you by our team. Sample product shown for demonstration.`,
+    description: `${r.name} — ${blurb[r.category]} from our collection. Metal, size and stone options are confirmed with you by our team.`,
     materials: "Fine jewelry — metal and stones confirmed by our team", gemstone: s.gemstone, price: null, showPrice: false,
     sizes: sizes(r.category, r.name), metals: [], gemstoneOptions: s.opts, customization: true, images: [r.image],
     available: true, isNew: NEW_.has(r.name), bestSeller: BEST.has(r.name), featured: FEATURED.has(r.name), placeholder: true,
@@ -45,7 +45,7 @@ const slugs = new Set(), imgs = new Set();
 for (const p of products) { if (slugs.has(p.slug)) throw new Error("duplicate slug " + p.slug); slugs.add(p.slug); for (const im of p.images) { if (imgs.has(im)) throw new Error("duplicate image " + im); imgs.add(im); } }
 
 products.push({ id: "PH-CUS-001", slug: "bespoke-signature-piece", name: "Bespoke Signature Piece", category: "Custom Jewelry",
-  description: "Begin a one-of-a-kind design with our team. Share your vision and we will discuss the possibilities with you. Sample entry shown for demonstration.",
+  description: "Begin a one-of-a-kind design with our team. Share your vision and we will discuss the possibilities with you.",
   materials: "To be discussed", gemstone: "To be discussed", price: null, showPrice: false, sizes: [], metals: [], gemstoneOptions: [], customization: true,
   images: ["/images/homepage/home-03.webp"], available: true, isNew: false, bestSeller: false, featured: true, placeholder: true, createdAt: "2026-01-01T00:00:00.000Z" });
 
