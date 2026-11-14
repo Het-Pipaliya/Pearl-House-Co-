@@ -14,6 +14,7 @@ export default function CartView() {
   const [form, setForm] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
+  const [hint, setHint] = useState("");
   const [f, setF] = useState({ name: "", email: "", phone: "", city: "", state: "", country: "", contactMethod: "Email", instructions: "", notes: "", website: "" });
   const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setF({ ...f, [k]: e.target.value });
 
@@ -22,14 +23,14 @@ export default function CartView() {
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault(); if (busy) return;
-    setBusy(true); setError("");
+    setBusy(true); setError(""); setHint("");
     try {
       const res = await fetch("/api/orders", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...f, openedAt, items: lines.map((l) => ({ productId: l.productId, quantity: l.quantity, size: l.size, metal: l.metal, gemstone: l.gemstone, customization: l.customization })) }),
       });
       const data = await res.json().catch(() => null);
-      if (!res.ok || !data?.ok) { setError(data?.error ?? "Something went wrong. Your cart has been kept — please try again."); setBusy(false); return; }
+      if (!res.ok || !data?.ok) { setError(data?.error ?? "Something went wrong. Your cart has been kept — please try again."); setHint(data?.hint ?? ""); setBusy(false); return; }
       clear(); // only after the server confirmed the request was saved
       router.push(`/order/success?ref=${encodeURIComponent(data.reference)}`);
     } catch {
@@ -79,7 +80,7 @@ export default function CartView() {
             <Field label="Preferred contact method" id="o-cm"><select id="o-cm" className="input" value={f.contactMethod} onChange={set("contactMethod")}>{METHODS.map((m) => <option key={m}>{m}</option>)}</select></Field>
             <Field label="Additional instructions" id="o-ins"><textarea id="o-ins" rows={3} maxLength={2000} className="input" value={f.instructions} onChange={set("instructions")} /></Field>
             <Field label="Order notes" id="o-notes"><textarea id="o-notes" rows={3} maxLength={2000} className="input" value={f.notes} onChange={set("notes")} /></Field>
-            {error && <p role="alert" className="border border-rose/40 bg-blush/50 p-3 text-sm text-rose-dark">{error}</p>}
+            {error && <div role="alert" className="border border-rose/40 bg-blush/50 p-3 text-sm text-rose-dark">{error}{hint && <p className="mt-2 text-xs text-cocoa/70">Technical detail: {hint}</p>}</div>}
             <button className="btn w-full" disabled={busy}>{busy ? "Sending…" : "Send Order Request"}</button>
             <p className="text-xs text-cocoa/55">Submitting does not confirm a purchase. Your details are used only to respond to your request — see our <Link href="/privacy" className="underline">Privacy Policy</Link>.</p>
           </form>
