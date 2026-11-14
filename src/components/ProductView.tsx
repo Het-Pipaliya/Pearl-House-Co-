@@ -34,7 +34,7 @@ export default function ProductView({ p }: { p: Product }) {
   return (
     <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
       <div>
-        <div ref={box} onMouseMove={move} onMouseLeave={() => setZoom(null)} onClick={() => setLight(true)} className="relative aspect-[3/2] cursor-zoom-in overflow-hidden bg-blush/40" role="button" tabIndex={0} aria-label="Open enlarged image" onKeyDown={(e) => e.key === "Enter" && setLight(true)}>
+        <div ref={box} onMouseMove={move} onMouseLeave={() => setZoom(null)} onClick={() => setLight(true)} className="relative aspect-square cursor-zoom-in overflow-hidden bg-blush/40" role="button" tabIndex={0} aria-label="Open enlarged image" onKeyDown={(e) => e.key === "Enter" && setLight(true)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={p.images[img]} alt={p.name} className="h-full w-full object-cover transition-transform duration-200" style={zoom ? { transform: "scale(2)", transformOrigin: `${zoom.x}% ${zoom.y}%` } : undefined} />
         </div>
