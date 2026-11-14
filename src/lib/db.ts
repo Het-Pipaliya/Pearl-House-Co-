@@ -68,22 +68,49 @@ async function remove(t: Table, id: string) {
 }
 
 /* ---------- products ---------- */
-let seeded = false;
+let lastSeedTry = 0;
+/** Puts the sample catalogue into an empty products table: ONE request (not 114). Throws if the database refuses. */
+async function seedCatalogue() {
+  if (usingSupabase()) {
+    const { error } = await client().from("products").upsert(
+      SEED_PRODUCTS.map((p) => ({ id: p.id, data: p, created_at: p.createdAt })), { onConflict: "id", ignoreDuplicates: true });
+    if (error) throw new Error(error.message);
+    return;
+  }
+  for (const s of SEED_PRODUCTS) await insertNew("products", s as Product & Row);
+}
+
+/**
+ * The shop must never be empty or crash because of the database:
+ *  - products are read from the database;
+ *  - if it is empty, the sample catalogue is loaded into it (retried at most once a minute);
+ *  - if the database cannot be read or written, the built-in sample catalogue is shown instead (and the problem is logged).
+ */
 export async function getProducts(): Promise<Product[]> {
   let rows: (Product & Row)[] = [];
-  try { rows = await list<Product & Row>("products"); } catch (e) { if (usingSupabase()) throw e; }
-  if (!rows.length && !seeded) {
-    seeded = true; // sample catalogue is inserted once so it can be edited in the admin
-    try {
-      for (const s of SEED_PRODUCTS) await insertNew("products", s as Product & Row);
-      rows = await list<Product & Row>("products");
-    } catch (e) { if (usingSupabase()) throw e; seeded = false; }
+  let readable = true;
+  try { rows = await list<Product & Row>("products"); } catch (e) { readable = false; console.error("products: database read failed —", (e as Error).message); }
+  if (readable && !rows.length && Date.now() - lastSeedTry > 60_000) {
+    lastSeedTry = Date.now();
+    try { await seedCatalogue(); rows = await list<Product & Row>("products"); } catch (e) { console.error("products: seeding failed —", (e as Error).message); }
   }
-  // No database connected (e.g. hosting without a writable disk): show the read-only sample catalogue.
-  if (!rows.length && !usingSupabase()) rows = SEED_PRODUCTS as (Product & Row)[];
+  if (!rows.length) rows = SEED_PRODUCTS as (Product & Row)[];
   return [...rows].sort((a, b) => b.createdAt.localeCompare(a.createdAt) || a.name.localeCompare(b.name));
 }
-export const getProduct = (id: string) => get<Product & Row>("products", id);
+
+/** Setup check (no secrets): can the server read and write the database? */
+export async function databaseStatus() {
+  if (!usingSupabase()) return { mode: "local-file/none", read: "n/a", write: "n/a" };
+  const out: { mode: string; read: string; write: string; products?: number } = { mode: "supabase", read: "ok", write: "ok" };
+  try { const { data, error } = await client().from("products").select("id").limit(1000); if (error) throw new Error(error.message); out.products = data?.length ?? 0; } catch (e) { out.read = "error: " + (e as Error).message.slice(0, 160); }
+  try {
+    const t = { id: "__health__", createdAt: new Date().toISOString() };
+    const { error } = await client().from("messages").upsert({ id: t.id, data: t, created_at: t.createdAt }); if (error) throw new Error(error.message);
+    await client().from("messages").delete().eq("id", t.id);
+  } catch (e) { out.write = "error: " + (e as Error).message.slice(0, 160); }
+  return out;
+}
+export const getProduct = async (id: string) => (await get<Product & Row>("products", id).catch(() => null)) ?? (SEED_PRODUCTS.find((p) => p.id === id) as (Product & Row) | undefined) ?? null;
 export async function getProductBySlug(slug: string) { return (await getProducts()).find((p) => p.slug === slug) ?? null; }
 export const saveProduct = (p: Product) => put("products", p as Product & Row);
 export const createProduct = (p: Product) => insertNew("products", p as Product & Row);
