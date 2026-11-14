@@ -2,6 +2,7 @@ import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import Words from "@/components/Words";
 import HeroCollage from "@/components/HeroCollage";
+import Showcase from "@/components/Showcase";
 import { getProducts } from "@/lib/db";
 import { CATEGORIES } from "@/lib/types";
 
@@ -57,17 +58,10 @@ export default async function Home() {
 
       <Row eyebrow="Just In" title="New Arrivals" items={all.filter((p) => p.isNew)} href="/shop?sort=newest" />
       <div className="bg-white"><Row eyebrow="Most Loved" title="Best Sellers" items={all.filter((p) => p.bestSeller)} href="/shop" /></div>
-      {(() => { const feat = all.filter((p) => p.featured).slice(0, 6); return feat.length > 0 && (
-        <section data-fx="hscroll" className="hs-outer bg-white">
-          <div className="hs-sticky py-16 md:py-0">
-            <header className="hs-head container-x mb-10 flex items-end justify-between gap-6">
-              <div><p className="eyebrow">Curated</p><h2 className="mt-2 text-4xl sm:text-5xl">Featured Pieces</h2></div>
-              <Link href="/shop" className="link-u hidden text-sm text-rose sm:block">View all →</Link>
-            </header>
-            <div className="hs-track">{feat.map((p) => <div key={p.id} className="hs-card"><ProductCard p={p} reveal={false} /></div>)}</div>
-            <div aria-hidden className="container-x mt-6 hidden md:block"><div className="h-px w-full bg-blush"><div data-hs-progress className="h-px origin-left scale-x-0 bg-rose" /></div></div>
-          </div>
-        </section>
+      {(() => { const feat = all.filter((p) => p.featured).slice(0, 8); return feat.length > 0 && (
+        <Showcase eyebrow="Curated" title="Featured Pieces">
+          {feat.map((p) => <div key={p.id} className="showcase-card"><ProductCard p={p} reveal={false} /></div>)}
+        </Showcase>
       ); })()}
 
       <section className="bg-blush/50 py-24">
