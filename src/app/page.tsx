@@ -62,15 +62,15 @@ export default async function Home() {
 
       <Row eyebrow="Just In" title="New Arrivals" items={all.filter((p) => p.isNew)} href="/shop?sort=newest" />
       <div className="bg-white"><Row eyebrow="Most Loved" title="Best Sellers" items={all.filter((p) => p.bestSeller)} href="/shop" /></div>
-      {(() => { const feat = all.filter((p) => p.featured).slice(0, 8); return feat.length > 0 && (
+      {(() => { const feat = all.filter((p) => p.featured).slice(0, 6); return feat.length > 0 && (
         <section data-fx="hscroll" className="hs-outer bg-white">
           <div className="hs-sticky py-16 md:py-0">
-            <header className="container-x mb-10 flex items-end justify-between gap-6">
+            <header className="hs-head container-x mb-10 flex items-end justify-between gap-6">
               <div><p className="eyebrow">Curated</p><h2 className="mt-2 text-4xl sm:text-5xl">Featured Pieces</h2></div>
               <Link href="/shop" className="link-u hidden text-sm text-rose sm:block">View all →</Link>
             </header>
             <div className="hs-track">{feat.map((p) => <div key={p.id} className="hs-card"><ProductCard p={p} reveal={false} /></div>)}</div>
-            <div aria-hidden className="container-x mt-10 hidden md:block"><div className="h-px w-full bg-blush"><div data-hs-progress className="h-px origin-left scale-x-0 bg-rose" /></div></div>
+            <div aria-hidden className="container-x mt-6 hidden md:block"><div className="h-px w-full bg-blush"><div data-hs-progress className="h-px origin-left scale-x-0 bg-rose" /></div></div>
           </div>
         </section>
       ); })()}
@@ -81,7 +81,7 @@ export default async function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/homepage/home-06.webp" alt="Ring design sketches beside a rose-gold ring" loading="lazy" className="aspect-square w-full object-cover" />
           </div>
-          <div data-fx="steps" className="space-y-14 lg:space-y-[26vh] lg:pb-[12vh] lg:pt-[6vh]">
+          <div data-fx="steps" className="space-y-14 lg:space-y-[15vh] lg:pb-[6vh] lg:pt-[3vh]">
             <div data-step>
               <p className="eyebrow">Custom Jewelry</p><h2 className="mt-3 text-4xl sm:text-5xl">Your Vision. Our Craftsmanship.</h2>
               <p className="mt-5 max-w-md text-cocoa/80">Have a design in mind? Share your ideas and inspiration with us. Our team will work with you and our manufacturing partners to explore what&apos;s possible.</p>

@@ -54,9 +54,10 @@ img { transition: opacity .6s ease; }
 .hs-track::-webkit-scrollbar { display: none; }
 .hs-card { flex: 0 0 74%; scroll-snap-align: center; }
 @media (min-width: 768px) {
+  /* The pinned panel starts just under the sticky header and fills the rest of the window; cards are sized from the window HEIGHT so title + cards always fit, even on short laptop screens. */
   .hs-card { flex: 0 0 38vw; }
-  .fx .hs-sticky { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
+  .fx .hs-sticky { position: sticky; top: 6.5rem; height: calc(100vh - 6.5rem); display: flex; flex-direction: column; justify-content: center; overflow: hidden; padding: 0 !important; }
   .fx .hs-track { width: max-content; overflow: visible; scroll-snap-type: none; gap: 2rem; padding: 0 max(1.5rem, calc((100vw - 80rem) / 2 + 2rem)); will-change: transform; }
-  .fx .hs-card { flex: 0 0 min(34vw, 30rem); }
+  .fx .hs-card { flex: 0 0 clamp(14rem, calc((100vh - 6.5rem - 19rem) * 1.333), 30rem); }
+  .fx .hs-head { margin-bottom: 1.25rem !important; }
 }
-@media (min-width: 1024px) { .fx .hs-card { flex: 0 0 min(28vw, 28rem); } }
