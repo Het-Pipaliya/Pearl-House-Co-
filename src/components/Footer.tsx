@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="mt-24 border-t border-blush bg-white">
       <div className="container-x grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-        <div><Logo className="h-10" /><p className="mt-5 max-w-xs text-sm leading-relaxed text-cocoa/70">Fine jewelry, personally arranged. Every request is reviewed by our team and made with our skilled manufacturing partners.</p></div>
+        <div><Logo className="h-12" /><p className="mt-5 max-w-xs text-sm leading-relaxed text-cocoa/70">Fine jewelry, personally arranged. Every request is reviewed by our team and made with our skilled manufacturing partners.</p></div>
         {col("Shop", [["All Jewelry", "/shop"], ["Engagement Rings", "/shop?category=Engagement%20Rings"], ["Wedding Bands", "/shop?category=Wedding%20Bands"], ["Necklaces", "/shop?category=Necklaces"], ["Earrings", "/shop?category=Earrings"]])}
         {col("Client Care", [["Custom Jewelry", "/custom"], ["Contact Us", "/contact"], ["Shipping Information", "/shipping"], ["Custom Order Policy", "/custom-order-policy"], ["Our Story", "/about"]])}
         <div>
