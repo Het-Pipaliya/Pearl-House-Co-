@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createInquiryResilient, getProducts, saveInquiry } from "@/lib/db";
 import { sendInquiryEmails } from "@/lib/email";
+import { authEnabled } from "@/lib/supabase/env";
 import { getSessionUser } from "@/lib/supabase/server";
 import { emailHint } from "@/lib/emailHint";
 import { clientIp, rateLimit } from "@/lib/ratelimit";
@@ -23,6 +24,7 @@ export async function POST(req: Request) {
   if (spam) return fail(spam, 400);
 
   const user = await getSessionUser();
+  if (authEnabled && !user) return fail("Please sign in to send your order request.", 401);
   try {
     // Never trust names/options from the browser: rebuild each line from the catalogue.
     const catalogue = new Map((await getProducts()).map((p) => [p.id, p]));
