@@ -1,5 +1,8 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
+
+// useLayoutEffect cleanups run BEFORE React removes the DOM nodes, which is what lets us undo GSAP's pin wrapper in time.
+const useIsoLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 /**
  * Scroll-controlled editorial collage (GSAP ScrollTrigger, scrubbed — never plays by itself):
@@ -13,7 +16,7 @@ import { useEffect, useRef } from "react";
 export default function HeroCollage() {
   const root = useRef<HTMLElement>(null);
 
-  useEffect(() => {
+  useIsoLayoutEffect(() => {
     const el = root.current; if (!el) return;
     el.style.setProperty("--rest-top", `${Math.round(el.getBoundingClientRect().top + window.scrollY)}px`);
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return; // static final collage
@@ -59,6 +62,7 @@ export default function HeroCollage() {
   }, []);
 
   return (
+    <div>
     <section ref={root} aria-label="Pearl House & Co jewelry editorial" className="collage relative overflow-hidden bg-ivory">
       <noscript><style>{`.collage .c-sec{opacity:1!important}.collage .c-main{transform:none!important}`}</style></noscript>
       <div className="absolute inset-0 p-3 md:p-5">
@@ -90,5 +94,6 @@ export default function HeroCollage() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
