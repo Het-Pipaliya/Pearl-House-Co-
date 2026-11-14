@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: auto; } /* smooth scrolling fights with pinned scroll animations (esp. Safari) */
   body { @apply bg-ivory text-cocoa font-sans antialiased; }
   h1, h2, h3, h4 { @apply font-serif font-medium tracking-tight; }
   ::selection { background: #F1DAD5; }
@@ -61,3 +61,17 @@ img { transition: opacity .6s ease; }
   .fx .hs-card { flex: 0 0 clamp(14rem, calc((100vh - 6.5rem - 19rem) * 1.333), 30rem); }
   .fx .hs-head { margin-bottom: 1.25rem !important; }
 }
+
+
+/* ---- Hero collage: avoid a flash of the finished collage before the scroll animation takes over ---- */
+@media (prefers-reduced-motion: no-preference) {
+  .collage:not(.is-ready) .c-sec { opacity: 0; }
+  .collage:not(.is-ready) .c-main { transform: translate3d(69%, 0, 0) scale(1.1); }
+}
+@media (prefers-reduced-motion: no-preference) and (max-width: 767px) {
+  .collage:not(.is-ready) .c-main { transform: translate3d(0, 25.8%, 0) scale(1.12); }
+}
+
+/* Stage = the space between the header and the bottom of the first screen (fallbacks = measured header heights; JS refines --rest-top) */
+.collage { height: calc(100vh - var(--rest-top, 6.5rem)); height: calc(100svh - var(--rest-top, 6.5rem)); min-height: 24rem; }
+@media (min-width: 768px) { .collage { height: calc(100vh - var(--rest-top, 9.75rem)); height: calc(100svh - var(--rest-top, 9.75rem)); } }

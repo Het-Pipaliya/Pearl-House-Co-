@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import Words from "@/components/Words";
+import HeroCollage from "@/components/HeroCollage";
 import { getProducts } from "@/lib/db";
 import { CATEGORIES } from "@/lib/types";
 
@@ -24,22 +25,16 @@ export default async function Home() {
   const all = (await getProducts()).filter((p) => p.available);
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-ivory">
-        {/* Full-width image: stacked on phones, full-bleed behind the text from md up */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/homepage/hero-banner.webp" alt="Diamond bracelet, solitaire ring, pendant and drop earrings on cream marble" data-parallax className="block aspect-[16/10] w-full object-cover object-[72%_center] md:absolute md:inset-0 md:-z-10 md:aspect-auto md:h-full" />
-        {/* Soft ivory gradient keeps the text readable and fades into the next section */}
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 hidden md:block bg-[linear-gradient(90deg,rgba(252,248,246,0.96)_0%,rgba(252,248,246,0.85)_30%,rgba(252,248,246,0.35)_52%,rgba(252,248,246,0)_68%)]" />
-        <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 hidden h-32 md:block bg-gradient-to-t from-ivory to-transparent" />
-        <div className="container-x relative flex items-center md:min-h-[min(78vh,720px)]">
-          <div data-fx="hero-text" className="max-w-xl md:max-w-[22rem] lg:max-w-xl"><div className="reveal py-12 md:py-20">
-            <p className="eyebrow">Pearl House &amp; Co · Fine Jewelry</p>
-            <h1 className="mt-5 text-5xl leading-[1.05] sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl">Your Dream Jewelry, Made Real.</h1>
-            <p className="mt-6 max-w-md text-lg text-cocoa/80">Choose from our collection or share your own design. We’ll create the jewelry just the way you want it.</p>
-            <Link href="/shop" className="btn mt-9">Explore Collections</Link>
-          </div></div>
+      <HeroCollage />
+
+      <section className="bg-ivory px-5 pt-20 text-center sm:pt-28">
+        <div className="mx-auto max-w-3xl">
+          <p className="eyebrow">Pearl House &amp; Co · Fine Jewelry</p>
+          <h1 className="mt-5 text-balance text-5xl leading-[1.05] sm:text-6xl lg:text-7xl">Your Dream Jewelry, Made Real.</h1>
+          <p className="mx-auto mt-6 max-w-xl text-lg text-cocoa/80">Choose from our collection or share your own design. We’ll create the jewelry just the way you want it.</p>
+          <Link href="/shop" className="btn mt-9">Explore Collections</Link>
         </div>
-        <p className="border-t border-blush/60 bg-champagne/60 py-2 text-center text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Imagery shown is illustrative — not Pearl House inventory</p>
+        <p className="mt-16 border-t border-blush/60 bg-champagne/60 py-2 text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Imagery shown is illustrative — not Pearl House inventory</p>
       </section>
 
 
