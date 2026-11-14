@@ -1,11 +1,20 @@
 "use client";
 import { useEffect, useRef } from "react";
 
+const clamp = (v: number, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+const ease = (t: number) => 1 - Math.pow(1 - t, 3);
+
 /**
- * Scroll effects, all disabled for visitors who prefer reduced motion:
- *  - elements with class `rv` fade/slide in as they enter the viewport (stagger with style --i)
- *  - a thin rose progress line under the header
- *  - gentle parallax on the hero image (element with [data-parallax])
+ * Scroll-driven effects (all skipped when the visitor prefers reduced motion — the page then simply reads top to bottom):
+ *  .rv                  fade/slide in when entering the viewport (stagger with style --i)
+ *  top progress line    thin rose line showing page progress
+ *  [data-parallax]      hero image drifts slower than the page
+ *  [data-fx=hero-text]  hero copy lifts and fades as you scroll away
+ *  [data-fx=parallax]   (data-speed) element drifts relative to the viewport centre
+ *  [data-fx=grow]       image scales up from a rounded card to full size as it enters
+ *  [data-fx=words]      words light up one by one as the paragraph scrolls into view
+ *  [data-fx=steps]      children [data-step] come into focus as they reach the centre of the screen
+ *  [data-fx=hscroll]    vertical scrolling pans a row of cards sideways (desktop), swipeable row on phones
  */
 export default function ScrollEffects() {
   const bar = useRef<HTMLDivElement>(null);
@@ -13,30 +22,79 @@ export default function ScrollEffects() {
   useEffect(() => {
     const root = document.documentElement;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    root.classList.add("js"); // from here on, `.rv` elements start hidden
+    root.classList.add("js", "fx");
 
     const io = new IntersectionObserver((entries) => {
       for (const e of entries) if (e.isIntersecting) { e.target.classList.add("rv-in"); io.unobserve(e.target); }
     }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
-    const scan = () => document.querySelectorAll<HTMLElement>(".rv:not(.rv-in):not([data-rv])").forEach((el) => { el.dataset.rv = "1"; io.observe(el); });
-    scan();
-    const mo = new MutationObserver(scan); // pages/filters that render new cards later
-    mo.observe(document.body, { childList: true, subtree: true });
+
+    type Lists = { hero: HTMLElement[]; par: HTMLElement[]; grow: HTMLElement[]; words: HTMLElement[]; steps: HTMLElement[]; hs: HTMLElement[]; heroImg: HTMLElement | null };
+    let L: Lists = { hero: [], par: [], grow: [], words: [], steps: [], hs: [], heroImg: null };
+    const q = (s: string) => Array.from(document.querySelectorAll<HTMLElement>(s));
+    const desktop = () => window.innerWidth >= 768;
+
+    const sizeHscroll = () => {
+      for (const el of L.hs) {
+        const track = el.querySelector<HTMLElement>(".hs-track"); if (!track) continue;
+        if (!desktop()) { el.style.height = ""; track.style.transform = ""; continue; }
+        el.style.height = `${Math.max(track.scrollWidth - window.innerWidth, 0) + window.innerHeight}px`;
+      }
+    };
+    const collect = () => {
+      document.querySelectorAll<HTMLElement>(".rv:not(.rv-in):not([data-rv])").forEach((el) => { el.dataset.rv = "1"; io.observe(el); });
+      L = { hero: q("[data-fx=hero-text]"), par: q("[data-fx=parallax]"), grow: q("[data-fx=grow]"), words: q("[data-fx=words]"), steps: q("[data-fx=steps]"), hs: q("[data-fx=hscroll]"), heroImg: document.querySelector("[data-parallax]") };
+      sizeHscroll();
+    };
+
+    const update = () => {
+      const y = window.scrollY, H = window.innerHeight, max = root.scrollHeight - H, wide = desktop();
+      if (bar.current) bar.current.style.transform = `scaleX(${max > 0 ? Math.min(y / max, 1) : 0})`;
+      if (L.heroImg && wide && y < H) L.heroImg.style.transform = `translate3d(0, ${y * 0.12}px, 0) scale(${1.08 + y * 0.00012})`;
+      for (const el of L.hero) { const p = clamp(y / (H * 0.7)); el.style.transform = `translate3d(0, ${-p * 70}px, 0)`; el.style.opacity = String(1 - p * 0.95); }
+
+      for (const el of L.par) {
+        const r = el.getBoundingClientRect(); if (r.bottom < -200 || r.top > H + 200) continue;
+        const speed = Number(el.dataset.speed ?? 0.08); const off = (r.top + r.height / 2 - H / 2) * speed;
+        el.style.transform = `translate3d(0, ${-off}px, 0)`;
+      }
+      for (const el of L.grow) {
+        const r = el.getBoundingClientRect(); if (r.bottom < -100 || r.top > H + 100) continue;
+        const p = ease(clamp((H - r.top) / (H * 0.9)));
+        el.style.transform = `scale(${0.8 + 0.2 * p})`; el.style.borderRadius = `${(1 - p) * 44}px`; el.style.opacity = String(0.35 + 0.65 * p);
+      }
+      for (const el of L.words) {
+        const r = el.getBoundingClientRect(); const ws = el.querySelectorAll<HTMLElement>(".w"); if (!ws.length) continue;
+        const p = clamp((H * 0.88 - r.top) / (H * 0.5 + r.height * 0.5));
+        ws.forEach((w, i) => { w.style.opacity = String(0.16 + 0.84 * clamp(p * (ws.length + 6) - i, 0, 1)); });
+      }
+      if (wide) for (const el of L.steps) {
+        for (const s of Array.from(el.querySelectorAll<HTMLElement>("[data-step]"))) {
+          const r = s.getBoundingClientRect(); const d = clamp(Math.abs(r.top + r.height / 2 - H * 0.5) / (H * 0.45));
+          s.style.opacity = String(1 - 0.72 * ease(d)); s.style.transform = `translate3d(0, ${d * 18}px, 0) scale(${1 - d * 0.03})`;
+        }
+      }
+      if (wide) for (const el of L.hs) {
+        const track = el.querySelector<HTMLElement>(".hs-track"); if (!track) continue;
+        const r = el.getBoundingClientRect(); const range = r.height - H; if (range <= 0) continue;
+        const p = clamp(-r.top / range); const dist = Math.max(track.scrollWidth - window.innerWidth, 0);
+        track.style.transform = `translate3d(${-p * dist}px, 0, 0)`;
+        const fill = el.querySelector<HTMLElement>("[data-hs-progress]"); if (fill) fill.style.transform = `scaleX(${p})`;
+      }
+    };
 
     let raf = 0;
-    const onScroll = () => {
-      if (raf) return;
-      raf = requestAnimationFrame(() => {
-        raf = 0;
-        const y = window.scrollY, max = root.scrollHeight - window.innerHeight;
-        if (bar.current) bar.current.style.transform = `scaleX(${max > 0 ? Math.min(y / max, 1) : 0})`;
-        const hero = document.querySelector<HTMLElement>("[data-parallax]");
-        if (hero && window.innerWidth >= 768 && y < 900) hero.style.transform = `translate3d(0, ${y * 0.12}px, 0) scale(1.08)`;
-      });
-    };
-    onScroll();
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; update(); }); };
+    const onResize = () => { sizeHscroll(); onScroll(); };
+    let mt = 0; const mo = new MutationObserver(() => { cancelAnimationFrame(mt); mt = requestAnimationFrame(() => { collect(); onScroll(); }); });
+    mo.observe(document.body, { childList: true, subtree: true });
+    collect(); update();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => { io.disconnect(); mo.disconnect(); window.removeEventListener("scroll", onScroll); if (raf) cancelAnimationFrame(raf); root.classList.remove("js"); };
+    window.addEventListener("resize", onResize);
+    window.addEventListener("load", onResize);
+    return () => {
+      io.disconnect(); mo.disconnect(); window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", onResize); window.removeEventListener("load", onResize);
+      cancelAnimationFrame(raf); cancelAnimationFrame(mt); root.classList.remove("js", "fx");
+    };
   }, []);
 
   return <div ref={bar} aria-hidden className="pointer-events-none fixed inset-x-0 top-0 z-[80] h-[2px] origin-left scale-x-0 bg-rose" />;

@@ -8,7 +8,7 @@ import { HeartIcon } from "./Icons";
 
 export const needsOptions = (p: Product) => p.sizes.length > 0 || p.metals.length > 0;
 
-export default function ProductCard({ p, i = 0 }: { p: Product; i?: number }) {
+export default function ProductCard({ p, i = 0, reveal = true }: { p: Product; i?: number; reveal?: boolean }) {
   const { wishlist, toggleWish, add } = useCart();
   const [added, setAdded] = useState(false);
   const wished = wishlist.includes(p.id);
@@ -17,7 +17,7 @@ export default function ProductCard({ p, i = 0 }: { p: Product; i?: number }) {
     setAdded(true); setTimeout(() => setAdded(false), 1800);
   };
   return (
-    <article className="rv group transition-transform duration-500 hover:-translate-y-1.5" style={{ "--i": i % 4 } as React.CSSProperties}>
+    <article className={`${reveal ? "rv " : ""}group transition-transform duration-500 hover:-translate-y-1.5`} style={{ "--i": i % 4 } as React.CSSProperties}>
       <div className="relative aspect-[4/3] overflow-hidden bg-blush/40 shadow-[0_0_0_rgba(73,48,43,0)] transition-shadow duration-500 group-hover:shadow-[0_18px_40px_-18px_rgba(73,48,43,0.35)]">
         <Link href={`/shop/${p.slug}`} aria-label={p.name}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
