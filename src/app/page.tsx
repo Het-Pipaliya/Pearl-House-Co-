@@ -23,20 +23,22 @@ export default async function Home() {
   const all = (await getProducts()).filter((p) => p.available);
   return (
     <>
-      <section className="relative bg-blush/40">
-        <div className="container-x grid items-center gap-10 py-14 lg:grid-cols-[1fr_1.15fr] lg:py-20">
-          <div className="reveal order-2 lg:order-1">
+      <section className="relative isolate overflow-hidden bg-ivory">
+        {/* Full-width image: stacked on phones, full-bleed behind the text from md up */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/hero-full.webp" alt="Diamond bracelet, solitaire ring, pendant and drop earrings on cream marble" className="block aspect-[16/10] w-full object-cover object-[72%_center] md:absolute md:inset-0 md:-z-10 md:aspect-auto md:h-full" />
+        {/* Soft ivory gradient keeps the text readable and fades into the next section */}
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 hidden md:block bg-[linear-gradient(90deg,rgba(252,248,246,0.96)_0%,rgba(252,248,246,0.85)_30%,rgba(252,248,246,0.35)_52%,rgba(252,248,246,0)_68%)]" />
+        <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 hidden h-32 md:block bg-gradient-to-t from-ivory to-transparent" />
+        <div className="container-x relative flex items-center md:min-h-[min(78vh,720px)]">
+          <div className="reveal max-w-xl py-12 md:max-w-[22rem] md:py-20 lg:max-w-xl">
             <p className="eyebrow">Pearl House &amp; Co · Fine Jewelry</p>
-            <h1 className="mt-5 text-5xl leading-[1.05] sm:text-7xl">Timeless Elegance, Beautifully Crafted</h1>
+            <h1 className="mt-5 text-5xl leading-[1.05] sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl">Timeless Elegance, Beautifully Crafted</h1>
             <p className="mt-6 max-w-md text-lg text-cocoa/80">Discover exceptional jewelry designed to celebrate life&apos;s most precious moments.</p>
             <Link href="/shop" className="btn mt-9">Explore Collections</Link>
           </div>
-          <div className="order-1 overflow-hidden shadow-[0_20px_60px_-25px_rgba(73,48,43,0.45)] lg:order-2">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/hero-jewelry-collection.webp" alt="Rose-gold jewelry displayed on blush pedestals" className="aspect-[3/2] w-full object-cover" />
-          </div>
         </div>
-        <p className="bg-champagne/70 py-2 text-center text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Imagery shown is illustrative concept artwork — not Pearl House inventory</p>
+        <p className="border-t border-blush/60 bg-champagne/60 py-2 text-center text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Imagery shown is illustrative — not Pearl House inventory</p>
       </section>
 
       <section className="container-x py-20">
