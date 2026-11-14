@@ -54,7 +54,6 @@ export default function ProductView({ p }: { p: Product }) {
       <div className="lg:pt-4">
         <p className="eyebrow">{p.category}</p>
         <h1 className="mt-2 text-4xl sm:text-5xl">{p.name}</h1>
-        {p.placeholder && <p className="mt-3 inline-block bg-champagne px-3 py-1 text-[11px] uppercase tracking-[0.14em]">Sample product · placeholder</p>}
         {p.showPrice && p.price != null ? <p className="mt-4 text-xl">{money(p.price)}</p> : <p className="mt-4 text-sm text-cocoa/60">Pricing confirmed by our team after your request</p>}
         <p className="mt-6 leading-relaxed text-cocoa/80">{p.description}</p>
         <dl className="mt-6 space-y-2 border-y border-blush py-5 text-sm">
