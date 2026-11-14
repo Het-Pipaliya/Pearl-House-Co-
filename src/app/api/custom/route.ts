@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createInquiry, saveInquiry } from "@/lib/db";
+import { createInquiryResilient, saveInquiry } from "@/lib/db";
 import { sendInquiryEmails } from "@/lib/email";
 import { clientIp, rateLimit } from "@/lib/ratelimit";
 import { saveImage, UploadError } from "@/lib/storage";
@@ -26,14 +26,15 @@ export async function POST(req: Request) {
   try {
     const refs: string[] = [];
     for (const f of files) refs.push(await saveImage(f, "references"));
-    const inquiry = await createInquiry((id) => ({
+    const { inquiry, stored } = await createInquiryResilient((id) => ({
       id, type: "custom", status: "New Inquiry", createdAt: new Date().toISOString(),
       customer: { name: d.name, email: d.email, phone: d.phone, contactMethod: d.contactMethod },
       items: [], custom: { jewelryType: d.jewelryType, metal: d.metal, gemstone: d.gemstone, budget: d.budget, description: d.description, referenceImages: refs },
       emailStatus: { business: "pending", customer: "pending" },
     }));
     inquiry.emailStatus = await sendInquiryEmails(inquiry);
-    await saveInquiry(inquiry).catch(() => {});
+    if (stored) await saveInquiry(inquiry).catch(() => {});
+    else if (inquiry.emailStatus.business !== "sent") return fail("We couldn't send your request just now. Please try again in a moment.", 500);
     return NextResponse.json({ ok: true, reference: inquiry.id });
   } catch (e) {
     if (e instanceof UploadError) return fail(e.message, 400);

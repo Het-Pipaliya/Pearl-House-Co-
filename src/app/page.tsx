@@ -26,7 +26,7 @@ export default async function Home() {
       <section className="relative">
         <div className="relative h-[78vh] min-h-[520px] overflow-hidden bg-blush">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/placeholders/hero.svg" alt="" className="absolute inset-0 h-full w-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1800&q=85&auto=format&fit=crop" alt="" className="absolute inset-0 h-full w-full object-cover object-[75%_center]" />
           <div className="absolute inset-0 bg-gradient-to-t from-ivory/95 via-ivory/40 to-transparent sm:bg-gradient-to-r sm:from-ivory/90 sm:via-ivory/55" />
           <div className="container-x relative flex h-full items-end pb-14 sm:items-center sm:pb-0">
             <div className="reveal max-w-xl">
@@ -37,7 +37,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        <p className="bg-champagne/70 py-2 text-center text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Imagery shown is placeholder artwork until real photography is added</p>
+        <p className="bg-champagne/70 py-2 text-center text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Photography shown is stock imagery for demonstration — not Pearl House inventory</p>
       </section>
 
       <section className="container-x py-20">
@@ -59,7 +59,7 @@ export default async function Home() {
       <section className="bg-blush/50 py-20">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/placeholders/custom-2.svg" alt="" loading="lazy" className="aspect-[4/3] w-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1400&q=85&auto=format&fit=crop" alt="Gold hoop earrings on a stone" loading="lazy" className="aspect-[4/3] w-full object-cover" />
           <div><p className="eyebrow">Custom Jewelry</p><h2 className="mt-3 text-4xl sm:text-5xl">Your Vision. Our Craftsmanship.</h2>
             <p className="mt-5 text-cocoa/80">Have a design in mind? Share your ideas and inspiration with us. Our team will work with you and our manufacturing partners to explore what&apos;s possible.</p>
             <Link href="/custom" className="btn mt-8">Begin Your Design</Link></div>

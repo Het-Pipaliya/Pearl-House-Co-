@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createInquiry, getProducts, saveInquiry } from "@/lib/db";
+import { createInquiryResilient, getProducts, saveInquiry } from "@/lib/db";
 import { sendInquiryEmails } from "@/lib/email";
 import { clientIp, rateLimit } from "@/lib/ratelimit";
 import { firstError, orderSchema, spamCheck } from "@/lib/validation";
@@ -33,14 +33,16 @@ export async function POST(req: Request) {
       if (it.gemstone && !p.gemstoneOptions.includes(it.gemstone)) return fail(`Invalid gemstone option for “${p.name}”.`, 400);
       items.push({ productId: p.id, name: p.name, quantity: it.quantity, size: it.size || undefined, metal: it.metal || undefined, gemstone: it.gemstone || undefined, customization: p.customization ? it.customization || undefined : undefined });
     }
-    const inquiry = await createInquiry((id) => ({
+    const { inquiry, stored } = await createInquiryResilient((id) => ({
       id, type: "order", status: "New Inquiry", createdAt: new Date().toISOString(),
       customer: { name: d.name, email: d.email, phone: d.phone, city: d.city, state: d.state, country: d.country, contactMethod: d.contactMethod },
       items, instructions: d.instructions, notes: d.notes, emailStatus: { business: "pending", customer: "pending" },
     }));
-    // The request is saved. Email problems must not lose the inquiry; the result is recorded for the admin.
+    // Email problems never lose a stored request; the result is recorded for the admin.
     inquiry.emailStatus = await sendInquiryEmails(inquiry);
-    await saveInquiry(inquiry).catch(() => {});
+    if (stored) await saveInquiry(inquiry).catch(() => {});
+    // With no database, the business email is the only record: if it was not delivered, fail so the cart is kept.
+    else if (inquiry.emailStatus.business !== "sent") return fail("We couldn't send your request just now. Your cart has been kept — please try again in a moment.", 500);
     return NextResponse.json({ ok: true, reference: inquiry.id });
   } catch (e) {
     console.error("order submission failed", e);
