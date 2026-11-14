@@ -43,7 +43,7 @@ export default function CartView() {
         <ul className="divide-y divide-blush border-y border-blush">
           {lines.map((l) => (
             <li key={l.key} className="grid grid-cols-[88px_1fr] gap-5 py-6 sm:grid-cols-[120px_1fr]">
-              <Link href={`/shop/${l.slug}`}>{/* eslint-disable-next-line @next/next/no-img-element */}<img src={l.image} alt={l.name} className="aspect-[4/5] w-full bg-blush/40 object-cover" /></Link>
+              <Link href={`/shop/${l.slug}`}>{/* eslint-disable-next-line @next/next/no-img-element */}<img src={l.image} alt={l.name} className="aspect-[4/3] w-full bg-blush/40 object-cover" /></Link>
               <div>
                 <div className="flex justify-between gap-3"><h2 className="text-xl"><Link href={`/shop/${l.slug}`}>{l.name}</Link></h2><button onClick={() => remove(l.key)} className="text-xs uppercase tracking-widest text-cocoa/60 hover:text-rose" aria-label={`Remove ${l.name}`}>Remove</button></div>
                 <p className="text-xs text-cocoa/55">SKU {l.productId}</p>
