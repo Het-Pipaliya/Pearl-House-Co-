@@ -2,6 +2,8 @@
 import { useEffect, useRef } from "react";
 
 const clamp = (v: number, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+/** Sideways pan speed vs. scrolling: 1 = one screen of scrolling per screen of panning. <1 pans faster, so the section is passed sooner. */
+const PAN_PACE = 0.5;
 const ease = (t: number) => 1 - Math.pow(1 - t, 3);
 
 /**
@@ -36,8 +38,10 @@ export default function ScrollEffects() {
     const sizeHscroll = () => {
       for (const el of L.hs) {
         const track = el.querySelector<HTMLElement>(".hs-track"); if (!track) continue;
-        if (!desktop()) { el.style.height = ""; track.style.transform = ""; continue; }
-        el.style.height = `${Math.max(track.scrollWidth - window.innerWidth, 0) + window.innerHeight}px`;
+        const sticky = el.querySelector<HTMLElement>(".hs-sticky");
+        if (!desktop() || !sticky) { el.style.height = ""; track.style.transform = ""; continue; }
+        // pinned for exactly as long as it takes to pan the row: section height = pan distance + the pinned panel's own height
+        el.style.height = `${Math.max(track.scrollWidth - window.innerWidth, 0) * PAN_PACE + sticky.offsetHeight}px`;
       }
     };
     const collect = () => {
@@ -75,8 +79,10 @@ export default function ScrollEffects() {
       }
       if (wide) for (const el of L.hs) {
         const track = el.querySelector<HTMLElement>(".hs-track"); if (!track) continue;
-        const r = el.getBoundingClientRect(); const range = r.height - H; if (range <= 0) continue;
-        const p = clamp(-r.top / range); const dist = Math.max(track.scrollWidth - window.innerWidth, 0);
+        const sticky = el.querySelector<HTMLElement>(".hs-sticky"); if (!sticky) continue;
+        const r = el.getBoundingClientRect(); const pinTop = parseFloat(getComputedStyle(sticky).top) || 0;
+        const dist = Math.max(track.scrollWidth - window.innerWidth, 0); if (dist <= 0) continue;
+        const p = clamp((pinTop - r.top) / (dist * PAN_PACE));
         track.style.transform = `translate3d(${-p * dist}px, 0, 0)`;
         const fill = el.querySelector<HTMLElement>("[data-hs-progress]"); if (fill) fill.style.transform = `scaleX(${p})`;
       }
