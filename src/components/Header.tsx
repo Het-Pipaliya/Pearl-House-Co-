@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { useCart } from "./CartProvider";
 import Logo from "./Logo";
+import AuthMenu from "./AuthMenu";
 import { BagIcon, CloseIcon, HeartIcon, MenuIcon, SearchIcon } from "./Icons";
 
 const NAV = [
@@ -46,6 +47,7 @@ export default function Header() {
         <Link href="/" aria-label="Pearl House & Co — home" className="justify-self-center"><Logo className="h-9 sm:h-14" /></Link>
         <div className="flex items-center justify-end gap-1">
           <button className="p-2 hover:text-rose lg:hidden" aria-label="Search" onClick={() => setSearching((s) => !s)}><SearchIcon /></button>
+          <AuthMenu />
           <Link href="/wishlist" className="relative p-2 hover:text-rose" aria-label={`Wishlist, ${wishlist.length} items`}><HeartIcon />{wishlist.length > 0 && <span className="absolute right-0 top-0 h-2 w-2 rounded-full bg-rose" />}</Link>
           <Link href="/cart" className="relative p-2 hover:text-rose" aria-label={`Cart, ${count} items`}><BagIcon />{count > 0 && <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-rose px-1 text-[10px] text-white">{count}</span>}</Link>
         </div>

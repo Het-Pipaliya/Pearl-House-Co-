@@ -47,6 +47,12 @@ The 113 sample products (plus one "Bespoke" entry) are generated from a supplied
 - `node scripts/check-images.mjs` verifies every image exists and **no photo is used twice** (run it before every deploy).
 - There is deliberately **no metal selector**: the sample photos cannot show different metals. Customers write a metal preference in the customization note. A product only shows a metal selector if you configure metals for it in the admin.
 
+## Google sign-in and accounts (optional)
+1. Supabase: run `supabase/schema.sql`; Authentication → Providers → Google (Client ID/secret from Google Cloud); Authentication → URL Configuration → Site URL = your site, Redirect URLs = `https://your-site/**`.
+2. Vercel variables: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `SUPABASE_SERVICE_ROLE_KEY` (secret key), `ADMIN_EMAILS` (your Google account).
+3. Customers: header "Sign in" → Google → `/account` ("My inquiries" with the status you set). Guests can still send requests.
+4. Admin: `/admin` → "Sign in with Google" using an account listed in `ADMIN_EMAILS`.
+
 ## Admin
 `/admin` → sign in. Inquiries tab: search, filter by status/type, change status (9 statuses), internal notes, view customer details and uploaded reference images (private), export CSV. Products tab: add/edit/delete, upload images, set price/visibility, availability. Messages tab: contact-form messages.
 

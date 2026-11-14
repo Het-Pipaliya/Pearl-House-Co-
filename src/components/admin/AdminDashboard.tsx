@@ -2,6 +2,8 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { ContactMessage, Inquiry, Product } from "@/lib/types";
+import { authEnabled } from "@/lib/supabase/env";
+import { signOut } from "@/lib/supabase/client";
 import Inquiries from "./Inquiries";
 import Products from "./Products";
 
@@ -10,7 +12,7 @@ export interface Setup { database: string; email: boolean; emailDetail: string }
 export default function AdminDashboard({ inquiries, products, messages, setup }: { inquiries: Inquiry[]; products: Product[]; messages: ContactMessage[]; setup: Setup }) {
   const router = useRouter();
   const [tab, setTab] = useState<"inquiries" | "products" | "messages">("inquiries");
-  const logout = async () => { await fetch("/api/admin/logout", { method: "POST" }); router.push("/admin/login"); router.refresh(); };
+  const logout = async () => { await fetch("/api/admin/logout", { method: "POST" }); if (authEnabled) await signOut(); router.push("/admin/login"); router.refresh(); };
   const tabBtn = (t: typeof tab, label: string) => <button onClick={() => setTab(t)} aria-pressed={tab === t} className={`px-5 py-2.5 text-xs uppercase tracking-[0.16em] ${tab === t ? "bg-rose text-white" : "border border-blush bg-white hover:border-rose"}`}>{label}</button>;
   return (
     <div className="container-x py-10">

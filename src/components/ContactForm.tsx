@@ -1,11 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Field, Honeypot, useOpenedAt } from "./Field";
 import NextSteps from "./NextSteps";
 
 export default function ContactForm({ product }: { product?: string }) {
   const openedAt = useOpenedAt();
   const [f, setF] = useState({ name: "", email: "", phone: "", message: product ? `I'd like more information about: ${product}\n\n` : "", website: "" });
+  useEffect(() => { fetch("/api/me").then((r) => r.json()).then((m) => { if (m?.email) setF((c) => ({ ...c, name: c.name || m.name || "", email: c.email || m.email })); }).catch(() => {}); }, []);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
   const [done, setDone] = useState(false);

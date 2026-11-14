@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Field, Honeypot, useOpenedAt } from "./Field";
 import NextSteps from "./NextSteps";
 
@@ -14,6 +14,7 @@ export default function CustomForm() {
   const [hint, setHint] = useState("");
   const [done, setDone] = useState<string | null>(null);
   const [hp, setHp] = useState("");
+  useEffect(() => { fetch("/api/me").then((r) => r.json()).then((m) => { if (!m?.email) return; const set = (id: string, v: string) => { const el = document.getElementById(id) as HTMLInputElement | null; if (el && !el.value) el.value = v; }; set("c-name", m.name || ""); set("c-email", m.email); }).catch(() => {}); }, []);
 
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); setBusy(true); setErr(""); setHint("");

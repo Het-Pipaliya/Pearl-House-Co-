@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createInquiryResilient, saveInquiry } from "@/lib/db";
 import { sendInquiryEmails } from "@/lib/email";
+import { getSessionUser } from "@/lib/supabase/server";
 import { emailHint } from "@/lib/emailHint";
 import { clientIp, rateLimit } from "@/lib/ratelimit";
 import { checkImage, storeImage, UploadError } from "@/lib/storage";
@@ -26,6 +27,7 @@ export async function POST(req: Request) {
   if (files.length > 4) return fail("Please attach no more than 4 reference images.", 400);
   // The hosting platform rejects request bodies over ~4.5 MB, so keep the total comfortably below that.
   if (files.reduce((n, f) => n + f.size, 0) > 4 * 1024 * 1024) return fail("Please keep your reference images under 4 MB in total.", 400);
+  const user = await getSessionUser();
   try {
     const checked = await Promise.all(files.map(checkImage));
     // Images are attached to the business email (the record when no database is connected); saving them is best-effort.
@@ -33,7 +35,7 @@ export async function POST(req: Request) {
     const refs: string[] = [];
     for (const c of checked) { try { refs.push(await storeImage(c, "references")); } catch { /* no storage connected: the email attachment is the copy */ } }
     const { inquiry, stored } = await createInquiryResilient((id) => ({
-      id, type: "custom", status: "New Inquiry", createdAt: new Date().toISOString(),
+      id, userId: user?.id, type: "custom", status: "New Inquiry", createdAt: new Date().toISOString(),
       customer: { name: d.name, email: d.email, phone: d.phone, contactMethod: d.contactMethod },
       items: [], custom: { jewelryType: d.jewelryType, metal: d.metal, gemstone: d.gemstone, budget: d.budget, description: d.description, referenceImages: refs },
       emailStatus: { business: "pending", customer: "pending" },

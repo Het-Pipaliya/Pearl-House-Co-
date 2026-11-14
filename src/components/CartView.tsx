@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useCart } from "./CartProvider";
 import { Field, Honeypot, useOpenedAt } from "./Field";
 
@@ -16,6 +16,7 @@ export default function CartView() {
   const [error, setError] = useState("");
   const [hint, setHint] = useState("");
   const [f, setF] = useState({ name: "", email: "", phone: "", city: "", state: "", country: "", contactMethod: "Email", instructions: "", notes: "", website: "" });
+  useEffect(() => { fetch("/api/me").then((r) => r.json()).then((m) => { if (m?.email) setF((cur) => ({ ...cur, name: cur.name || m.name || "", email: cur.email || m.email })); }).catch(() => {}); }, []);
   const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setF({ ...f, [k]: e.target.value });
 
   if (!ready) return <p className="py-24 text-center text-cocoa/60">Loading your cart…</p>;

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createInquiryResilient, getProducts, saveInquiry } from "@/lib/db";
 import { sendInquiryEmails } from "@/lib/email";
+import { getSessionUser } from "@/lib/supabase/server";
 import { emailHint } from "@/lib/emailHint";
 import { clientIp, rateLimit } from "@/lib/ratelimit";
 import { firstError, orderSchema, spamCheck } from "@/lib/validation";
@@ -21,6 +22,7 @@ export async function POST(req: Request) {
   if (spam === "silent") return NextResponse.json({ ok: true, reference: "PH-000000-XXXXX" }); // bots get a fake success; nothing stored
   if (spam) return fail(spam, 400);
 
+  const user = await getSessionUser();
   try {
     // Never trust names/options from the browser: rebuild each line from the catalogue.
     const catalogue = new Map((await getProducts()).map((p) => [p.id, p]));
@@ -35,7 +37,7 @@ export async function POST(req: Request) {
       items.push({ productId: p.id, name: p.name, quantity: it.quantity, size: it.size || undefined, metal: it.metal || undefined, gemstone: it.gemstone || undefined, customization: p.customization ? it.customization || undefined : undefined });
     }
     const { inquiry, stored } = await createInquiryResilient((id) => ({
-      id, type: "order", status: "New Inquiry", createdAt: new Date().toISOString(),
+      id, userId: user?.id, type: "order", status: "New Inquiry", createdAt: new Date().toISOString(),
       customer: { name: d.name, email: d.email, phone: d.phone, city: d.city, state: d.state, country: d.country, contactMethod: d.contactMethod },
       items, instructions: d.instructions, notes: d.notes, emailStatus: { business: "pending", customer: "pending" },
     }));

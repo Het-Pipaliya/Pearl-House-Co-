@@ -50,6 +50,8 @@ export interface CartLine {
 
 export interface Inquiry {
   id: string; // reference number
+  /** Supabase user id when the customer was signed in (lets them see the request under "My inquiries"). */
+  userId?: string;
   type: "order" | "custom";
   status: Status;
   createdAt: string;
