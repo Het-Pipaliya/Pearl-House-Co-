@@ -34,7 +34,7 @@ export default function ProductView({ p }: { p: Product }) {
   return (
     <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
       <div className="lg:sticky lg:top-40 lg:self-start">
-        <div ref={box} onMouseMove={move} onMouseLeave={() => setZoom(null)} onClick={() => setLight(true)} className="relative aspect-[12/5] cursor-zoom-in overflow-hidden bg-blush/40" role="button" tabIndex={0} aria-label="Open enlarged image" onKeyDown={(e) => e.key === "Enter" && setLight(true)}>
+        <div ref={box} onMouseMove={move} onMouseLeave={() => setZoom(null)} onClick={() => setLight(true)} className="relative aspect-[4/3] cursor-zoom-in overflow-hidden bg-blush/40" role="button" tabIndex={0} aria-label="Open enlarged image" onKeyDown={(e) => e.key === "Enter" && setLight(true)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={p.images[img]} alt={p.name} className="h-full w-full object-cover transition-transform duration-200" style={zoom ? { transform: "scale(2)", transformOrigin: `${zoom.x}% ${zoom.y}%` } : undefined} />
         </div>
@@ -61,7 +61,7 @@ export default function ProductView({ p }: { p: Product }) {
             {p.metals.length > 0 && <fieldset><legend className="label">Metal {metal && <span className="normal-case tracking-normal text-cocoa">— {metal}</span>}</legend><div className="flex flex-wrap gap-2">{p.metals.map((m) => <button type="button" key={m} onClick={() => setMetal(m)} aria-pressed={metal === m} className={chip(metal === m)}>{m}</button>)}</div></fieldset>}
             {p.sizes.length > 0 && <fieldset><legend className="label">Size</legend><div className="flex flex-wrap gap-2">{p.sizes.map((s) => <button type="button" key={s} onClick={() => setSize(s)} aria-pressed={size === s} className={`${chip(size === s)} min-w-12`}>{s}</button>)}</div></fieldset>}
             {p.gemstoneOptions.length > 0 && <div><label className="label" htmlFor="gem">Gemstone</label><select id="gem" value={gem} onChange={(e) => setGem(e.target.value)} className="input"><option value="">No preference</option>{p.gemstoneOptions.map((g) => <option key={g}>{g}</option>)}</select></div>}
-            {p.customization && <div><label className="label" htmlFor="note">Customization requests (optional)</label><textarea id="note" value={note} onChange={(e) => setNote(e.target.value)} maxLength={1000} rows={3} className="input" placeholder="Engraving text, stone size, special requests…" /></div>}
+            {p.customization && <div><label className="label" htmlFor="note">Customization requests (optional)</label><textarea id="note" value={note} onChange={(e) => setNote(e.target.value)} maxLength={1000} rows={3} className="input" placeholder="Preferred metal (yellow, white or rose gold), engraving, stone size, special requests…" /></div>}
             <div className="flex items-center gap-4">
               <div className="flex items-center border border-blush bg-white" role="group" aria-label="Quantity">
                 <button type="button" className="px-4 py-3" aria-label="Decrease quantity" onClick={() => setQty((q) => Math.max(1, q - 1))}>−</button>

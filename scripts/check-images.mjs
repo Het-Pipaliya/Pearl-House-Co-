@@ -10,7 +10,7 @@ for (const f of walk("src").filter((f) => /\.(tsx?|css)$/.test(f))) {
   for (const m of t.matchAll(/"(\/images\/[^"]*)"/g)) { if (!/^\/images\/[A-Za-z0-9_\/-]+\.webp$/.test(m[1])) { console.log("BAD PATH", JSON.stringify(m[1]), f); process.exitCode = 1; } else add(m[1], f); }
   if (f.endsWith("app/page.tsx")) { // category tile map: "rings/rings-02" → /images/rings/rings-02.webp
     const map = t.match(/const catImg[^{]*\{([^}]*)\}/s)?.[1] ?? "";
-    for (const m of map.matchAll(/"([a-z]+\/[a-z]+-\d+)"/g)) add(`/images/${m[1]}.webp`, f + " (category tile)");
+    for (const m of map.matchAll(/"((?:catalog|homepage)\/[a-z0-9-]+)"/g)) add(`/images/${m[1]}.webp`, f + " (category tile)");
   }
 }
 let bad = 0;

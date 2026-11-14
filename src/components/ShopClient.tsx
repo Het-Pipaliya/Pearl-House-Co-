@@ -1,24 +1,24 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import { CATEGORIES, METALS, type Product } from "@/lib/types";
 import ProductCard from "./ProductCard";
 
 const SORTS = { featured: "Featured", newest: "Newest", "price-asc": "Price: Low to High", "price-desc": "Price: High to Low", name: "Name A–Z" } as const;
 type SortKey = keyof typeof SORTS;
 
-export default function ShopClient({ products, wishlistOnly = false }: { products: Product[]; wishlistOnly?: boolean }) {
-  const sp = useSearchParams();
-  // The URL is the single source of truth for category and search, so header links
-  // (e.g. Wedding Bands → Engagement) always change the grid, even when already on /shop.
-  const urlCat = sp.get("category") ?? "All";
-  const cat = (CATEGORIES as readonly string[]).includes(urlCat) ? urlCat : "All";
-  const urlQ = sp.get("q") ?? "";
-  const [q, setQ] = useState(urlQ);
-  useEffect(() => setQ(urlQ), [urlQ]);
+const PAGE = 24;
+
+/** `category` and `initialQuery` come from the URL (read on the server), so header links such as Wedding Bands → Engagement always change the grid. */
+export default function ShopClient({ products, category = "All", initialQuery = "", initialSort, wishlistOnly = false }: { products: Product[]; category?: string; initialQuery?: string; initialSort?: string; wishlistOnly?: boolean }) {
+  const cat = category;
+  const [q, setQ] = useState(initialQuery);
+  useEffect(() => setQ(initialQuery), [initialQuery]);
   const [metal, setMetal] = useState("All");
-  const [sort, setSort] = useState<SortKey>(((s) => (s && s in SORTS ? s : "featured") as SortKey)(sp.get("sort")));
+  const [sort, setSort] = useState<SortKey>(((s) => (s && s in SORTS ? s : "featured") as SortKey)(initialSort ?? null));
+  const [shown, setShown] = useState(PAGE);
+  useEffect(() => setShown(PAGE), [cat, q, metal, sort]);
+  const hasMetals = useMemo(() => products.some((p) => p.metals.length > 0), [products]);
   const [avail, setAvail] = useState(false);
 
   const counts = useMemo(() => { const c: Record<string, number> = {}; for (const p of products) c[p.category] = (c[p.category] ?? 0) + 1; return c; }, [products]);
@@ -46,15 +46,16 @@ export default function ShopClient({ products, wishlistOnly = false }: { product
           </ul>
         </nav>
       )}
-      <div className="mb-8 grid gap-3 border-y border-blush py-5 md:grid-cols-[2fr_1fr_1fr_auto] md:items-end">
+      <div className={`mb-8 grid gap-3 border-y border-blush py-5 md:items-end ${hasMetals ? "md:grid-cols-[2fr_1fr_1fr_auto]" : "md:grid-cols-[2fr_1fr_auto]"}`}>
         <div><label className="label" htmlFor="s-q">Search</label><input id="s-q" type="search" value={q} onChange={(e) => setQ(e.target.value)} className="input" placeholder="Name, material, gemstone…" /></div>
-        <div><label className="label" htmlFor="s-m">Metal</label><select id="s-m" value={metal} onChange={(e) => setMetal(e.target.value)} className="input"><option>All</option>{METALS.map((m) => <option key={m}>{m}</option>)}</select></div>
+        {hasMetals && <div><label className="label" htmlFor="s-m">Metal</label><select id="s-m" value={metal} onChange={(e) => setMetal(e.target.value)} className="input"><option>All</option>{METALS.map((m) => <option key={m}>{m}</option>)}</select></div>}
         <div><label className="label" htmlFor="s-s">Sort by</label><select id="s-s" value={sort} onChange={(e) => setSort(e.target.value as SortKey)} className="input">{Object.entries(SORTS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></div>
         <label className="flex items-center gap-2 pb-3 text-sm"><input type="checkbox" checked={avail} onChange={(e) => setAvail(e.target.checked)} className="accent-[#B76E62]" />Available only</label>
       </div>
       <p className="mb-6 text-sm text-cocoa/60" aria-live="polite">{cat !== "All" && <strong className="font-medium text-cocoa">{cat} · </strong>}{list.length} {list.length === 1 ? "piece" : "pieces"}</p>
       {list.length === 0 ? <p className="py-20 text-center text-cocoa/70">No pieces match your search. Try clearing a filter.</p> :
-        <div key={`${cat}|${q}|${metal}|${sort}|${avail}`} className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-3 xl:grid-cols-4 lg:gap-x-7">{list.map((p, i) => <ProductCard key={p.id} p={p} i={i} />)}</div>}
+        <div className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-3 xl:grid-cols-4 lg:gap-x-7">{list.slice(0, shown).map((p, i) => <ProductCard key={p.id} p={p} i={i} />)}</div>}
+      {list.length > shown && <div className="mt-12 text-center"><button className="btn-outline" onClick={() => setShown((n) => n + PAGE)}>Show more ({list.length - shown} remaining)</button></div>}
     </div>
   );
 }

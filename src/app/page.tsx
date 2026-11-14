@@ -5,7 +5,7 @@ import { CATEGORIES } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-const catImg: Record<string, string> = { Rings: "rings/rings-02", "Engagement Rings": "rings/rings-01", Necklaces: "necklaces/necklaces-04", Pendants: "necklaces/necklaces-02", Bracelets: "bracelets/bracelets-01", Earrings: "earrings/earrings-01", "Wedding Bands": "rings/rings-06", "Custom Jewelry": "homepage/home-05" };
+const catImg: Record<string, string> = { Rings: "catalog/tile-rings", "Engagement Rings": "catalog/tile-engagement-rings", Necklaces: "catalog/tile-necklaces", Pendants: "catalog/tile-pendants", Bracelets: "catalog/tile-bracelets", Earrings: "catalog/tile-earrings", "Wedding Bands": "catalog/tile-wedding-bands", "Custom Jewelry": "homepage/home-05" };
 const why = [["Personal service", "A dedicated team member guides your request from start to finish."], ["Made to order", "Pieces are produced by skilled independent manufacturing partners."], ["Customizable", "Choose metals, sizes and gemstones, or begin a bespoke design."], ["No payment online", "We confirm details and arrangements with you personally first."]];
 
 function Row({ title, eyebrow, items, href }: { title: string; eyebrow: string; items: Awaited<ReturnType<typeof getProducts>>; href: string }) {
@@ -26,7 +26,7 @@ export default async function Home() {
       <section className="relative isolate overflow-hidden bg-ivory">
         {/* Full-width image: stacked on phones, full-bleed behind the text from md up */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/hero-full.webp" alt="Diamond bracelet, solitaire ring, pendant and drop earrings on cream marble" data-parallax className="block aspect-[16/10] w-full object-cover object-[72%_center] md:absolute md:inset-0 md:-z-10 md:aspect-auto md:h-full" />
+        <img src="/images/homepage/hero-banner.webp" alt="Diamond bracelet, solitaire ring, pendant and drop earrings on cream marble" data-parallax className="block aspect-[16/10] w-full object-cover object-[72%_center] md:absolute md:inset-0 md:-z-10 md:aspect-auto md:h-full" />
         {/* Soft ivory gradient keeps the text readable and fades into the next section */}
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 hidden md:block bg-[linear-gradient(90deg,rgba(252,248,246,0.96)_0%,rgba(252,248,246,0.85)_30%,rgba(252,248,246,0.35)_52%,rgba(252,248,246,0)_68%)]" />
         <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 hidden h-32 md:block bg-gradient-to-t from-ivory to-transparent" />
@@ -46,7 +46,7 @@ export default async function Home() {
         <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-6">
           {CATEGORIES.map((c) => (
             <li key={c} className="rv" style={{ "--i": CATEGORIES.indexOf(c) % 4 } as React.CSSProperties}><Link href={`/shop?category=${encodeURIComponent(c)}`} className="group block">
-              <div className="aspect-square overflow-hidden bg-blush/40">{/* eslint-disable-next-line @next/next/no-img-element */}<img src={`/images/${catImg[c]}.webp`} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.08]" /></div>
+              <div className="aspect-[4/3] overflow-hidden bg-blush/40">{/* eslint-disable-next-line @next/next/no-img-element */}<img src={`/images/${catImg[c]}.webp`} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.08]" /></div>
               <p className="mt-3 text-center font-serif text-xl group-hover:text-rose">{c}</p>
             </Link></li>
           ))}

@@ -39,7 +39,13 @@ If an email fails, the inquiry is **still saved** (the customer's request is nev
 Edit `src/lib/site.ts`: email, phone, hours, social links (all placeholders now; no address is invented). Policy pages (`/privacy`, `/terms`, `/shipping`, `/custom-order-policy`) are **templates** with `[bracketed]` blanks — have them reviewed for your jurisdiction.
 
 ## Products & imagery
-The 8 sample products and all artwork in `public/placeholders` are illustrative placeholders (flagged "sample" on the site). In `/admin → Products` add real products with photography and delete or edit the samples. Only the metals/sizes/gemstones you configure for a product are shown to customers.
+The 113 sample products (plus one "Bespoke" entry) are generated from a supplied photo library and are marked "sample" on the site. The photos are AI-generated **concept images, not your inventory**, and their native detail is low (upscaled), so replace them with real, manufacturer-approved photography before selling (1600 × 1600 px or larger, JPG/WebP, under 400 KB each).
+
+- Add/replace real products in `/admin → Products` (needs Supabase), or edit the catalogue with the scripts below.
+- `python3 scripts/prepare-images.py <unzipped-library-folder>` crops the supplied photos (removes ivory bars and baked-in captions) into 1200×900 images and writes `scripts/catalog.json`.
+- `node scripts/make-seed.mjs` turns `scripts/catalog.json` into `src/lib/seed.ts`.
+- `node scripts/check-images.mjs` verifies every image exists and **no photo is used twice** (run it before every deploy).
+- There is deliberately **no metal selector**: the sample photos cannot show different metals. Customers write a metal preference in the customization note. A product only shows a metal selector if you configure metals for it in the admin.
 
 ## Admin
 `/admin` → sign in. Inquiries tab: search, filter by status/type, change status (9 statuses), internal notes, view customer details and uploaded reference images (private), export CSV. Products tab: add/edit/delete, upload images, set price/visibility, availability. Messages tab: contact-form messages.
@@ -59,4 +65,4 @@ The 8 sample products and all artwork in `public/placeholders` are illustrative 
 Any Node host works too: `npm run build && npm start`.
 
 ## Scripts
-`npm run dev` · `npm run build` · `npm run start` · `npm run typecheck` · `npm run placeholders` (regenerate sample artwork)
+`npm run dev` · `npm run build` · `npm run start` · `npm run typecheck`
