@@ -51,7 +51,7 @@ export default function CartView() {
                 <p className="text-xs text-cocoa/55">SKU {l.productId}</p>
                 <p className="mt-2 text-sm text-cocoa/80">{[l.metal, l.size && `Size ${l.size}`, l.gemstone].filter(Boolean).join(" · ") || "Standard configuration"}</p>
                 <label className="mt-3 block text-xs uppercase tracking-widest text-cocoa/60" htmlFor={`n-${l.key}`}>Customization notes</label>
-                <input id={`n-${l.key}`} className="input mt-1 !py-2" defaultValue={l.customization ?? ""} maxLength={1000} onBlur={(e) => setNote(l.key, e.target.value)} placeholder="Engraving, stone size, special requests…" />
+                <input id={`n-${l.key}`} className="input mt-1 !py-2" value={l.customization ?? ""} maxLength={1000} onChange={(e) => setNote(l.key, e.target.value)} placeholder="Engraving, stone size, special requests…" />
                 <div className="mt-4 inline-flex items-center border border-blush bg-white" role="group" aria-label={`Quantity for ${l.name}`}>
                   <button className="px-3.5 py-2" aria-label="Decrease quantity" onClick={() => setQty(l.key, l.quantity - 1)}>−</button>
                   <span className="w-8 text-center">{l.quantity}</span>
@@ -72,7 +72,7 @@ export default function CartView() {
             <Honeypot value={f.website} onChange={(v) => setF({ ...f, website: v })} />
             <Field label="Full name" id="o-name" required><input id="o-name" required maxLength={120} autoComplete="name" className="input" value={f.name} onChange={set("name")} /></Field>
             <Field label="Email address" id="o-email" required><input id="o-email" type="email" required autoComplete="email" className="input" value={f.email} onChange={set("email")} /></Field>
-            <Field label="Phone number" id="o-phone" required><input id="o-phone" type="tel" required autoComplete="tel" className="input" value={f.phone} onChange={set("phone")} /></Field>
+            <Field label="Phone number" id="o-phone" required><input id="o-phone" type="tel" required minLength={7} pattern={"[0-9+\\-\\(\\)\\.\\s]{7,}"} title="Enter a valid phone number" autoComplete="tel" className="input" value={f.phone} onChange={set("phone")} /></Field>
             <div className="grid grid-cols-2 gap-3">
               <Field label="Shipping city" id="o-city"><input id="o-city" className="input" autoComplete="address-level2" value={f.city} onChange={set("city")} /></Field>
               <Field label="State" id="o-state"><input id="o-state" className="input" autoComplete="address-level1" value={f.state} onChange={set("state")} /></Field>

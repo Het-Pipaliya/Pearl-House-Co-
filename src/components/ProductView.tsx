@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Product } from "@/lib/types";
 import { money } from "@/lib/format";
 import { useCart } from "./CartProvider";
@@ -19,6 +19,12 @@ export default function ProductView({ p }: { p: Product }) {
   const [err, setErr] = useState("");
   const [added, setAdded] = useState(false);
   const box = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!light) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setLight(false);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [light]);
 
   const move = (e: React.MouseEvent) => { const r = box.current!.getBoundingClientRect(); setZoom({ x: ((e.clientX - r.left) / r.width) * 100, y: ((e.clientY - r.top) / r.height) * 100 }); };
   const submit = () => {
