@@ -6,13 +6,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollEffects from "@/components/ScrollEffects";
 import { SITE } from "@/lib/site";
+import { SITE_URL } from "@/lib/siteUrl";
 
 const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-serif", display: "swap" });
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 
-const url = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const metadata: Metadata = {
-  metadataBase: new URL(url),
+  metadataBase: new URL(SITE_URL),
   title: { default: `${SITE.name} — ${SITE.tagline}`, template: `%s | ${SITE.name}` },
   description: "Choose from our collection or share your own design. Pearl House & Co creates fine jewelry just the way you want it — submit an order request, no online payment required.",
   openGraph: { title: `${SITE.name} — ${SITE.tagline}`, type: "website", siteName: SITE.name },
