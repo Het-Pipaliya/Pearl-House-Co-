@@ -15,8 +15,9 @@ export default function CartView() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [hint, setHint] = useState("");
+  const [needSignIn, setNeedSignIn] = useState(false);
   const [f, setF] = useState({ name: "", email: "", phone: "", city: "", state: "", country: "", contactMethod: "Email", instructions: "", notes: "", website: "" });
-  useEffect(() => { fetch("/api/me").then((r) => r.json()).then((m) => { if (m?.email) setF((cur) => ({ ...cur, name: cur.name || m.name || "", email: cur.email || m.email })); }).catch(() => {}); }, []);
+  useEffect(() => { fetch("/api/me").then((r) => r.json()).then((m) => { setNeedSignIn(!!m?.authEnabled && !m?.signedIn); if (m?.signedIn && new URLSearchParams(location.search).get("checkout") === "1") setForm(true); if (m?.email) setF((cur) => ({ ...cur, name: cur.name || m.name || "", email: cur.email || m.email })); }).catch(() => {}); }, []);
   const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => setF({ ...f, [k]: e.target.value });
 
   if (!ready) return <p className="py-24 text-center text-cocoa/60">Loading your cart…</p>;
@@ -31,6 +32,7 @@ export default function CartView() {
         body: JSON.stringify({ ...f, openedAt, items: lines.map((l) => ({ productId: l.productId, quantity: l.quantity, size: l.size, metal: l.metal, gemstone: l.gemstone, customization: l.customization })) }),
       });
       const data = await res.json().catch(() => null);
+      if (res.status === 401) { setNeedSignIn(true); setForm(false); setBusy(false); return; }
       if (!res.ok || !data?.ok) { setError(data?.error ?? "Something went wrong. Your cart has been kept — please try again."); setHint(data?.hint ?? ""); setBusy(false); return; }
       clear(); // only after the server confirmed the request was saved
       router.push(`/order/success?ref=${encodeURIComponent(data.reference)}`);
@@ -67,7 +69,12 @@ export default function CartView() {
       <aside className="h-fit border border-blush bg-white p-6 sm:p-8 lg:sticky lg:top-40">
         <h2 className="text-2xl">Order Request</h2>
         <p className="mt-3 text-sm leading-relaxed text-cocoa/70">{lines.reduce((n, l) => n + l.quantity, 0)} item(s). Pricing, availability and delivery are confirmed with you personally by our team. <strong>No payment is taken online.</strong></p>
-        {!form ? <button className="btn mt-6 w-full" onClick={() => setForm(true)}>Submit Order Request</button> : (
+        {needSignIn ? (
+          <div className="mt-6">
+            <p className="mb-3 text-sm text-cocoa/75">Please sign in with Google to send your request. Your cart will be waiting for you when you come back.</p>
+            <Link href={`/signin?next=${encodeURIComponent("/cart?checkout=1")}`} className="btn w-full text-center">Sign in to send request</Link>
+          </div>
+        ) : !form ? <button className="btn mt-6 w-full" onClick={() => setForm(true)}>Submit Order Request</button> : (
           <form onSubmit={submit} className="relative mt-6 space-y-4" noValidate={false}>
             <Honeypot value={f.website} onChange={(v) => setF({ ...f, website: v })} />
             <Field label="Full name" id="o-name" required><input id="o-name" required maxLength={120} autoComplete="name" className="input" value={f.name} onChange={set("name")} /></Field>
