@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img" aria-label="Pearl House & Co">
+<!-- PLACEHOLDER WORDMARK: replace this file (or point SITE.logo in src/lib/site.ts at your own logo) -->
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#D9A094"/><stop offset=".5" stop-color="#B76E62"/><stop offset="1" stop-color="#8E5148"/></linearGradient></defs>
+<text x="210" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="46" letter-spacing="7" fill="url(#g)">PEARL HOUSE</text>
+<text x="210" y="98" text-anchor="middle" font-family="Georgia, serif" font-size="17" letter-spacing="9" fill="#B76E62">&amp; CO · FINE JEWELRY</text>
+</svg>
