@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 const clamp = (v: number, a = 0, b = 1) => Math.min(b, Math.max(a, v));
 /** Sideways pan speed vs. scrolling: 1 = one screen of scrolling per screen of panning. <1 pans faster, so the section is passed sooner. */
-const PAN_PACE = 0.5;
+const PAN_PACE = 0.3;
 const ease = (t: number) => 1 - Math.pow(1 - t, 3);
 
 /**
