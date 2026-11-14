@@ -78,7 +78,7 @@ img { transition: opacity .6s ease; }
 
 /* announcement ticker */
 .ticker { background: #49302B; color: #F6E9DD; overflow: hidden; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; }
-.ticker-track { display: flex; width: max-content; animation: ticker 60s linear infinite; }
+.ticker-track { display: flex; width: max-content; animation: ticker 120s linear infinite; }
 .ticker:hover .ticker-track { animation-play-state: paused; }
 .ticker-set { display: flex; flex-shrink: 0; margin: 0; padding: 0; list-style: none; }
 .ticker-set li { padding: .6rem 0; white-space: nowrap; display: flex; align-items: center; }
