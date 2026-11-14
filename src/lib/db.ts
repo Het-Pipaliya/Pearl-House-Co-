@@ -70,13 +70,18 @@ async function remove(t: Table, id: string) {
 /* ---------- products ---------- */
 let seeded = false;
 export async function getProducts(): Promise<Product[]> {
-  let rows = await list<Product & Row>("products");
+  let rows: (Product & Row)[] = [];
+  try { rows = await list<Product & Row>("products"); } catch (e) { if (usingSupabase()) throw e; }
   if (!rows.length && !seeded) {
     seeded = true; // sample catalogue is inserted once so it can be edited in the admin
-    for (const s of SEED_PRODUCTS) await insertNew("products", s as Product & Row);
-    rows = await list<Product & Row>("products");
+    try {
+      for (const s of SEED_PRODUCTS) await insertNew("products", s as Product & Row);
+      rows = await list<Product & Row>("products");
+    } catch (e) { if (usingSupabase()) throw e; seeded = false; }
   }
-  return rows.sort((a, b) => b.createdAt.localeCompare(a.createdAt) || a.name.localeCompare(b.name));
+  // No database connected (e.g. hosting without a writable disk): show the read-only sample catalogue.
+  if (!rows.length && !usingSupabase()) rows = SEED_PRODUCTS as (Product & Row)[];
+  return [...rows].sort((a, b) => b.createdAt.localeCompare(a.createdAt) || a.name.localeCompare(b.name));
 }
 export const getProduct = (id: string) => get<Product & Row>("products", id);
 export async function getProductBySlug(slug: string) { return (await getProducts()).find((p) => p.slug === slug) ?? null; }
