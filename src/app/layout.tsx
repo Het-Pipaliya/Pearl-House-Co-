@@ -14,7 +14,7 @@ const url = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title: { default: `${SITE.name} — ${SITE.tagline}`, template: `%s | ${SITE.name}` },
-  description: "Discover exceptional fine jewelry designed to celebrate life's most precious moments. Browse, customize and submit an order request — no online payment required.",
+  description: "Choose from our collection or share your own design. Pearl House & Co creates fine jewelry just the way you want it — submit an order request, no online payment required.",
   openGraph: { title: `${SITE.name} — ${SITE.tagline}`, type: "website", siteName: SITE.name },
 };
 

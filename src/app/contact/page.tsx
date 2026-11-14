@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "Contact Us", description: "Questions
 const FAQ: [string, string][] = [
   ["Do I pay when I submit an order request?", "No. Submitting a request does not require payment and does not confirm a purchase. Our team contacts you to discuss pricing, availability, customization, payment arrangements and delivery."],
   ["What happens after I submit a request?", "You receive an inquiry number. We review your request and contact you using your preferred method. Once everything is agreed, we place your order with our manufacturing partner and ship the finished piece to you."],
-  ["Can I customize a piece?", "Yes. Many pieces offer options such as metal, size and gemstone, and you can add notes. For fully personalized designs, use our Custom Jewelry page."],
+  ["Can I customize a piece?", "Yes. Many pieces offer options such as size and gemstone, and you can add notes about metal, engraving or anything else. For fully personalized designs, use our Custom Jewelry page."],
   ["Do you make the jewelry yourselves?", "No. Pearl House & Co works with independent, skilled jewelry manufacturers who produce pieces to order."],
   ["How long will my order take?", "Timing depends on the piece and customization. We will confirm an estimate with you before anything is placed into production."],
 ];
@@ -19,8 +19,7 @@ export default function Contact({ searchParams }: { searchParams: { product?: st
         <ContactForm product={searchParams.product?.slice(0, 120)} />
         <div className="space-y-8">
           <div><h2 className="text-2xl">Client Care</h2>
-            <ul className="mt-4 space-y-2 text-cocoa/80"><li>Email: <a className="text-rose underline" href={`mailto:${SITE.email}`}>{SITE.email}</a></li><li>Phone: {SITE.phone}</li><li>Hours: {SITE.hours}</li></ul>
-            <p className="mt-3 text-xs text-cocoa/50">Contact details shown are placeholders until real business details are provided.</p></div>
+            <ul className="mt-4 space-y-2 text-cocoa/80"><li>Email: <a className="text-rose underline" href={`mailto:${SITE.email}`}>{SITE.email}</a></li><li>Phone: <a className="text-rose underline" href={SITE.phoneHref}>{SITE.phone}</a></li></ul></div>
           <div><h2 className="text-2xl">Follow Us</h2><ul className="mt-3 flex gap-6">{SITE.social.map((s) => <li key={s.label}><a href={s.href} target="_blank" rel="noopener noreferrer" className="link-u text-rose">{s.label}</a></li>)}</ul></div>
         </div>
       </div>

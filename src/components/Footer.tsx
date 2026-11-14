@@ -19,7 +19,7 @@ export default function Footer() {
         <div>
           <h3 className="mb-4 font-sans text-[11px] uppercase tracking-luxe text-rose">Connect</h3>
           <ul className="space-y-2.5 text-sm text-cocoa/80">
-            <li>{SITE.email}</li><li>{SITE.phone}</li>
+            <li><a href={`mailto:${SITE.email}`} className="link-u hover:text-rose">{SITE.email}</a></li><li><a href={SITE.phoneHref} className="link-u hover:text-rose">{SITE.phone}</a></li>
             {SITE.social.map((s) => <li key={s.label}><a href={s.href} target="_blank" rel="noopener noreferrer" className="link-u hover:text-rose">{s.label}</a></li>)}
           </ul>
         </div>

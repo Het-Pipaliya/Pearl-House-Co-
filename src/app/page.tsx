@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import Words from "@/components/Words";
 import { getProducts } from "@/lib/db";
 import { CATEGORIES } from "@/lib/types";
 
@@ -31,22 +32,28 @@ export default async function Home() {
         <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 hidden md:block bg-[linear-gradient(90deg,rgba(252,248,246,0.96)_0%,rgba(252,248,246,0.85)_30%,rgba(252,248,246,0.35)_52%,rgba(252,248,246,0)_68%)]" />
         <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 hidden h-32 md:block bg-gradient-to-t from-ivory to-transparent" />
         <div className="container-x relative flex items-center md:min-h-[min(78vh,720px)]">
-          <div className="reveal max-w-xl py-12 md:max-w-[22rem] md:py-20 lg:max-w-xl">
+          <div data-fx="hero-text" className="max-w-xl md:max-w-[22rem] lg:max-w-xl"><div className="reveal py-12 md:py-20">
             <p className="eyebrow">Pearl House &amp; Co · Fine Jewelry</p>
-            <h1 className="mt-5 text-5xl leading-[1.05] sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl">Timeless Elegance, Beautifully Crafted</h1>
-            <p className="mt-6 max-w-md text-lg text-cocoa/80">Discover exceptional jewelry designed to celebrate life&apos;s most precious moments.</p>
+            <h1 className="mt-5 text-5xl leading-[1.05] sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl">Your Dream Jewelry, Made Real.</h1>
+            <p className="mt-6 max-w-md text-lg text-cocoa/80">Choose from our collection or share your own design. We’ll create the jewelry just the way you want it.</p>
             <Link href="/shop" className="btn mt-9">Explore Collections</Link>
-          </div>
+          </div></div>
         </div>
         <p className="border-t border-blush/60 bg-champagne/60 py-2 text-center text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Imagery shown is illustrative — not Pearl House inventory</p>
       </section>
 
-      <section className="container-x py-20">
+
+      <section className="container-x py-24 sm:py-32">
+        <p className="eyebrow mb-6 text-center">How we work</p>
+        <Words className="mx-auto max-w-4xl text-center font-serif text-3xl leading-[1.2] text-cocoa sm:text-5xl lg:text-6xl" text="Every piece begins with a conversation. Choose from our collection, or share a design of your own — and we’ll bring it to life, together." />
+      </section>
+
+      <section className="container-x pb-20">
         <header className="rv mb-10 text-center"><p className="eyebrow">Collections</p><h2 className="mt-2 text-4xl sm:text-5xl">Shop by Category</h2></header>
         <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-6">
           {CATEGORIES.map((c) => (
             <li key={c} className="rv" style={{ "--i": CATEGORIES.indexOf(c) % 4 } as React.CSSProperties}><Link href={`/shop?category=${encodeURIComponent(c)}`} className="group block">
-              <div className="aspect-[4/3] overflow-hidden bg-blush/40">{/* eslint-disable-next-line @next/next/no-img-element */}<img src={`/images/${catImg[c]}.webp`} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.08]" /></div>
+              <div className="aspect-[4/3] overflow-hidden bg-blush/40"><div data-fx="parallax" data-speed={CATEGORIES.indexOf(c) % 2 ? "0.06" : "0.1"} className="-my-[9%] h-[118%]">{/* eslint-disable-next-line @next/next/no-img-element */}<img src={`/images/${catImg[c]}.webp`} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.08]" /></div></div>
               <p className="mt-3 text-center font-serif text-xl group-hover:text-rose">{c}</p>
             </Link></li>
           ))}
@@ -55,15 +62,38 @@ export default async function Home() {
 
       <Row eyebrow="Just In" title="New Arrivals" items={all.filter((p) => p.isNew)} href="/shop?sort=newest" />
       <div className="bg-white"><Row eyebrow="Most Loved" title="Best Sellers" items={all.filter((p) => p.bestSeller)} href="/shop" /></div>
-      <Row eyebrow="Curated" title="Featured Pieces" items={all.filter((p) => p.featured)} href="/shop" />
+      {(() => { const feat = all.filter((p) => p.featured).slice(0, 8); return feat.length > 0 && (
+        <section data-fx="hscroll" className="hs-outer bg-white">
+          <div className="hs-sticky py-16 md:py-0">
+            <header className="container-x mb-10 flex items-end justify-between gap-6">
+              <div><p className="eyebrow">Curated</p><h2 className="mt-2 text-4xl sm:text-5xl">Featured Pieces</h2></div>
+              <Link href="/shop" className="link-u hidden text-sm text-rose sm:block">View all →</Link>
+            </header>
+            <div className="hs-track">{feat.map((p) => <div key={p.id} className="hs-card"><ProductCard p={p} reveal={false} /></div>)}</div>
+            <div aria-hidden className="container-x mt-10 hidden md:block"><div className="h-px w-full bg-blush"><div data-hs-progress className="h-px origin-left scale-x-0 bg-rose" /></div></div>
+          </div>
+        </section>
+      ); })()}
 
-      <section className="bg-blush/50 py-20">
-        <div className="container-x grid items-center gap-12 lg:grid-cols-2">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/homepage/home-06.webp" alt="Ring design sketches beside a rose-gold ring" loading="lazy" className="rv rv-l aspect-square w-full object-cover" />
-          <div className="rv rv-r"><p className="eyebrow">Custom Jewelry</p><h2 className="mt-3 text-4xl sm:text-5xl">Your Vision. Our Craftsmanship.</h2>
-            <p className="mt-5 text-cocoa/80">Have a design in mind? Share your ideas and inspiration with us. Our team will work with you and our manufacturing partners to explore what&apos;s possible.</p>
-            <Link href="/custom" className="btn mt-8">Begin Your Design</Link></div>
+      <section className="bg-blush/50 py-24">
+        <div className="container-x grid gap-12 lg:grid-cols-2 lg:gap-20">
+          <div className="lg:sticky lg:top-32 lg:self-start">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/homepage/home-06.webp" alt="Ring design sketches beside a rose-gold ring" loading="lazy" className="aspect-square w-full object-cover" />
+          </div>
+          <div data-fx="steps" className="space-y-14 lg:space-y-[26vh] lg:pb-[12vh] lg:pt-[6vh]">
+            <div data-step>
+              <p className="eyebrow">Custom Jewelry</p><h2 className="mt-3 text-4xl sm:text-5xl">Your Vision. Our Craftsmanship.</h2>
+              <p className="mt-5 max-w-md text-cocoa/80">Have a design in mind? Share your ideas and inspiration with us. Our team will work with you and our manufacturing partners to explore what&apos;s possible.</p>
+            </div>
+            {[["Choose", "Browse the collection and pick the pieces and options you love."], ["Submit a request", "Send your order request. No payment is taken online."], ["Personal consultation", "Our team contacts you to confirm availability, details and pricing."], ["Confirm & make", "Once agreed, your piece is made to order by our manufacturing partner."], ["Delivery", "Your finished jewelry is shipped to you."]].map(([t, d], i) => (
+              <div key={t} data-step className="flex gap-6">
+                <span className="font-serif text-6xl leading-none text-rose sm:text-7xl">{i + 1}</span>
+                <div><h3 className="text-2xl sm:text-3xl">{t}</h3><p className="mt-2 max-w-sm text-cocoa/75">{d}</p></div>
+              </div>
+            ))}
+            <div data-step><Link href="/custom" className="btn">Begin Your Design</Link></div>
+          </div>
         </div>
       </section>
 
@@ -72,16 +102,7 @@ export default async function Home() {
           <p className="mt-5 text-cocoa/80">Pearl House &amp; Co pairs a thoughtfully curated collection with a personal, unhurried service. We work with skilled independent manufacturers to bring each piece to life — and we guide you every step of the way.</p>
           <Link href="/about" className="link-u mt-6 inline-block text-rose">Read our story →</Link></div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/homepage/home-07.webp" alt="A pearl necklace beside a blush ring box" loading="lazy" className="rv rv-r aspect-square w-full object-cover" />
-      </section>
-
-      <section className="container-x py-24">
-        <header className="rv mb-12 text-center"><p className="eyebrow">Simple &amp; Personal</p><h2 className="mt-2 text-4xl sm:text-5xl">How It Works</h2></header>
-        <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
-          {[["Choose", "Browse the collection and pick the pieces and options you love."], ["Submit a request", "Send your order request. No payment is taken online."], ["Personal consultation", "Our team contacts you to confirm availability, details and pricing."], ["Confirm & make", "Once agreed, your piece is made to order by our manufacturing partner."], ["Delivery", "Your finished jewelry is shipped to you."]].map(([t, d], i) => (
-            <li key={t} className="rv text-center" style={{ "--i": i } as React.CSSProperties}><span className="font-serif text-4xl text-rose">{i + 1}</span><h3 className="mt-1 text-xl">{t}</h3><p className="mt-2 text-sm text-cocoa/70">{d}</p></li>
-          ))}
-        </ol>
+        <div data-fx="grow" className="overflow-hidden"><img src="/images/homepage/home-07.webp" alt="A pearl necklace beside a blush ring box" loading="lazy" className="aspect-square w-full object-cover" /></div>
       </section>
 
       <section className="bg-white py-20"><div className="container-x"><h2 className="mb-12 text-center text-4xl sm:text-5xl">Why Choose Pearl House &amp; Co</h2>
