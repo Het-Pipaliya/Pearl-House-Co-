@@ -5,7 +5,7 @@ import { CATEGORIES } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-const catImg: Record<string, string> = { Rings: "ring", "Engagement Rings": "engagement", Necklaces: "necklace", Pendants: "pendant", Bracelets: "bracelet", Earrings: "earrings", "Wedding Bands": "band", "Custom Jewelry": "custom" };
+const catImg: Record<string, string> = { Rings: "etoile-gold-ring", "Engagement Rings": "aurelia-diamond-ring", Necklaces: "pearl-drop-necklace", Pendants: "celeste-pearl-pendant", Bracelets: "lumiere-tennis-bracelet", Earrings: "amara-drop-earrings", "Wedding Bands": "etoile-gold-ring-alternate", "Custom Jewelry": "custom-jewelry-design" };
 const why = [["Personal service", "A dedicated team member guides your request from start to finish."], ["Made to order", "Pieces are produced by skilled independent manufacturing partners."], ["Customizable", "Choose metals, sizes and gemstones, or begin a bespoke design."], ["No payment online", "We confirm details and arrangements with you personally first."]];
 
 function Row({ title, eyebrow, items, href }: { title: string; eyebrow: string; items: Awaited<ReturnType<typeof getProducts>>; href: string }) {
@@ -23,21 +23,20 @@ export default async function Home() {
   const all = (await getProducts()).filter((p) => p.available);
   return (
     <>
-      <section className="relative">
-        <div className="relative h-[78vh] min-h-[520px] overflow-hidden bg-blush">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1800&q=85&auto=format&fit=crop" alt="" className="absolute inset-0 h-full w-full object-cover object-[75%_center]" />
-          <div className="absolute inset-0 bg-gradient-to-t from-ivory/95 via-ivory/40 to-transparent sm:bg-gradient-to-r sm:from-ivory/90 sm:via-ivory/55" />
-          <div className="container-x relative flex h-full items-end pb-14 sm:items-center sm:pb-0">
-            <div className="reveal max-w-xl">
-              <p className="eyebrow">Pearl House &amp; Co · Fine Jewelry</p>
-              <h1 className="mt-5 text-5xl leading-[1.05] sm:text-7xl">Timeless Elegance, Beautifully Crafted</h1>
-              <p className="mt-6 max-w-md text-lg text-cocoa/80">Discover exceptional jewelry designed to celebrate life&apos;s most precious moments.</p>
-              <Link href="/shop" className="btn mt-9">Explore Collections</Link>
-            </div>
+      <section className="relative bg-blush/40">
+        <div className="container-x grid items-center gap-10 py-14 lg:grid-cols-[1fr_1.15fr] lg:py-20">
+          <div className="reveal order-2 lg:order-1">
+            <p className="eyebrow">Pearl House &amp; Co · Fine Jewelry</p>
+            <h1 className="mt-5 text-5xl leading-[1.05] sm:text-7xl">Timeless Elegance, Beautifully Crafted</h1>
+            <p className="mt-6 max-w-md text-lg text-cocoa/80">Discover exceptional jewelry designed to celebrate life&apos;s most precious moments.</p>
+            <Link href="/shop" className="btn mt-9">Explore Collections</Link>
+          </div>
+          <div className="order-1 overflow-hidden shadow-[0_20px_60px_-25px_rgba(73,48,43,0.45)] lg:order-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/hero-jewelry-collection.webp" alt="Rose-gold jewelry displayed on blush pedestals" className="aspect-[3/2] w-full object-cover" />
           </div>
         </div>
-        <p className="bg-champagne/70 py-2 text-center text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Photography shown is stock imagery for demonstration — not Pearl House inventory</p>
+        <p className="bg-champagne/70 py-2 text-center text-[11px] uppercase tracking-[0.18em] text-cocoa/60">Imagery shown is illustrative concept artwork — not Pearl House inventory</p>
       </section>
 
       <section className="container-x py-20">
@@ -45,7 +44,7 @@ export default async function Home() {
         <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-6">
           {CATEGORIES.map((c) => (
             <li key={c}><Link href={`/shop?category=${encodeURIComponent(c)}`} className="group block">
-              <div className="aspect-square overflow-hidden bg-blush/40">{/* eslint-disable-next-line @next/next/no-img-element */}<img src={`/placeholders/${catImg[c]}-${c === "Rings" || c === "Pendants" ? 2 : 1}.svg`} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" /></div>
+              <div className="aspect-[4/3] overflow-hidden bg-blush/40">{/* eslint-disable-next-line @next/next/no-img-element */}<img src={`/images/${catImg[c]}.webp`} alt="" loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" /></div>
               <p className="mt-3 text-center font-serif text-xl group-hover:text-rose">{c}</p>
             </Link></li>
           ))}
@@ -59,7 +58,7 @@ export default async function Home() {
       <section className="bg-blush/50 py-20">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=1400&q=85&auto=format&fit=crop" alt="Gold hoop earrings on a stone" loading="lazy" className="aspect-[4/3] w-full object-cover" />
+          <img src="/images/custom-jewelry-design.webp" alt="Jewelry design sketches beside gold rings" loading="lazy" className="aspect-[4/3] w-full object-cover" />
           <div><p className="eyebrow">Custom Jewelry</p><h2 className="mt-3 text-4xl sm:text-5xl">Your Vision. Our Craftsmanship.</h2>
             <p className="mt-5 text-cocoa/80">Have a design in mind? Share your ideas and inspiration with us. Our team will work with you and our manufacturing partners to explore what&apos;s possible.</p>
             <Link href="/custom" className="btn mt-8">Begin Your Design</Link></div>
@@ -71,7 +70,7 @@ export default async function Home() {
           <p className="mt-5 text-cocoa/80">Pearl House &amp; Co pairs a thoughtfully curated collection with a personal, unhurried service. We work with skilled independent manufacturers to bring each piece to life — and we guide you every step of the way.</p>
           <Link href="/about" className="link-u mt-6 inline-block text-rose">Read our story →</Link></div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/placeholders/story.svg" alt="" loading="lazy" className="aspect-[4/3] w-full object-cover" />
+        <img src="/images/pearl-jewelry-packaging.webp" alt="A pearl necklace beside a blush jewelry box" loading="lazy" className="aspect-[4/3] w-full object-cover" />
       </section>
 
       <section className="bg-white py-20"><div className="container-x"><h2 className="mb-12 text-center text-4xl sm:text-5xl">Why Choose Pearl House &amp; Co</h2>
