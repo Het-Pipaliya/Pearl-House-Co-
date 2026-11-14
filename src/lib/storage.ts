@@ -16,15 +16,26 @@ const LOCAL = path.join(process.cwd(), ".data", "uploads");
 
 export class UploadError extends Error {}
 
-/** Validates (by file signature, not the client-supplied type) and stores an image. `bucket` public = product images, private = customer reference images. */
-export async function saveImage(file: File, bucket: "products" | "references"): Promise<string> {
+export interface CheckedImage { buf: Buffer; ext: string; mime: string }
+
+/** Validates an upload by its file signature (not the client-supplied type or name). */
+export async function checkImage(file: File): Promise<CheckedImage> {
   if (file.size > MAX_BYTES) throw new UploadError("Images must be 5 MB or smaller.");
   const buf = Buffer.from(await file.arrayBuffer());
   const kind = sniff(buf);
   if (!kind) throw new UploadError("Only JPG, PNG or WebP images are accepted.");
-  const name = `${crypto.randomUUID()}.${kind.ext}`;
+  return { buf, ...kind };
+}
+
+export async function saveImage(file: File, bucket: "products" | "references"): Promise<string> {
+  return storeImage(await checkImage(file), bucket);
+}
+
+/** Stores an already-checked image. `bucket` public = product images, private = customer reference images. */
+export async function storeImage({ buf, ext, mime }: CheckedImage, bucket: "products" | "references"): Promise<string> {
+  const name = `${crypto.randomUUID()}.${ext}`;
   if (usingSupabase()) {
-    const { error } = await sb().storage.from(bucket).upload(name, buf, { contentType: kind.mime });
+    const { error } = await sb().storage.from(bucket).upload(name, buf, { contentType: mime });
     if (error) throw new Error(error.message);
     // public bucket → public URL; private bucket → opaque reference resolved by the admin-only route
     return bucket === "products" ? sb().storage.from(bucket).getPublicUrl(name).data.publicUrl : `ref:${name}`;
