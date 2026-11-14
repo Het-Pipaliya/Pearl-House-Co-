@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Field, Honeypot, useOpenedAt } from "./Field";
+import NextSteps from "./NextSteps";
 
 const TYPES = ["Engagement Ring", "Ring", "Wedding Band", "Necklace", "Pendant", "Bracelet", "Earrings", "Other"];
 const METALS = ["No preference", "Yellow Gold", "White Gold", "Rose Gold", "Platinum"];
@@ -30,7 +31,8 @@ export default function CustomForm() {
     <div className="border border-blush bg-white p-10 text-center" role="status">
       <h2 className="text-3xl">Thank you for your inquiry.</h2>
       <p className="mt-4 text-cocoa/80">Thank you for your inquiry. Our team will review your request and contact you to discuss the next steps.</p>
-      <p className="mt-6 text-sm text-cocoa/60">Inquiry number: <strong className="text-rose">{done}</strong></p>
+      <p className="mt-6 inline-block border border-rose/40 px-6 py-3 text-sm text-cocoa/70">Your inquiry number<br /><strong className="font-serif text-2xl tracking-widest text-rose">{done}</strong></p>
+      <NextSteps className="mx-auto mt-6 max-w-xl" />
     </div>
   );
   return (
