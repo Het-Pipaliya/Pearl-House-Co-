@@ -1,12 +1,13 @@
 import { NextResponse } from "next/server";
 import { createInquiryResilient, saveInquiry } from "@/lib/db";
 import { sendInquiryEmails } from "@/lib/email";
+import { emailHint } from "@/lib/emailHint";
 import { clientIp, rateLimit } from "@/lib/ratelimit";
 import { saveImage, UploadError } from "@/lib/storage";
 import { customSchema, firstError, spamCheck } from "@/lib/validation";
 
 export const dynamic = "force-dynamic";
-const fail = (error: string, status: number) => NextResponse.json({ ok: false, error }, { status });
+const fail = (error: string, status: number, hint?: string) => NextResponse.json({ ok: false, error, ...(hint ? { hint } : {}) }, { status });
 
 export async function POST(req: Request) {
   if (!rateLimit(`custom:${clientIp(req)}`, 4, 10 * 60_000)) return fail("Too many requests. Please try again in a few minutes.", 429);
@@ -34,7 +35,10 @@ export async function POST(req: Request) {
     }));
     inquiry.emailStatus = await sendInquiryEmails(inquiry);
     if (stored) await saveInquiry(inquiry).catch(() => {});
-    else if (inquiry.emailStatus.business !== "sent") return fail("We couldn't send your request just now. Please try again in a moment.", 500);
+    else if (inquiry.emailStatus.business !== "sent") {
+      console.error("custom request email not delivered:", inquiry.emailStatus.business);
+      return fail("We couldn't send your request just now. Please try again in a moment.", 500, emailHint(inquiry.emailStatus.business));
+    }
     return NextResponse.json({ ok: true, reference: inquiry.id });
   } catch (e) {
     if (e instanceof UploadError) return fail(e.message, 400);

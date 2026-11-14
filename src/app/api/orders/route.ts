@@ -1,12 +1,13 @@
 import { NextResponse } from "next/server";
 import { createInquiryResilient, getProducts, saveInquiry } from "@/lib/db";
 import { sendInquiryEmails } from "@/lib/email";
+import { emailHint } from "@/lib/emailHint";
 import { clientIp, rateLimit } from "@/lib/ratelimit";
 import { firstError, orderSchema, spamCheck } from "@/lib/validation";
 import type { Inquiry } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
-const fail = (error: string, status: number) => NextResponse.json({ ok: false, error }, { status });
+const fail = (error: string, status: number, hint?: string) => NextResponse.json({ ok: false, error, ...(hint ? { hint } : {}) }, { status });
 
 export async function POST(req: Request) {
   if (!rateLimit(`order:${clientIp(req)}`, 5, 10 * 60_000)) return fail("Too many requests. Please try again in a few minutes.", 429);
@@ -42,7 +43,10 @@ export async function POST(req: Request) {
     inquiry.emailStatus = await sendInquiryEmails(inquiry);
     if (stored) await saveInquiry(inquiry).catch(() => {});
     // With no database, the business email is the only record: if it was not delivered, fail so the cart is kept.
-    else if (inquiry.emailStatus.business !== "sent") return fail("We couldn't send your request just now. Your cart has been kept — please try again in a moment.", 500);
+    else if (inquiry.emailStatus.business !== "sent") {
+      console.error("order email not delivered:", inquiry.emailStatus.business);
+      return fail("We couldn't send your request just now. Your cart has been kept — please try again in a moment.", 500, emailHint(inquiry.emailStatus.business));
+    }
     return NextResponse.json({ ok: true, reference: inquiry.id });
   } catch (e) {
     console.error("order submission failed", e);

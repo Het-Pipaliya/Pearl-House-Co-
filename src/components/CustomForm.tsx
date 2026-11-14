@@ -10,17 +10,18 @@ export default function CustomForm() {
   const openedAt = useOpenedAt();
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState("");
+  const [hint, setHint] = useState("");
   const [done, setDone] = useState<string | null>(null);
   const [hp, setHp] = useState("");
 
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); setBusy(true); setErr("");
+    e.preventDefault(); setBusy(true); setErr(""); setHint("");
     const fd = new FormData(e.currentTarget);
     fd.set("website", hp); fd.set("openedAt", String(openedAt));
     try {
       const res = await fetch("/api/custom", { method: "POST", body: fd });
       const data = await res.json().catch(() => null);
-      if (!res.ok || !data?.ok) setErr(data?.error ?? "Something went wrong. Please try again."); else setDone(data.reference);
+      if (!res.ok || !data?.ok) { setErr(data?.error ?? "Something went wrong. Please try again."); setHint(data?.hint ?? ""); } else setDone(data.reference);
     } catch { setErr("We couldn't reach the server. Please try again."); }
     setBusy(false);
   };
@@ -45,7 +46,7 @@ export default function CustomForm() {
       <Field label="Approximate budget" id="c-bud"><select id="c-bud" name="budget" className="input">{BUDGETS.map((t) => <option key={t}>{t}</option>)}</select></Field>
       <div className="sm:col-span-2"><Field label="Description of desired design" id="c-desc" required><textarea id="c-desc" name="description" required minLength={20} maxLength={4000} rows={6} className="input" placeholder="Tell us about the piece you imagine, the occasion, and any details that matter to you." /></Field></div>
       <div className="sm:col-span-2"><Field label="Upload reference images (up to 4 · JPG, PNG or WebP · 5 MB each)" id="c-img"><input id="c-img" name="images" type="file" accept="image/jpeg,image/png,image/webp" multiple className="input !p-2.5 file:mr-4 file:border-0 file:bg-blush file:px-4 file:py-2 file:text-xs file:uppercase file:tracking-widest" /></Field></div>
-      {err && <p role="alert" className="border border-rose/40 bg-blush/50 p-3 text-sm text-rose-dark sm:col-span-2">{err}</p>}
+      {err && <div role="alert" className="border border-rose/40 bg-blush/50 p-3 text-sm text-rose-dark sm:col-span-2">{err}{hint && <p className="mt-2 text-xs text-cocoa/70">Technical detail: {hint}</p>}</div>}
       <div className="sm:col-span-2"><button className="btn w-full sm:w-auto" disabled={busy}>{busy ? "Sending…" : "Submit Custom Design Request"}</button><p className="mt-3 text-xs text-cocoa/55">Submitting a request does not obligate you to purchase and requires no payment.</p></div>
     </form>
   );
