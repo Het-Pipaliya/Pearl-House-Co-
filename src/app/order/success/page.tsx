@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import NextSteps from "@/components/NextSteps";
 export const metadata: Metadata = { title: "Request Received", robots: { index: false } };
 
 export default function Success({ searchParams }: { searchParams: { ref?: string } }) {
@@ -15,6 +16,7 @@ export default function Success({ searchParams }: { searchParams: { ref?: string
         <p>Please note that submitting an order request does not confirm a purchase or require payment.</p>
         <p>We look forward to helping you find something extraordinary.</p>
       </div>
+      <NextSteps hasNumber={!!ref} className="mx-auto mt-8 max-w-xl" />
       <Link href="/shop" className="btn mt-10">Continue Browsing</Link>
     </div>
   );

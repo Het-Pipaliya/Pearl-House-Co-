@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Field, Honeypot, useOpenedAt } from "./Field";
+import NextSteps from "./NextSteps";
 
 export default function ContactForm({ product }: { product?: string }) {
   const openedAt = useOpenedAt();
@@ -17,7 +18,7 @@ export default function ContactForm({ product }: { product?: string }) {
     } catch { setErr("We couldn't reach the server. Please try again."); }
     setBusy(false);
   };
-  if (done) return <div role="status" className="border border-blush bg-white p-8 text-center"><h3 className="text-2xl">Message sent</h3><p className="mt-3 text-cocoa/75">Thank you. Our team will get back to you soon.</p></div>;
+  if (done) return <div role="status" className="border border-blush bg-white p-8 text-center"><h3 className="text-2xl">Message sent</h3><p className="mt-3 text-cocoa/75">Thank you for getting in touch.</p><NextSteps hasNumber={false} className="mt-5" /></div>;
   return (
     <form onSubmit={submit} className="relative space-y-5 border border-blush bg-white p-6 sm:p-8">
       <Honeypot value={f.website} onChange={(v) => setF({ ...f, website: v })} />
