@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   openGraph: { title: `${SITE.name} — ${SITE.tagline}`, type: "website", siteName: SITE.name },
 };
 
+const TICKER = ["Custom jewelry — we can make it anything you want", "Your idea, your design, your jewelry", "Engagement rings · Wedding bands · Pendants · Earrings · Bracelets", "Share a sketch, a photo or just a feeling", "Personalized fine jewelry made for your moments"];
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
@@ -25,8 +27,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CartProvider>
           <ScrollEffects />
           <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-white focus:px-4 focus:py-2">Skip to content</a>
-          <div className="bg-champagne px-4 py-2 text-center text-[11px] uppercase tracking-[0.2em] text-cocoa">
-            Personalized fine jewelry · Made for your moments
+          <div className="ticker" role="region" aria-label="Announcement">
+            <div className="ticker-track">
+              {[0, 1].map((k) => (
+                <ul key={k} className="ticker-set" aria-hidden={k === 1 ? true : undefined}>
+                  {TICKER.map((t) => <li key={t}>{t}</li>)}
+                </ul>
+              ))}
+            </div>
           </div>
           <Header />
           <main id="main">{children}</main>
