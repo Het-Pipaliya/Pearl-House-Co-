@@ -88,6 +88,18 @@ export default function ScrollEffects() {
       }
     };
 
+    // Keyboard users: tabbing to a card that is currently panned off-screen scrolls the page so the card slides into view.
+    const onFocus = (e: FocusEvent) => {
+      const t = e.target as HTMLElement | null; const card = t?.closest<HTMLElement>(".hs-card"); const outer = card?.closest<HTMLElement>("[data-fx=hscroll]");
+      if (!card || !outer || !desktop()) return;
+      const track = outer.querySelector<HTMLElement>(".hs-track"); const sticky = outer.querySelector<HTMLElement>(".hs-sticky"); if (!track || !sticky) return;
+      sticky.scrollLeft = 0; // browsers may try to scroll the clipped panel itself
+      const dist = Math.max(track.scrollWidth - window.innerWidth, 0); if (dist <= 0) return;
+      const want = clamp(card.offsetLeft - (window.innerWidth - card.offsetWidth) / 2, 0, dist);
+      const pinTop = parseFloat(getComputedStyle(sticky).top) || 0; const secTop = outer.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: secTop - pinTop + (want / dist) * dist * PAN_PACE, behavior: "instant" });
+    };
+    document.addEventListener("focusin", onFocus);
     let raf = 0;
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; update(); }); };
     const onResize = () => { sizeHscroll(); onScroll(); };
@@ -98,7 +110,7 @@ export default function ScrollEffects() {
     window.addEventListener("resize", onResize);
     window.addEventListener("load", onResize);
     return () => {
-      io.disconnect(); mo.disconnect(); window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", onResize); window.removeEventListener("load", onResize);
+      io.disconnect(); mo.disconnect(); document.removeEventListener("focusin", onFocus); window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", onResize); window.removeEventListener("load", onResize);
       cancelAnimationFrame(raf); cancelAnimationFrame(mt); root.classList.remove("js", "fx");
     };
   }, []);

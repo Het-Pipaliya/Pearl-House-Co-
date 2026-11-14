@@ -6,9 +6,8 @@ export const SITE = {
   phone: "(415) 769-7914",
   phoneHref: "tel:+14157697914",
   social: [
-    { label: "Instagram", href: "https://instagram.com/" },
-    { label: "Facebook", href: "https://facebook.com/" },
-    { label: "Pinterest", href: "https://pinterest.com/" },
+    { label: "Instagram", href: "https://www.instagram.com/pearlhouseandco" },
+    { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61596367868488" },
   ],
   // Header/footer logo (transparent PNG). Replace public/logo.png to change it.
   logo: "/logo.png",
