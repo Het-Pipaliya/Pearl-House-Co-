@@ -37,7 +37,7 @@ export async function sendInquiryEmails(i: Inquiry) {
   const business = await send(
     cfg.businessEmail,
     i.type === "custom" ? `New Custom Jewelry Request — Pearl House & Co — #${i.id}` : `New Jewelry Order Request — Pearl House & Co — #${i.id}`,
-    shell(`<h2 style="font-family:Georgia,serif;margin:0 0 4px">New ${label}</h2><p style="margin:0 0 16px;color:#8a6f68">Reference #${esc(i.id)} · ${esc(when)}</p>
+    shell(`<h2 style="font-family:Georgia,serif;margin:0 0 4px">New ${label}</h2><p style="margin:0 0 16px;color:#8a6f68">Reference #${esc(i.id)} · ${esc(when)}</p>${i.notStored ? `<p style="background:#F1DAD5;border:1px solid #B76E62;padding:10px 14px;color:#49302B"><strong>Not saved to a database.</strong> This email is the only record of this request. Please keep it.</p>` : ""}
 <table style="font-size:14px">${row("Name", c.name)}${row("Email", c.email)}${row("Phone", c.phone)}${row("Preferred contact", c.contactMethod)}${row("City", c.city)}${row("State", c.state)}${row("Country", c.country)}</table>
 ${itemsTable(i)}${customBlock}<table style="margin-top:16px;font-size:14px">${row("Additional instructions", i.instructions)}${row("Order notes", i.notes)}</table>
 <p style="margin-top:24px;font-size:12px;color:#8a6f68">This is an inquiry, not a confirmed purchase. No payment has been taken.</p>`),

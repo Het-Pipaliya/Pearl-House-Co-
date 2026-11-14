@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CartProvider>
           <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:bg-white focus:px-4 focus:py-2">Skip to content</a>
           <div className="bg-champagne px-4 py-2 text-center text-[11px] uppercase tracking-[0.2em] text-cocoa">
-            Complimentary design consultation with every order request
+            Personalized fine jewelry · Made for your moments
           </div>
           <Header />
           <main id="main">{children}</main>

@@ -104,6 +104,14 @@ export async function createInquiry(build: (id: string) => Inquiry): Promise<Inq
   }
   throw new Error("Could not allocate a unique reference number");
 }
+/** Like createInquiry, but never throws: if storage is unavailable the inquiry is returned with notStored=true so it can still be emailed. */
+export async function createInquiryResilient(build: (id: string) => Inquiry): Promise<{ inquiry: Inquiry; stored: boolean }> {
+  try { return { inquiry: await createInquiry(build), stored: true }; }
+  catch (e) {
+    console.error("inquiry could not be stored; falling back to email only", e);
+    return { inquiry: { ...build(newReference()), notStored: true }, stored: false };
+  }
+}
 export const getInquiries = async () => (await list<Inquiry & Row>("inquiries")).sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 export const getInquiry = (id: string) => get<Inquiry & Row>("inquiries", id);
 export const saveInquiry = (i: Inquiry) => put("inquiries", i as unknown as Row);

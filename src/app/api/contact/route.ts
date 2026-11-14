@@ -18,8 +18,9 @@ export async function POST(req: Request) {
   if (spam === "silent") return NextResponse.json({ ok: true });
   if (spam) return fail(spam, 400);
   try {
-    await saveMessage({ id: crypto.randomUUID(), createdAt: new Date().toISOString(), name: d.name, email: d.email, phone: d.phone || undefined, message: d.message, read: false });
-    await sendContactEmail({ name: d.name, email: d.email, phone: d.phone || undefined, message: d.message });
+    const saved = await saveMessage({ id: crypto.randomUUID(), createdAt: new Date().toISOString(), name: d.name, email: d.email, phone: d.phone || undefined, message: d.message, read: false }).then(() => true, () => false);
+    const mail = await sendContactEmail({ name: d.name, email: d.email, phone: d.phone || undefined, message: d.message });
+    if (!saved && mail !== "sent") return fail("We couldn't send your message just now. Please try again.", 500);
     return NextResponse.json({ ok: true });
   } catch (e) {
     console.error("contact failed", e);

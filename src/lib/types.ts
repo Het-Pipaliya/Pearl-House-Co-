@@ -66,6 +66,8 @@ export interface Inquiry {
   };
   emailStatus: { business: string; customer: string };
   adminNotes?: string;
+  /** true when no database was reachable: the business email is then the only record. */
+  notStored?: boolean;
 }
 
 export interface ContactMessage {
