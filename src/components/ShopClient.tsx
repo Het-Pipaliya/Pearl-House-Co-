@@ -39,9 +39,9 @@ export default function ShopClient({ products, category = "All", initialQuery = 
       {!wishlistOnly && (
         <nav aria-label="Categories" className="mb-8">
           <ul className="flex flex-wrap justify-center gap-2">
-            <li><Link scroll={false} href="/shop" aria-current={cat === "All" ? "page" : undefined} className={chip(cat === "All")}>All ({products.length})</Link></li>
+            <li><Link scroll={false} href="/shop" aria-current={cat === "All" ? "page" : undefined} className={chip(cat === "All")}>All</Link></li>
             {CATEGORIES.filter((c) => counts[c]).map((c) => (
-              <li key={c}><Link scroll={false} href={`/shop?category=${encodeURIComponent(c)}`} aria-current={cat === c ? "page" : undefined} className={chip(cat === c)}>{c} ({counts[c]})</Link></li>
+              <li key={c}><Link scroll={false} href={`/shop?category=${encodeURIComponent(c)}`} aria-current={cat === c ? "page" : undefined} className={chip(cat === c)}>{c}</Link></li>
             ))}
           </ul>
         </nav>
@@ -52,10 +52,10 @@ export default function ShopClient({ products, category = "All", initialQuery = 
         <div><label className="label" htmlFor="s-s">Sort by</label><select id="s-s" value={sort} onChange={(e) => setSort(e.target.value as SortKey)} className="input">{Object.entries(SORTS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}</select></div>
         <label className="flex items-center gap-2 pb-3 text-sm"><input type="checkbox" checked={avail} onChange={(e) => setAvail(e.target.checked)} className="accent-[#B76E62]" />Available only</label>
       </div>
-      <p className="mb-6 text-sm text-cocoa/60" aria-live="polite">{cat !== "All" && <strong className="font-medium text-cocoa">{cat} · </strong>}{list.length} {list.length === 1 ? "piece" : "pieces"}</p>
+      {q.trim() && <p className="mb-6 text-sm text-cocoa/60" aria-live="polite">Results for “{q.trim()}”</p>}
       {list.length === 0 ? <p className="py-20 text-center text-cocoa/70">No pieces match your search. Try clearing a filter.</p> :
         <div className="grid grid-cols-2 gap-x-4 gap-y-10 lg:grid-cols-3 xl:grid-cols-4 lg:gap-x-7">{list.slice(0, shown).map((p, i) => <ProductCard key={p.id} p={p} i={i} />)}</div>}
-      {list.length > shown && <div className="mt-12 text-center"><button className="btn-outline" onClick={() => setShown((n) => n + PAGE)}>Show more ({list.length - shown} remaining)</button></div>}
+      {list.length > shown && <div className="mt-12 text-center"><button className="btn-outline" onClick={() => setShown((n) => n + PAGE)}>Show more</button></div>}
     </div>
   );
 }

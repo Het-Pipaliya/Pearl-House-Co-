@@ -174,10 +174,10 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-001",
-    "slug": "classic-diamond-studs",
-    "name": "Classic Diamond Studs",
+    "slug": "classic-round-diamond-studs",
+    "name": "Classic Round Diamond Studs",
     "category": "Earrings",
-    "description": "Classic Diamond Studs — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Classic Round Diamond Studs — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -191,7 +191,7 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/classic-diamond-studs.webp"
+      "/images/earrings/earring-01.webp"
     ],
     "available": true,
     "isNew": false,
@@ -398,24 +398,20 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-002",
-    "slug": "halo-diamond-studs",
-    "name": "Halo Diamond Studs",
+    "slug": "sculpted-gold-twist-hoops",
+    "name": "Sculpted Gold Twist Hoops",
     "category": "Earrings",
-    "description": "Halo Diamond Studs — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Sculpted Gold Twist Hoops — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/halo-diamond-studs.webp"
+      "/images/earrings/earring-02.webp"
     ],
     "available": true,
     "isNew": false,
@@ -628,22 +624,24 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-003",
-    "slug": "classic-pearl-studs",
-    "name": "Classic Pearl Studs",
+    "slug": "triple-row-diamond-huggies",
+    "name": "Triple Row Diamond Huggies",
     "category": "Earrings",
-    "description": "Classic Pearl Studs — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Triple Row Diamond Huggies — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Cultured pearl",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
     "gemstoneOptions": [
-      "Cultured Pearl"
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/classic-pearl-studs.webp"
+      "/images/earrings/earring-03.webp"
     ],
     "available": true,
     "isNew": false,
@@ -849,28 +847,24 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-004",
-    "slug": "floral-diamond-studs",
-    "name": "Floral Diamond Studs",
+    "slug": "classic-polished-gold-hoops",
+    "name": "Classic Polished Gold Hoops",
     "category": "Earrings",
-    "description": "Floral Diamond Studs — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Classic Polished Gold Hoops — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/floral-diamond-studs.webp"
+      "/images/earrings/earring-04.webp"
     ],
     "available": true,
     "isNew": false,
-    "bestSeller": false,
+    "bestSeller": true,
     "featured": false,
     "placeholder": true,
     "createdAt": "2026-01-05T18:00:00.000Z"
@@ -1078,24 +1072,20 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-005",
-    "slug": "princess-cut-studs",
-    "name": "Princess-Cut Studs",
+    "slug": "chunky-gold-huggies",
+    "name": "Chunky Gold Huggies",
     "category": "Earrings",
-    "description": "Princess-Cut Studs — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Chunky Gold Huggies — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/princess-cut-studs.webp"
+      "/images/earrings/earring-05.webp"
     ],
     "available": true,
     "isNew": false,
@@ -1309,10 +1299,10 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-006",
-    "slug": "pave-huggie-hoops",
-    "name": "Pavé Huggie Hoops",
+    "slug": "slim-diamond-huggies",
+    "name": "Slim Diamond Huggies",
     "category": "Earrings",
-    "description": "Pavé Huggie Hoops — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Slim Diamond Huggies — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -1326,7 +1316,7 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/pave-huggie-hoops.webp"
+      "/images/earrings/earring-06.webp"
     ],
     "available": true,
     "isNew": false,
@@ -1505,24 +1495,28 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-007",
-    "slug": "gold-huggie-hoops",
-    "name": "Gold Huggie Hoops",
+    "slug": "four-prong-diamond-studs",
+    "name": "Four Prong Diamond Studs",
     "category": "Earrings",
-    "description": "Gold Huggie Hoops — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Four Prong Diamond Studs — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "None",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
-    "gemstoneOptions": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
     "customization": true,
     "images": [
-      "/images/catalog/gold-huggie-hoops.webp"
+      "/images/earrings/earring-07.webp"
     ],
     "available": true,
     "isNew": false,
-    "bestSeller": true,
+    "bestSeller": false,
     "featured": false,
     "placeholder": true,
     "createdAt": "2026-01-04T22:00:00.000Z"
@@ -1665,10 +1659,10 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-008",
-    "slug": "twisted-gold-hoops",
-    "name": "Twisted Gold Hoops",
+    "slug": "basket-set-diamond-studs",
+    "name": "Basket Set Diamond Studs",
     "category": "Earrings",
-    "description": "Twisted Gold Hoops — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Basket Set Diamond Studs — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -1682,7 +1676,7 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/twisted-gold-hoops.webp"
+      "/images/earrings/earring-08.webp"
     ],
     "available": true,
     "isNew": false,
@@ -1802,7 +1796,7 @@ export const SEED_PRODUCTS: Product[] = [
     "category": "Pendants",
     "description": "Emerald-Cut Pendant — a pendant on a fine chain from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Emerald with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -1812,9 +1806,8 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Emerald",
+      "Lab-Created Emerald"
     ],
     "customization": true,
     "images": [
@@ -1829,24 +1822,20 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-009",
-    "slug": "inside-out-diamond-hoops",
-    "name": "Inside-Out Diamond Hoops",
+    "slug": "rounded-gold-hoop-earrings",
+    "name": "Rounded Gold Hoop Earrings",
     "category": "Earrings",
-    "description": "Inside-Out Diamond Hoops — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rounded Gold Hoop Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/inside-out-diamond-hoops.webp"
+      "/images/earrings/earring-09.webp"
     ],
     "available": true,
     "isNew": false,
@@ -1992,22 +1981,20 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-010",
-    "slug": "pearl-drop-earrings",
-    "name": "Pearl Drop Earrings",
+    "slug": "wide-polished-gold-huggies",
+    "name": "Wide Polished Gold Huggies",
     "category": "Earrings",
-    "description": "Pearl Drop Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Wide Polished Gold Huggies — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Cultured pearl",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
-    "gemstoneOptions": [
-      "Cultured Pearl"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/pearl-drop-earrings.webp"
+      "/images/earrings/earring-10.webp"
     ],
     "available": true,
     "isNew": false,
@@ -2151,24 +2138,22 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-011",
-    "slug": "emerald-cut-drops",
-    "name": "Emerald-Cut Drops",
+    "slug": "pearl-floral-infinity-drop-earrings",
+    "name": "Pearl Floral Infinity Drop Earrings",
     "category": "Earrings",
-    "description": "Emerald-Cut Drops — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Pearl Floral Infinity Drop Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Cultured pearl",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Cultured Pearl"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/emerald-cut-drops.webp"
+      "/images/earrings/earring-11.webp"
     ],
     "available": true,
     "isNew": false,
@@ -2279,24 +2264,23 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-012",
-    "slug": "floral-drop-earrings",
-    "name": "Floral Drop Earrings",
+    "slug": "emerald-teardrop-halo-earrings",
+    "name": "Emerald Teardrop Halo Earrings",
     "category": "Earrings",
-    "description": "Floral Drop Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Emerald Teardrop Halo Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Emerald with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Emerald",
+      "Lab-Created Emerald"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/floral-drop-earrings.webp"
+      "/images/earrings/earring-12.webp"
     ],
     "available": true,
     "isNew": false,
@@ -2411,27 +2395,26 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-013",
-    "slug": "cushion-halo-drops",
-    "name": "Cushion Halo Drops",
+    "slug": "royal-sapphire-floral-drop-earrings",
+    "name": "Royal Sapphire Floral Drop Earrings",
     "category": "Earrings",
-    "description": "Cushion Halo Drops — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Royal Sapphire Floral Drop Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/cushion-halo-drops.webp"
+      "/images/earrings/earring-13.webp"
     ],
     "available": true,
-    "isNew": false,
+    "isNew": true,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
@@ -2539,24 +2522,23 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-014",
-    "slug": "triple-diamond-drops",
-    "name": "Triple Diamond Drops",
+    "slug": "ruby-marquise-halo-drop-earrings",
+    "name": "Ruby Marquise Halo Drop Earrings",
     "category": "Earrings",
-    "description": "Triple Diamond Drops — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Ruby Marquise Halo Drop Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Ruby with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Ruby",
+      "Lab-Created Ruby"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/triple-diamond-drops.webp"
+      "/images/earrings/earring-14.webp"
     ],
     "available": true,
     "isNew": false,
@@ -2671,24 +2653,22 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-015",
-    "slug": "chandelier-diamond-earrings",
-    "name": "Chandelier Diamond Earrings",
+    "slug": "pearl-chandelier-bridal-earrings",
+    "name": "Pearl Chandelier Bridal Earrings",
     "category": "Earrings",
-    "description": "Chandelier Diamond Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Pearl Chandelier Bridal Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Cultured pearl",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Cultured Pearl"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/chandelier-diamond-earrings.webp"
+      "/images/earrings/earring-15.webp"
     ],
     "available": true,
     "isNew": false,
@@ -2799,22 +2779,23 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-016",
-    "slug": "pearl-chandelier-earrings",
-    "name": "Pearl Chandelier Earrings",
+    "slug": "sapphire-pearl-vine-earrings",
+    "name": "Sapphire Pearl Vine Earrings",
     "category": "Earrings",
-    "description": "Pearl Chandelier Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Sapphire Pearl Vine Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Cultured pearl",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
     "gemstoneOptions": [
-      "Cultured Pearl"
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/pearl-chandelier-earrings.webp"
+      "/images/earrings/earring-16.webp"
     ],
     "available": true,
     "isNew": false,
@@ -2924,10 +2905,10 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-017",
-    "slug": "art-deco-statement-earrings",
-    "name": "Art Deco Statement Earrings",
+    "slug": "diamond-teardrop-cascade-earrings",
+    "name": "Diamond Teardrop Cascade Earrings",
     "category": "Earrings",
-    "description": "Art Deco Statement Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Diamond Teardrop Cascade Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -2941,7 +2922,7 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/art-deco-statement-earrings.webp"
+      "/images/earrings/earring-17.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3012,24 +2993,23 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-018",
-    "slug": "infinity-statement-earrings",
-    "name": "Infinity Statement Earrings",
+    "slug": "emerald-cut-green-gemstone-drop-earrings",
+    "name": "Emerald-Cut Green Gemstone Drop Earrings",
     "category": "Earrings",
-    "description": "Infinity Statement Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Emerald-Cut Green Gemstone Drop Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Emerald with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Emerald",
+      "Lab-Created Emerald"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/infinity-statement-earrings.webp"
+      "/images/earrings/earring-18.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3100,27 +3080,25 @@ export const SEED_PRODUCTS: Product[] = [
   },
   {
     "id": "PH-EAR-019",
-    "slug": "blossom-statement-earrings",
-    "name": "Blossom Statement Earrings",
+    "slug": "golden-leaf-pearl-drop-earrings",
+    "name": "Golden Leaf Pearl Drop Earrings",
     "category": "Earrings",
-    "description": "Blossom Statement Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Golden Leaf Pearl Drop Earrings — a pair of earrings from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Cultured pearl",
     "price": null,
     "showPrice": false,
     "sizes": [],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Cultured Pearl"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/blossom-statement-earrings.webp"
+      "/images/earrings/earring-19.webp"
     ],
     "available": true,
-    "isNew": true,
+    "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,

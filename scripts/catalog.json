@@ -247,120 +247,6 @@
    "source": "necklaces/necklace20"
   },
   {
-   "name": "Classic Diamond Studs",
-   "category": "Earrings",
-   "image": "/images/catalog/classic-diamond-studs.webp",
-   "source": "earrings/earring01"
-  },
-  {
-   "name": "Halo Diamond Studs",
-   "category": "Earrings",
-   "image": "/images/catalog/halo-diamond-studs.webp",
-   "source": "earrings/earring02"
-  },
-  {
-   "name": "Classic Pearl Studs",
-   "category": "Earrings",
-   "image": "/images/catalog/classic-pearl-studs.webp",
-   "source": "earrings/earring03"
-  },
-  {
-   "name": "Floral Diamond Studs",
-   "category": "Earrings",
-   "image": "/images/catalog/floral-diamond-studs.webp",
-   "source": "earrings/earring04"
-  },
-  {
-   "name": "Princess-Cut Studs",
-   "category": "Earrings",
-   "image": "/images/catalog/princess-cut-studs.webp",
-   "source": "earrings/earring05"
-  },
-  {
-   "name": "Pavé Huggie Hoops",
-   "category": "Earrings",
-   "image": "/images/catalog/pave-huggie-hoops.webp",
-   "source": "earrings/earring06"
-  },
-  {
-   "name": "Gold Huggie Hoops",
-   "category": "Earrings",
-   "image": "/images/catalog/gold-huggie-hoops.webp",
-   "source": "earrings/earring07"
-  },
-  {
-   "name": "Twisted Gold Hoops",
-   "category": "Earrings",
-   "image": "/images/catalog/twisted-gold-hoops.webp",
-   "source": "earrings/earring08"
-  },
-  {
-   "name": "Inside-Out Diamond Hoops",
-   "category": "Earrings",
-   "image": "/images/catalog/inside-out-diamond-hoops.webp",
-   "source": "earrings/earring09"
-  },
-  {
-   "name": "Pearl Drop Earrings",
-   "category": "Earrings",
-   "image": "/images/catalog/pearl-drop-earrings.webp",
-   "source": "earrings/earring10"
-  },
-  {
-   "name": "Emerald-Cut Drops",
-   "category": "Earrings",
-   "image": "/images/catalog/emerald-cut-drops.webp",
-   "source": "earrings/earring12"
-  },
-  {
-   "name": "Floral Drop Earrings",
-   "category": "Earrings",
-   "image": "/images/catalog/floral-drop-earrings.webp",
-   "source": "earrings/earring13"
-  },
-  {
-   "name": "Cushion Halo Drops",
-   "category": "Earrings",
-   "image": "/images/catalog/cushion-halo-drops.webp",
-   "source": "earrings/earring14"
-  },
-  {
-   "name": "Triple Diamond Drops",
-   "category": "Earrings",
-   "image": "/images/catalog/triple-diamond-drops.webp",
-   "source": "earrings/earring15"
-  },
-  {
-   "name": "Chandelier Diamond Earrings",
-   "category": "Earrings",
-   "image": "/images/catalog/chandelier-diamond-earrings.webp",
-   "source": "earrings/earring16"
-  },
-  {
-   "name": "Pearl Chandelier Earrings",
-   "category": "Earrings",
-   "image": "/images/catalog/pearl-chandelier-earrings.webp",
-   "source": "earrings/earring17"
-  },
-  {
-   "name": "Art Deco Statement Earrings",
-   "category": "Earrings",
-   "image": "/images/catalog/art-deco-statement-earrings.webp",
-   "source": "earrings/earring18"
-  },
-  {
-   "name": "Infinity Statement Earrings",
-   "category": "Earrings",
-   "image": "/images/catalog/infinity-statement-earrings.webp",
-   "source": "earrings/earring19"
-  },
-  {
-   "name": "Blossom Statement Earrings",
-   "category": "Earrings",
-   "image": "/images/catalog/blossom-statement-earrings.webp",
-   "source": "earrings/earring20"
-  },
-  {
    "name": "Two-Tone Braided Band",
    "category": "Wedding Bands",
    "image": "/images/bands/band-01.webp",
@@ -839,6 +725,120 @@
    "category": "Bracelets",
    "image": "/images/bracelets/bracelet-40.webp",
    "source": "bracelets/bracelet-40"
+  },
+  {
+   "name": "Classic Round Diamond Studs",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-01.webp",
+   "source": "earrings/earring-01"
+  },
+  {
+   "name": "Sculpted Gold Twist Hoops",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-02.webp",
+   "source": "earrings/earring-02"
+  },
+  {
+   "name": "Triple Row Diamond Huggies",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-03.webp",
+   "source": "earrings/earring-03"
+  },
+  {
+   "name": "Classic Polished Gold Hoops",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-04.webp",
+   "source": "earrings/earring-04"
+  },
+  {
+   "name": "Chunky Gold Huggies",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-05.webp",
+   "source": "earrings/earring-05"
+  },
+  {
+   "name": "Slim Diamond Huggies",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-06.webp",
+   "source": "earrings/earring-06"
+  },
+  {
+   "name": "Four Prong Diamond Studs",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-07.webp",
+   "source": "earrings/earring-07"
+  },
+  {
+   "name": "Basket Set Diamond Studs",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-08.webp",
+   "source": "earrings/earring-08"
+  },
+  {
+   "name": "Rounded Gold Hoop Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-09.webp",
+   "source": "earrings/earring-09"
+  },
+  {
+   "name": "Wide Polished Gold Huggies",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-10.webp",
+   "source": "earrings/earring-10"
+  },
+  {
+   "name": "Pearl Floral Infinity Drop Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-11.webp",
+   "source": "earrings/earring-11"
+  },
+  {
+   "name": "Emerald Teardrop Halo Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-12.webp",
+   "source": "earrings/earring-12"
+  },
+  {
+   "name": "Royal Sapphire Floral Drop Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-13.webp",
+   "source": "earrings/earring-13"
+  },
+  {
+   "name": "Ruby Marquise Halo Drop Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-14.webp",
+   "source": "earrings/earring-14"
+  },
+  {
+   "name": "Pearl Chandelier Bridal Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-15.webp",
+   "source": "earrings/earring-15"
+  },
+  {
+   "name": "Sapphire Pearl Vine Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-16.webp",
+   "source": "earrings/earring-16"
+  },
+  {
+   "name": "Diamond Teardrop Cascade Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-17.webp",
+   "source": "earrings/earring-17"
+  },
+  {
+   "name": "Emerald-Cut Green Gemstone Drop Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-18.webp",
+   "source": "earrings/earring-18"
+  },
+  {
+   "name": "Golden Leaf Pearl Drop Earrings",
+   "category": "Earrings",
+   "image": "/images/earrings/earring-19.webp",
+   "source": "earrings/earring-19"
   }
  ],
  "tiles": {
