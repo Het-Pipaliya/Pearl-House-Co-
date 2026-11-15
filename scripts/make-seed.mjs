@@ -5,8 +5,8 @@ const { products: items } = JSON.parse(readFileSync("scripts/catalog.json", "utf
 const slugify = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 const CODE = { "Engagement Rings": "ENG", Rings: "RNG", "Wedding Bands": "WED", Necklaces: "NCK", Pendants: "PND", Earrings: "EAR", Bracelets: "BRC" };
-const NO_STONE = new Set(["Brushed Gold Band","Classic Gold Band","Satin Gold Band","Hammered Gold Band","Two-Tone Brushed Band","Brushed Platinum Band","Tri-Colour Stack","Ribbed Gold Collar","Layered Chain Necklace","Gold Huggie Hoops","Paperclip Chain Bracelet","Rope Chain Bracelet"]);
-const COLOURED = [["Sapphire", "Blue Sapphire"], ["Ruby", "Ruby"], ["Emerald", "Emerald"]];
+const NO_STONE = new Set(["Brushed Gold Band","Classic Gold Band","Satin Gold Band","Hammered Gold Band","Two-Tone Brushed Band","Brushed Platinum Band","Two-Tone Braided Band","Black Brushed Mens Band","Hammered Yellow Gold Band","Hammered Gold Wedding Band","Hammered Yellow Gold Wedding Band","Black Brushed Silver Stripe Band","Brushed Platinum Classic Band","Golden Chevron Engraved Band","Black Silver Stripe Band","Rose Gold Braided Heritage Band","Classic Brushed Band Worn","Tri-Colour Stack","Ribbed Gold Collar","Layered Chain Necklace","Gold Huggie Hoops","Paperclip Chain Bracelet","Rope Chain Bracelet"]);
+const COLOURED = [["Sapphire", "Blue Sapphire"], ["Ruby", "Ruby"], ["Emerald", "Emerald"], ["Pink Gemstone", "Pink Sapphire"]];
 const stone = (n) => {
   if (NO_STONE.has(n)) return { gemstone: "None", opts: [] };
   if (/Multi-Gemstone/.test(n)) return { gemstone: "Mixed coloured gemstones (configurable)", opts: ["Mixed Gemstones"] };
@@ -20,9 +20,9 @@ const RING_SIZES = ["4","5","6","7","8","9","10"];
 const sizes = (cat, n) => cat === "Earrings" ? [] : cat === "Bracelets" ? (/Bangle|Cuff/.test(n) ? ["Small","Medium","Large"] : ['6.5"','7"','7.5"']) : cat === "Necklaces" || cat === "Pendants" ? (/Collar/.test(n) ? ["Small","Medium","Large"] : ['16"','18"','20"']) : RING_SIZES;
 const blurb = { "Engagement Rings": "an engagement ring design", Rings: "a statement ring", "Wedding Bands": "a wedding band design", Necklaces: "a necklace", Pendants: "a pendant on a fine chain", Earrings: "a pair of earrings", Bracelets: "a bracelet" };
 
-const FEATURED = new Set(["Six-Prong Solitaire","Emerald-Cut Solitaire","Pearl Blossom Pendant","Chandelier Diamond Earrings","Classic Pearl Bracelet","Diamond Lariat Necklace","Gold Eternity Band","Pear Diamond Pendant"]);
-const BEST = new Set(["Cushion Halo Ring","Classic Gold Band","Round Solitaire Pendant","Classic Diamond Studs","Classic Diamond Tennis Bracelet","Gold Huggie Hoops","Layered Chain Necklace","Pavé Diamond Bangle"]);
-const NEW_ = new Set(["Rosé Pear Halo Ring","Sapphire Halo Ring","Ribbed Gold Collar","Ruby Halo Pendant","Blossom Statement Earrings","Heart Charm Bracelet","Ruby Tennis Bracelet","Wave Pavé Band"]);
+const FEATURED = new Set(["Six-Prong Solitaire","Emerald-Cut Solitaire","Pearl Blossom Pendant","Chandelier Diamond Earrings","Classic Pearl Bracelet","Diamond Lariat Necklace","Platinum Diamond Eternity Band","Pear Diamond Pendant"]);
+const BEST = new Set(["Cushion Halo Ring","Hammered Yellow Gold Band","Round Solitaire Pendant","Classic Diamond Studs","Classic Diamond Tennis Bracelet","Gold Huggie Hoops","Layered Chain Necklace","Pavé Diamond Bangle"]);
+const NEW_ = new Set(["Rosé Pear Halo Ring","Sapphire Halo Ring","Ribbed Gold Collar","Ruby Halo Pendant","Blossom Statement Earrings","Heart Charm Bracelet","Ruby Tennis Bracelet","Royal Blue Sapphire Pavé Band","Emerald Bezel Eternity Band"]);
 
 // Round-robin across categories so the homepage "featured / new / best seller" rows mix categories.
 const order = ["Engagement Rings","Wedding Bands","Rings","Necklaces","Pendants","Earrings","Bracelets"];

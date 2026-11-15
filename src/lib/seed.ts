@@ -38,16 +38,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-05T17:00:00.000Z"
+    "createdAt": "2026-01-05T23:00:00.000Z"
   },
   {
     "id": "PH-WED-001",
-    "slug": "gold-oval-eternity-band",
-    "name": "Gold Oval Eternity Band",
+    "slug": "two-tone-braided-band",
+    "name": "Two-Tone Braided Band",
     "category": "Wedding Bands",
-    "description": "Gold Oval Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Two-Tone Braided Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -60,21 +60,17 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/gold-oval-eternity-band.webp"
+      "/images/bands/band-01.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T16:00:00.000Z"
+    "createdAt": "2026-01-05T22:00:00.000Z"
   },
   {
     "id": "PH-RNG-001",
@@ -110,7 +106,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T15:00:00.000Z"
+    "createdAt": "2026-01-05T21:00:00.000Z"
   },
   {
     "id": "PH-NCK-001",
@@ -142,7 +138,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T14:00:00.000Z"
+    "createdAt": "2026-01-05T20:00:00.000Z"
   },
   {
     "id": "PH-PND-001",
@@ -174,7 +170,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T13:00:00.000Z"
+    "createdAt": "2026-01-05T19:00:00.000Z"
   },
   {
     "id": "PH-EAR-001",
@@ -202,7 +198,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T12:00:00.000Z"
+    "createdAt": "2026-01-05T18:00:00.000Z"
   },
   {
     "id": "PH-BRC-001",
@@ -234,7 +230,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T11:00:00.000Z"
+    "createdAt": "2026-01-05T17:00:00.000Z"
   },
   {
     "id": "PH-ENG-002",
@@ -270,16 +266,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T10:00:00.000Z"
+    "createdAt": "2026-01-05T16:00:00.000Z"
   },
   {
     "id": "PH-WED-002",
-    "slug": "marquise-eternity-band",
-    "name": "Marquise Eternity Band",
+    "slug": "black-brushed-mens-band",
+    "name": "Black Brushed Mens Band",
     "category": "Wedding Bands",
-    "description": "Marquise Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Black Brushed Mens Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -292,21 +288,17 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/marquise-eternity-band.webp"
+      "/images/bands/band-02.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T09:00:00.000Z"
+    "createdAt": "2026-01-05T15:00:00.000Z"
   },
   {
     "id": "PH-RNG-002",
@@ -342,7 +334,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T08:00:00.000Z"
+    "createdAt": "2026-01-05T14:00:00.000Z"
   },
   {
     "id": "PH-NCK-002",
@@ -370,7 +362,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T07:00:00.000Z"
+    "createdAt": "2026-01-05T13:00:00.000Z"
   },
   {
     "id": "PH-PND-002",
@@ -402,7 +394,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-05T06:00:00.000Z"
+    "createdAt": "2026-01-05T12:00:00.000Z"
   },
   {
     "id": "PH-EAR-002",
@@ -430,7 +422,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T05:00:00.000Z"
+    "createdAt": "2026-01-05T11:00:00.000Z"
   },
   {
     "id": "PH-BRC-002",
@@ -462,7 +454,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T04:00:00.000Z"
+    "createdAt": "2026-01-05T10:00:00.000Z"
   },
   {
     "id": "PH-ENG-003",
@@ -498,16 +490,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T03:00:00.000Z"
+    "createdAt": "2026-01-05T09:00:00.000Z"
   },
   {
     "id": "PH-WED-003",
-    "slug": "brushed-gold-band",
-    "name": "Brushed Gold Band",
+    "slug": "sapphire-accent-mens-band",
+    "name": "Sapphire Accent Mens Band",
     "category": "Wedding Bands",
-    "description": "Brushed Gold Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Sapphire Accent Mens Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "None",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -520,17 +512,20 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [],
+    "gemstoneOptions": [
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
+    ],
     "customization": true,
     "images": [
-      "/images/catalog/brushed-gold-band.webp"
+      "/images/bands/band-03.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T02:00:00.000Z"
+    "createdAt": "2026-01-05T08:00:00.000Z"
   },
   {
     "id": "PH-RNG-003",
@@ -566,7 +561,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T01:00:00.000Z"
+    "createdAt": "2026-01-05T07:00:00.000Z"
   },
   {
     "id": "PH-NCK-003",
@@ -598,7 +593,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T00:00:00.000Z"
+    "createdAt": "2026-01-05T06:00:00.000Z"
   },
   {
     "id": "PH-PND-003",
@@ -629,7 +624,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T23:00:00.000Z"
+    "createdAt": "2026-01-05T05:00:00.000Z"
   },
   {
     "id": "PH-EAR-003",
@@ -655,7 +650,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T22:00:00.000Z"
+    "createdAt": "2026-01-05T04:00:00.000Z"
   },
   {
     "id": "PH-BRC-003",
@@ -687,7 +682,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T21:00:00.000Z"
+    "createdAt": "2026-01-05T03:00:00.000Z"
   },
   {
     "id": "PH-ENG-004",
@@ -723,16 +718,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T20:00:00.000Z"
+    "createdAt": "2026-01-05T02:00:00.000Z"
   },
   {
     "id": "PH-WED-004",
-    "slug": "baguette-channel-band",
-    "name": "Baguette Channel Band",
+    "slug": "hammered-yellow-gold-band",
+    "name": "Hammered Yellow Gold Band",
     "category": "Wedding Bands",
-    "description": "Baguette Channel Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Hammered Yellow Gold Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -745,21 +740,17 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/baguette-channel-band.webp"
+      "/images/bands/band-04.webp"
     ],
     "available": true,
     "isNew": false,
-    "bestSeller": false,
+    "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T19:00:00.000Z"
+    "createdAt": "2026-01-05T01:00:00.000Z"
   },
   {
     "id": "PH-RNG-004",
@@ -795,7 +786,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T18:00:00.000Z"
+    "createdAt": "2026-01-05T00:00:00.000Z"
   },
   {
     "id": "PH-NCK-004",
@@ -823,7 +814,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T17:00:00.000Z"
+    "createdAt": "2026-01-04T23:00:00.000Z"
   },
   {
     "id": "PH-PND-004",
@@ -854,7 +845,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T16:00:00.000Z"
+    "createdAt": "2026-01-04T22:00:00.000Z"
   },
   {
     "id": "PH-EAR-004",
@@ -882,7 +873,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T15:00:00.000Z"
+    "createdAt": "2026-01-04T21:00:00.000Z"
   },
   {
     "id": "PH-BRC-004",
@@ -913,7 +904,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T14:00:00.000Z"
+    "createdAt": "2026-01-04T20:00:00.000Z"
   },
   {
     "id": "PH-ENG-005",
@@ -949,16 +940,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-04T13:00:00.000Z"
+    "createdAt": "2026-01-04T19:00:00.000Z"
   },
   {
     "id": "PH-WED-005",
-    "slug": "milgrain-filigree-band",
-    "name": "Milgrain Filigree Band",
+    "slug": "pink-gemstone-eternity-band",
+    "name": "Pink Gemstone Eternity Band",
     "category": "Wedding Bands",
-    "description": "Milgrain Filigree Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Pink Gemstone Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Pink Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -972,20 +963,19 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Pink Sapphire",
+      "Lab-Created Pink Sapphire"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/milgrain-filigree-band.webp"
+      "/images/bands/band-05.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T12:00:00.000Z"
+    "createdAt": "2026-01-04T18:00:00.000Z"
   },
   {
     "id": "PH-RNG-005",
@@ -1021,7 +1011,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T11:00:00.000Z"
+    "createdAt": "2026-01-04T17:00:00.000Z"
   },
   {
     "id": "PH-NCK-005",
@@ -1053,7 +1043,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T10:00:00.000Z"
+    "createdAt": "2026-01-04T16:00:00.000Z"
   },
   {
     "id": "PH-PND-005",
@@ -1084,7 +1074,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T09:00:00.000Z"
+    "createdAt": "2026-01-04T15:00:00.000Z"
   },
   {
     "id": "PH-EAR-005",
@@ -1112,7 +1102,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T08:00:00.000Z"
+    "createdAt": "2026-01-04T14:00:00.000Z"
   },
   {
     "id": "PH-BRC-005",
@@ -1143,7 +1133,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T07:00:00.000Z"
+    "createdAt": "2026-01-04T13:00:00.000Z"
   },
   {
     "id": "PH-ENG-006",
@@ -1179,16 +1169,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T06:00:00.000Z"
+    "createdAt": "2026-01-04T12:00:00.000Z"
   },
   {
     "id": "PH-WED-006",
-    "slug": "classic-gold-band",
-    "name": "Classic Gold Band",
+    "slug": "platinum-diamond-eternity-band",
+    "name": "Platinum Diamond Eternity Band",
     "category": "Wedding Bands",
-    "description": "Classic Gold Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Platinum Diamond Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "None",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -1201,17 +1191,21 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
     "customization": true,
     "images": [
-      "/images/catalog/classic-gold-band.webp"
+      "/images/bands/band-06.webp"
     ],
     "available": true,
     "isNew": false,
-    "bestSeller": true,
-    "featured": false,
+    "bestSeller": false,
+    "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-04T05:00:00.000Z"
+    "createdAt": "2026-01-04T11:00:00.000Z"
   },
   {
     "id": "PH-RNG-006",
@@ -1246,7 +1240,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T04:00:00.000Z"
+    "createdAt": "2026-01-04T10:00:00.000Z"
   },
   {
     "id": "PH-NCK-006",
@@ -1278,7 +1272,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-04T03:00:00.000Z"
+    "createdAt": "2026-01-04T09:00:00.000Z"
   },
   {
     "id": "PH-PND-006",
@@ -1310,7 +1304,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T02:00:00.000Z"
+    "createdAt": "2026-01-04T08:00:00.000Z"
   },
   {
     "id": "PH-EAR-006",
@@ -1338,7 +1332,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T01:00:00.000Z"
+    "createdAt": "2026-01-04T07:00:00.000Z"
   },
   {
     "id": "PH-BRC-006",
@@ -1369,7 +1363,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T00:00:00.000Z"
+    "createdAt": "2026-01-04T06:00:00.000Z"
   },
   {
     "id": "PH-ENG-007",
@@ -1405,14 +1399,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T23:00:00.000Z"
+    "createdAt": "2026-01-04T05:00:00.000Z"
   },
   {
     "id": "PH-WED-007",
-    "slug": "oval-stone-eternity-ring",
-    "name": "Oval Stone Eternity Ring",
+    "slug": "yellow-gold-diamond-half-eternity",
+    "name": "Yellow Gold Diamond Half Eternity",
     "category": "Wedding Bands",
-    "description": "Oval Stone Eternity Ring — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Yellow Gold Diamond Half Eternity — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -1434,14 +1428,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/oval-stone-eternity-ring.webp"
+      "/images/bands/band-07.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T22:00:00.000Z"
+    "createdAt": "2026-01-04T04:00:00.000Z"
   },
   {
     "id": "PH-NCK-007",
@@ -1473,7 +1467,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T21:00:00.000Z"
+    "createdAt": "2026-01-04T03:00:00.000Z"
   },
   {
     "id": "PH-PND-007",
@@ -1505,7 +1499,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T20:00:00.000Z"
+    "createdAt": "2026-01-04T02:00:00.000Z"
   },
   {
     "id": "PH-EAR-007",
@@ -1529,7 +1523,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T19:00:00.000Z"
+    "createdAt": "2026-01-04T01:00:00.000Z"
   },
   {
     "id": "PH-BRC-007",
@@ -1559,7 +1553,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T18:00:00.000Z"
+    "createdAt": "2026-01-04T00:00:00.000Z"
   },
   {
     "id": "PH-ENG-008",
@@ -1595,14 +1589,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T17:00:00.000Z"
+    "createdAt": "2026-01-03T23:00:00.000Z"
   },
   {
     "id": "PH-WED-008",
-    "slug": "round-eternity-band",
-    "name": "Round Eternity Band",
+    "slug": "white-gold-infinity-band",
+    "name": "White Gold Infinity Band",
     "category": "Wedding Bands",
-    "description": "Round Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "White Gold Infinity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -1624,14 +1618,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/round-eternity-band.webp"
+      "/images/bands/band-08.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T16:00:00.000Z"
+    "createdAt": "2026-01-03T22:00:00.000Z"
   },
   {
     "id": "PH-PND-008",
@@ -1663,7 +1657,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T15:00:00.000Z"
+    "createdAt": "2026-01-03T21:00:00.000Z"
   },
   {
     "id": "PH-EAR-008",
@@ -1691,7 +1685,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T14:00:00.000Z"
+    "createdAt": "2026-01-03T20:00:00.000Z"
   },
   {
     "id": "PH-BRC-008",
@@ -1721,7 +1715,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-03T13:00:00.000Z"
+    "createdAt": "2026-01-03T19:00:00.000Z"
   },
   {
     "id": "PH-ENG-009",
@@ -1757,14 +1751,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T12:00:00.000Z"
+    "createdAt": "2026-01-03T18:00:00.000Z"
   },
   {
     "id": "PH-WED-009",
-    "slug": "baguette-pave-band",
-    "name": "Baguette Pavé Band",
+    "slug": "rose-gold-baguette-band",
+    "name": "Rose Gold Baguette Band",
     "category": "Wedding Bands",
-    "description": "Baguette Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rose Gold Baguette Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -1786,14 +1780,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/baguette-pave-band.webp"
+      "/images/bands/band-09.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T11:00:00.000Z"
+    "createdAt": "2026-01-03T17:00:00.000Z"
   },
   {
     "id": "PH-PND-009",
@@ -1825,7 +1819,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T10:00:00.000Z"
+    "createdAt": "2026-01-03T16:00:00.000Z"
   },
   {
     "id": "PH-EAR-009",
@@ -1853,7 +1847,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T09:00:00.000Z"
+    "createdAt": "2026-01-03T15:00:00.000Z"
   },
   {
     "id": "PH-BRC-009",
@@ -1883,7 +1877,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T08:00:00.000Z"
+    "createdAt": "2026-01-03T14:00:00.000Z"
   },
   {
     "id": "PH-ENG-010",
@@ -1919,16 +1913,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T07:00:00.000Z"
+    "createdAt": "2026-01-03T13:00:00.000Z"
   },
   {
     "id": "PH-WED-010",
-    "slug": "marble-eternity-band",
-    "name": "Marble Eternity Band",
+    "slug": "blue-sapphire-diamond-eternity",
+    "name": "Blue Sapphire Diamond Eternity",
     "category": "Wedding Bands",
-    "description": "Marble Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Blue Sapphire Diamond Eternity — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -1942,20 +1936,19 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/marble-eternity-band.webp"
+      "/images/bands/band-10.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T06:00:00.000Z"
+    "createdAt": "2026-01-03T12:00:00.000Z"
   },
   {
     "id": "PH-PND-010",
@@ -1987,7 +1980,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T05:00:00.000Z"
+    "createdAt": "2026-01-03T11:00:00.000Z"
   },
   {
     "id": "PH-EAR-010",
@@ -2013,7 +2006,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T04:00:00.000Z"
+    "createdAt": "2026-01-03T10:00:00.000Z"
   },
   {
     "id": "PH-BRC-010",
@@ -2045,7 +2038,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T03:00:00.000Z"
+    "createdAt": "2026-01-03T09:00:00.000Z"
   },
   {
     "id": "PH-ENG-011",
@@ -2081,14 +2074,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T02:00:00.000Z"
+    "createdAt": "2026-01-03T08:00:00.000Z"
   },
   {
     "id": "PH-WED-011",
-    "slug": "twisted-stack-band",
-    "name": "Twisted Stack Band",
+    "slug": "marquise-diamond-vine-band",
+    "name": "Marquise Diamond Vine Band",
     "category": "Wedding Bands",
-    "description": "Twisted Stack Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Marquise Diamond Vine Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -2110,14 +2103,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/twisted-stack-band.webp"
+      "/images/bands/band-11.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T01:00:00.000Z"
+    "createdAt": "2026-01-03T07:00:00.000Z"
   },
   {
     "id": "PH-PND-011",
@@ -2147,7 +2140,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-03T00:00:00.000Z"
+    "createdAt": "2026-01-03T06:00:00.000Z"
   },
   {
     "id": "PH-EAR-011",
@@ -2175,7 +2168,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T23:00:00.000Z"
+    "createdAt": "2026-01-03T05:00:00.000Z"
   },
   {
     "id": "PH-BRC-011",
@@ -2207,7 +2200,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T22:00:00.000Z"
+    "createdAt": "2026-01-03T04:00:00.000Z"
   },
   {
     "id": "PH-ENG-012",
@@ -2243,16 +2236,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T21:00:00.000Z"
+    "createdAt": "2026-01-03T03:00:00.000Z"
   },
   {
     "id": "PH-WED-012",
-    "slug": "brushed-platinum-band",
-    "name": "Brushed Platinum Band",
+    "slug": "two-tone-rope-diamond-band",
+    "name": "Two Tone Rope Diamond Band",
     "category": "Wedding Bands",
-    "description": "Brushed Platinum Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Two Tone Rope Diamond Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "None",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -2265,17 +2258,21 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
     "customization": true,
     "images": [
-      "/images/catalog/brushed-platinum-band.webp"
+      "/images/bands/band-12.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T20:00:00.000Z"
+    "createdAt": "2026-01-03T02:00:00.000Z"
   },
   {
     "id": "PH-EAR-012",
@@ -2303,7 +2300,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T19:00:00.000Z"
+    "createdAt": "2026-01-03T01:00:00.000Z"
   },
   {
     "id": "PH-BRC-012",
@@ -2335,7 +2332,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T18:00:00.000Z"
+    "createdAt": "2026-01-03T00:00:00.000Z"
   },
   {
     "id": "PH-ENG-013",
@@ -2371,14 +2368,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T17:00:00.000Z"
+    "createdAt": "2026-01-02T23:00:00.000Z"
   },
   {
     "id": "PH-WED-013",
-    "slug": "curved-contour-band",
-    "name": "Curved Contour Band",
+    "slug": "brushed-two-tone-diamond-band",
+    "name": "Brushed Two Tone Diamond Band",
     "category": "Wedding Bands",
-    "description": "Curved Contour Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Brushed Two Tone Diamond Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -2400,14 +2397,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/curved-contour-band.webp"
+      "/images/bands/band-13.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T16:00:00.000Z"
+    "createdAt": "2026-01-02T22:00:00.000Z"
   },
   {
     "id": "PH-EAR-013",
@@ -2435,7 +2432,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T15:00:00.000Z"
+    "createdAt": "2026-01-02T21:00:00.000Z"
   },
   {
     "id": "PH-BRC-013",
@@ -2467,7 +2464,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T14:00:00.000Z"
+    "createdAt": "2026-01-02T20:00:00.000Z"
   },
   {
     "id": "PH-ENG-014",
@@ -2503,14 +2500,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T13:00:00.000Z"
+    "createdAt": "2026-01-02T19:00:00.000Z"
   },
   {
     "id": "PH-WED-014",
-    "slug": "chevron-pave-band",
-    "name": "Chevron Pavé Band",
+    "slug": "emerald-cut-diamond-pave-band",
+    "name": "Emerald-Cut Diamond Pavé Band",
     "category": "Wedding Bands",
-    "description": "Chevron Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Emerald-Cut Diamond Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -2532,14 +2529,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/chevron-pave-band.webp"
+      "/images/bands/band-14.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T12:00:00.000Z"
+    "createdAt": "2026-01-02T18:00:00.000Z"
   },
   {
     "id": "PH-EAR-014",
@@ -2567,7 +2564,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T11:00:00.000Z"
+    "createdAt": "2026-01-02T17:00:00.000Z"
   },
   {
     "id": "PH-BRC-014",
@@ -2599,7 +2596,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T10:00:00.000Z"
+    "createdAt": "2026-01-02T16:00:00.000Z"
   },
   {
     "id": "PH-ENG-015",
@@ -2635,14 +2632,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T09:00:00.000Z"
+    "createdAt": "2026-01-02T15:00:00.000Z"
   },
   {
     "id": "PH-WED-015",
-    "slug": "slim-pave-band",
-    "name": "Slim Pavé Band",
+    "slug": "platinum-infinity-diamond-band",
+    "name": "Platinum Infinity Diamond Band",
     "category": "Wedding Bands",
-    "description": "Slim Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Platinum Infinity Diamond Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -2664,14 +2661,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/slim-pave-band.webp"
+      "/images/bands/band-15.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T08:00:00.000Z"
+    "createdAt": "2026-01-02T14:00:00.000Z"
   },
   {
     "id": "PH-EAR-015",
@@ -2699,7 +2696,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-02T07:00:00.000Z"
+    "createdAt": "2026-01-02T13:00:00.000Z"
   },
   {
     "id": "PH-BRC-015",
@@ -2727,7 +2724,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T06:00:00.000Z"
+    "createdAt": "2026-01-02T12:00:00.000Z"
   },
   {
     "id": "PH-ENG-016",
@@ -2763,14 +2760,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T05:00:00.000Z"
+    "createdAt": "2026-01-02T11:00:00.000Z"
   },
   {
     "id": "PH-WED-016",
-    "slug": "gold-eternity-band",
-    "name": "Gold Eternity Band",
+    "slug": "yellow-gold-infinity-band",
+    "name": "Yellow Gold Infinity Band",
     "category": "Wedding Bands",
-    "description": "Gold Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Yellow Gold Infinity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -2792,14 +2789,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/gold-eternity-band.webp"
+      "/images/bands/band-16.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
-    "featured": true,
+    "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T04:00:00.000Z"
+    "createdAt": "2026-01-02T10:00:00.000Z"
   },
   {
     "id": "PH-EAR-016",
@@ -2825,7 +2822,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T03:00:00.000Z"
+    "createdAt": "2026-01-02T09:00:00.000Z"
   },
   {
     "id": "PH-BRC-016",
@@ -2853,7 +2850,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T02:00:00.000Z"
+    "createdAt": "2026-01-02T08:00:00.000Z"
   },
   {
     "id": "PH-ENG-017",
@@ -2889,16 +2886,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T01:00:00.000Z"
+    "createdAt": "2026-01-02T07:00:00.000Z"
   },
   {
     "id": "PH-WED-017",
-    "slug": "twist-pave-band",
-    "name": "Twist Pavé Band",
+    "slug": "rose-gold-pink-gemstone-band",
+    "name": "Rose Gold Pink Gemstone Band",
     "category": "Wedding Bands",
-    "description": "Twist Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rose Gold Pink Gemstone Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Pink Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -2912,20 +2909,19 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Pink Sapphire",
+      "Lab-Created Pink Sapphire"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/twist-pave-band.webp"
+      "/images/bands/band-17.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T00:00:00.000Z"
+    "createdAt": "2026-01-02T06:00:00.000Z"
   },
   {
     "id": "PH-EAR-017",
@@ -2953,7 +2949,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T23:00:00.000Z"
+    "createdAt": "2026-01-02T05:00:00.000Z"
   },
   {
     "id": "PH-BRC-017",
@@ -2981,16 +2977,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T22:00:00.000Z"
+    "createdAt": "2026-01-02T04:00:00.000Z"
   },
   {
     "id": "PH-WED-018",
-    "slug": "platinum-eternity-band",
-    "name": "Platinum Eternity Band",
+    "slug": "black-brushed-silver-stripe-band",
+    "name": "Black Brushed Silver Stripe Band",
     "category": "Wedding Bands",
-    "description": "Platinum Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Black Brushed Silver Stripe Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -3003,21 +2999,17 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/platinum-eternity-band.webp"
+      "/images/bands/band-18.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T21:00:00.000Z"
+    "createdAt": "2026-01-02T03:00:00.000Z"
   },
   {
     "id": "PH-EAR-018",
@@ -3045,7 +3037,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T20:00:00.000Z"
+    "createdAt": "2026-01-02T02:00:00.000Z"
   },
   {
     "id": "PH-BRC-018",
@@ -3077,16 +3069,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T19:00:00.000Z"
+    "createdAt": "2026-01-02T01:00:00.000Z"
   },
   {
     "id": "PH-WED-019",
-    "slug": "baguette-half-eternity-band",
-    "name": "Baguette Half-Eternity Band",
+    "slug": "hammered-gold-wedding-band",
+    "name": "Hammered Gold Wedding Band",
     "category": "Wedding Bands",
-    "description": "Baguette Half-Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Hammered Gold Wedding Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -3099,21 +3091,17 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/baguette-half-eternity-band.webp"
+      "/images/bands/band-19.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T18:00:00.000Z"
+    "createdAt": "2026-01-02T00:00:00.000Z"
   },
   {
     "id": "PH-EAR-019",
@@ -3141,7 +3129,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T17:00:00.000Z"
+    "createdAt": "2026-01-01T23:00:00.000Z"
   },
   {
     "id": "PH-BRC-019",
@@ -3173,16 +3161,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T16:00:00.000Z"
+    "createdAt": "2026-01-01T22:00:00.000Z"
   },
   {
     "id": "PH-WED-020",
-    "slug": "satin-gold-band",
-    "name": "Satin Gold Band",
+    "slug": "sapphire-accent-brushed-band",
+    "name": "Sapphire Accent Brushed Band",
     "category": "Wedding Bands",
-    "description": "Satin Gold Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Sapphire Accent Brushed Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "None",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -3195,10 +3183,225 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [],
+    "gemstoneOptions": [
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
+    ],
     "customization": true,
     "images": [
-      "/images/catalog/satin-gold-band.webp"
+      "/images/bands/band-20.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T21:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-021",
+    "slug": "alternating-sapphire-and-diamond-band",
+    "name": "Alternating Sapphire and Diamond Band",
+    "category": "Wedding Bands",
+    "description": "Alternating Sapphire and Diamond Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bands/band-21.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T20:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-022",
+    "slug": "classic-platinum-diamond-eternity-band",
+    "name": "Classic Platinum Diamond Eternity Band",
+    "category": "Wedding Bands",
+    "description": "Classic Platinum Diamond Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bands/band-22.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T19:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-023",
+    "slug": "royal-blue-sapphire-pave-band",
+    "name": "Royal Blue Sapphire Pavé Band",
+    "category": "Wedding Bands",
+    "description": "Royal Blue Sapphire Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bands/band-23.webp"
+    ],
+    "available": true,
+    "isNew": true,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T18:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-024",
+    "slug": "princess-sapphire-diamond-border-band",
+    "name": "Princess Sapphire Diamond Border Band",
+    "category": "Wedding Bands",
+    "description": "Princess Sapphire Diamond Border Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bands/band-24.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T17:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-025",
+    "slug": "brushed-platinum-princess-diamond-band",
+    "name": "Brushed Platinum Princess Diamond Band",
+    "category": "Wedding Bands",
+    "description": "Brushed Platinum Princess Diamond Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bands/band-25.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T16:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-026",
+    "slug": "sapphire-diamond-infinity-eternity-band",
+    "name": "Sapphire Diamond Infinity Eternity Band",
+    "category": "Wedding Bands",
+    "description": "Sapphire Diamond Infinity Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bands/band-26.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3208,11 +3411,11 @@ export const SEED_PRODUCTS: Product[] = [
     "createdAt": "2026-01-01T15:00:00.000Z"
   },
   {
-    "id": "PH-WED-021",
-    "slug": "wave-pave-band",
-    "name": "Wave Pavé Band",
+    "id": "PH-WED-027",
+    "slug": "brushed-diamond-station-wedding-band",
+    "name": "Brushed Diamond Station Wedding Band",
     "category": "Wedding Bands",
-    "description": "Wave Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Brushed Diamond Station Wedding Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -3234,23 +3437,23 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/wave-pave-band.webp"
+      "/images/bands/band-27.webp"
     ],
     "available": true,
-    "isNew": true,
+    "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
     "createdAt": "2026-01-01T14:00:00.000Z"
   },
   {
-    "id": "PH-WED-022",
-    "slug": "vintage-milgrain-band",
-    "name": "Vintage Milgrain Band",
+    "id": "PH-WED-028",
+    "slug": "square-sapphire-diamond-channel-band",
+    "name": "Square Sapphire Diamond Channel Band",
     "category": "Wedding Bands",
-    "description": "Vintage Milgrain Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Square Sapphire Diamond Channel Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -3264,13 +3467,12 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/vintage-milgrain-band.webp"
+      "/images/bands/band-28.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3280,11 +3482,11 @@ export const SEED_PRODUCTS: Product[] = [
     "createdAt": "2026-01-01T13:00:00.000Z"
   },
   {
-    "id": "PH-WED-023",
-    "slug": "triple-row-pave-band",
-    "name": "Triple Row Pavé Band",
+    "id": "PH-WED-029",
+    "slug": "rose-rope-diamond-wedding-band",
+    "name": "Rose Rope Diamond Wedding Band",
     "category": "Wedding Bands",
-    "description": "Triple Row Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rose Rope Diamond Wedding Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -3306,7 +3508,7 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/triple-row-pave-band.webp"
+      "/images/bands/band-29.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3316,11 +3518,11 @@ export const SEED_PRODUCTS: Product[] = [
     "createdAt": "2026-01-01T12:00:00.000Z"
   },
   {
-    "id": "PH-WED-024",
-    "slug": "hammered-gold-band",
-    "name": "Hammered Gold Band",
+    "id": "PH-WED-030",
+    "slug": "hammered-yellow-gold-wedding-band",
+    "name": "Hammered Yellow Gold Wedding Band",
     "category": "Wedding Bands",
-    "description": "Hammered Gold Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Hammered Yellow Gold Wedding Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "None",
     "price": null,
@@ -3338,7 +3540,7 @@ export const SEED_PRODUCTS: Product[] = [
     "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/hammered-gold-band.webp"
+      "/images/bands/band-30.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3348,13 +3550,13 @@ export const SEED_PRODUCTS: Product[] = [
     "createdAt": "2026-01-01T11:00:00.000Z"
   },
   {
-    "id": "PH-WED-025",
-    "slug": "wide-pave-band",
-    "name": "Wide Pavé Band",
+    "id": "PH-WED-031",
+    "slug": "brushed-platinum-classic-band",
+    "name": "Brushed Platinum Classic Band",
     "category": "Wedding Bands",
-    "description": "Wide Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Brushed Platinum Classic Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -3367,14 +3569,10 @@ export const SEED_PRODUCTS: Product[] = [
       "10"
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/wide-pave-band.webp"
+      "/images/bands/band-31.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3384,11 +3582,11 @@ export const SEED_PRODUCTS: Product[] = [
     "createdAt": "2026-01-01T10:00:00.000Z"
   },
   {
-    "id": "PH-WED-026",
-    "slug": "two-tone-brushed-band",
-    "name": "Two-Tone Brushed Band",
+    "id": "PH-WED-032",
+    "slug": "golden-chevron-engraved-band",
+    "name": "Golden Chevron Engraved Band",
     "category": "Wedding Bands",
-    "description": "Two-Tone Brushed Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Golden Chevron Engraved Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "None",
     "price": null,
@@ -3406,7 +3604,7 @@ export const SEED_PRODUCTS: Product[] = [
     "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/two-tone-brushed-band.webp"
+      "/images/bands/band-32.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3416,191 +3614,11 @@ export const SEED_PRODUCTS: Product[] = [
     "createdAt": "2026-01-01T09:00:00.000Z"
   },
   {
-    "id": "PH-WED-027",
-    "slug": "bezel-eternity-band",
-    "name": "Bezel Eternity Band",
+    "id": "PH-WED-033",
+    "slug": "black-silver-stripe-band",
+    "name": "Black Silver Stripe Band",
     "category": "Wedding Bands",
-    "description": "Bezel Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
-    "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
-    "price": null,
-    "showPrice": false,
-    "sizes": [
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
-    "customization": true,
-    "images": [
-      "/images/catalog/bezel-eternity-band.webp"
-    ],
-    "available": true,
-    "isNew": false,
-    "bestSeller": false,
-    "featured": false,
-    "placeholder": true,
-    "createdAt": "2026-01-01T08:00:00.000Z"
-  },
-  {
-    "id": "PH-WED-028",
-    "slug": "crossover-pave-band",
-    "name": "Crossover Pavé Band",
-    "category": "Wedding Bands",
-    "description": "Crossover Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
-    "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
-    "price": null,
-    "showPrice": false,
-    "sizes": [
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
-    "customization": true,
-    "images": [
-      "/images/catalog/crossover-pave-band.webp"
-    ],
-    "available": true,
-    "isNew": false,
-    "bestSeller": false,
-    "featured": false,
-    "placeholder": true,
-    "createdAt": "2026-01-01T07:00:00.000Z"
-  },
-  {
-    "id": "PH-WED-029",
-    "slug": "baguette-eternity-band",
-    "name": "Baguette Eternity Band",
-    "category": "Wedding Bands",
-    "description": "Baguette Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
-    "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
-    "price": null,
-    "showPrice": false,
-    "sizes": [
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
-    "customization": true,
-    "images": [
-      "/images/catalog/baguette-eternity-band.webp"
-    ],
-    "available": true,
-    "isNew": false,
-    "bestSeller": false,
-    "featured": false,
-    "placeholder": true,
-    "createdAt": "2026-01-01T06:00:00.000Z"
-  },
-  {
-    "id": "PH-WED-030",
-    "slug": "filigree-gold-band",
-    "name": "Filigree Gold Band",
-    "category": "Wedding Bands",
-    "description": "Filigree Gold Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
-    "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
-    "price": null,
-    "showPrice": false,
-    "sizes": [
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
-    "customization": true,
-    "images": [
-      "/images/catalog/filigree-gold-band.webp"
-    ],
-    "available": true,
-    "isNew": false,
-    "bestSeller": false,
-    "featured": false,
-    "placeholder": true,
-    "createdAt": "2026-01-01T05:00:00.000Z"
-  },
-  {
-    "id": "PH-WED-031",
-    "slug": "princess-channel-band",
-    "name": "Princess Channel Band",
-    "category": "Wedding Bands",
-    "description": "Princess Channel Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
-    "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
-    "price": null,
-    "showPrice": false,
-    "sizes": [
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10"
-    ],
-    "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
-    "customization": true,
-    "images": [
-      "/images/catalog/princess-channel-band.webp"
-    ],
-    "available": true,
-    "isNew": false,
-    "bestSeller": false,
-    "featured": false,
-    "placeholder": true,
-    "createdAt": "2026-01-01T04:00:00.000Z"
-  },
-  {
-    "id": "PH-WED-032",
-    "slug": "tri-colour-stack",
-    "name": "Tri-Colour Stack",
-    "category": "Wedding Bands",
-    "description": "Tri-Colour Stack — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Black Silver Stripe Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "None",
     "price": null,
@@ -3618,7 +3636,178 @@ export const SEED_PRODUCTS: Product[] = [
     "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/tri-colour-stack.webp"
+      "/images/bands/band-33.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T08:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-034",
+    "slug": "royal-sapphire-gold-channel-band",
+    "name": "Royal Sapphire Gold Channel Band",
+    "category": "Wedding Bands",
+    "description": "Royal Sapphire Gold Channel Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bands/band-34.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T07:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-035",
+    "slug": "rose-gold-braided-heritage-band",
+    "name": "Rose Gold Braided Heritage Band",
+    "category": "Wedding Bands",
+    "description": "Rose Gold Braided Heritage Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "None",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [],
+    "customization": true,
+    "images": [
+      "/images/bands/band-35.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T06:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-036",
+    "slug": "platinum-diamond-eternity-ring",
+    "name": "Platinum Diamond Eternity Ring",
+    "category": "Wedding Bands",
+    "description": "Platinum Diamond Eternity Ring — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bands/band-36.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T05:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-037",
+    "slug": "geometric-platinum-diamond-band",
+    "name": "Geometric Platinum Diamond Band",
+    "category": "Wedding Bands",
+    "description": "Geometric Platinum Diamond Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bands/band-37.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T04:00:00.000Z"
+  },
+  {
+    "id": "PH-WED-038",
+    "slug": "classic-brushed-band-worn",
+    "name": "Classic Brushed Band Worn",
+    "category": "Wedding Bands",
+    "description": "Classic Brushed Band Worn — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "None",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "metals": [],
+    "gemstoneOptions": [],
+    "customization": true,
+    "images": [
+      "/images/bands/band-38.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3628,13 +3817,13 @@ export const SEED_PRODUCTS: Product[] = [
     "createdAt": "2026-01-01T03:00:00.000Z"
   },
   {
-    "id": "PH-WED-033",
-    "slug": "petite-pave-band",
-    "name": "Petite Pavé Band",
+    "id": "PH-WED-039",
+    "slug": "rose-gold-sapphire-diamond-band",
+    "name": "Rose Gold Sapphire Diamond Band",
     "category": "Wedding Bands",
-    "description": "Petite Pavé Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rose Gold Sapphire Diamond Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -3648,13 +3837,12 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/petite-pave-band.webp"
+      "/images/bands/band-39.webp"
     ],
     "available": true,
     "isNew": false,
@@ -3664,13 +3852,13 @@ export const SEED_PRODUCTS: Product[] = [
     "createdAt": "2026-01-01T02:00:00.000Z"
   },
   {
-    "id": "PH-WED-034",
-    "slug": "diamond-profile-band",
-    "name": "Diamond Profile Band",
+    "id": "PH-WED-040",
+    "slug": "emerald-bezel-eternity-band",
+    "name": "Emerald Bezel Eternity Band",
     "category": "Wedding Bands",
-    "description": "Diamond Profile Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Emerald Bezel Eternity Band — a wedding band design from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Emerald with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -3684,16 +3872,15 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Emerald",
+      "Lab-Created Emerald"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/diamond-profile-band.webp"
+      "/images/bands/band-40.webp"
     ],
     "available": true,
-    "isNew": false,
+    "isNew": true,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
