@@ -146,8 +146,10 @@ export async function getProducts(): Promise<Product[]> {
 /** Setup check (no secrets): can the server read and write the database? */
 export async function databaseStatus() {
   if (!usingSupabase()) return { mode: "local-file/none", read: "n/a", write: "n/a" };
-  const out: { mode: string; read: string; write: string; products?: number } = { mode: "supabase", read: "ok", write: "ok" };
-  try { const { data, error } = await client().from("products").select("id").limit(1000); if (error) throw new Error(error.message); out.products = data?.length ?? 0; } catch (e) { out.read = "error: " + (e as Error).message.slice(0, 160); }
+  const out: { mode: string; read: string; write: string; products?: number; catalogue?: object } = { mode: "supabase", read: "ok", write: "ok" };
+  try { const { data, error } = await client().from("products").select("id").limit(1000); if (error) throw new Error(error.message); out.products = data?.length ?? 0;
+    const all = await list<Product & Row>("products"); const seed = new Map(SEED_PRODUCTS.map((p) => [p.id, p.images[0]]));
+    out.catalogue = { rows: all.length, matchingBuiltIn: all.filter((r) => seed.get(r.id) === r.images?.[0]).length, builtIn: SEED_PRODUCTS.length }; } catch (e) { out.read = "error: " + (e as Error).message.slice(0, 160); }
   try {
     const t = { id: "__health__", createdAt: new Date().toISOString() };
     const { error } = await client().from("messages").upsert({ id: t.id, data: t, created_at: t.createdAt }); if (error) throw new Error(error.message);
