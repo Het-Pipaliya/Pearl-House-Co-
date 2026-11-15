@@ -361,120 +361,6 @@
    "source": "earrings/earring20"
   },
   {
-   "name": "Classic Diamond Tennis Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/classic-diamond-tennis-bracelet.webp",
-   "source": "bracelets/bracelet01"
-  },
-  {
-   "name": "Baguette Tennis Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/baguette-tennis-bracelet.webp",
-   "source": "bracelets/bracelet03"
-  },
-  {
-   "name": "Floral Diamond Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/floral-diamond-bracelet.webp",
-   "source": "bracelets/bracelet04"
-  },
-  {
-   "name": "Sapphire Tennis Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/sapphire-tennis-bracelet.webp",
-   "source": "bracelets/bracelet05"
-  },
-  {
-   "name": "Ruby Tennis Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/ruby-tennis-bracelet.webp",
-   "source": "bracelets/bracelet06"
-  },
-  {
-   "name": "Emerald Tennis Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/emerald-tennis-bracelet.webp",
-   "source": "bracelets/bracelet07"
-  },
-  {
-   "name": "Multi-Gemstone Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/multi-gemstone-bracelet.webp",
-   "source": "bracelets/bracelet08"
-  },
-  {
-   "name": "Classic Pearl Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/classic-pearl-bracelet.webp",
-   "source": "bracelets/bracelet09"
-  },
-  {
-   "name": "Double-Strand Pearl Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/double-strand-pearl-bracelet.webp",
-   "source": "bracelets/bracelet10"
-  },
-  {
-   "name": "Gold Diamond Bangle",
-   "category": "Bracelets",
-   "image": "/images/catalog/gold-diamond-bangle.webp",
-   "source": "bracelets/bracelet11"
-  },
-  {
-   "name": "Pavé Diamond Bangle",
-   "category": "Bracelets",
-   "image": "/images/catalog/pave-diamond-bangle.webp",
-   "source": "bracelets/bracelet12"
-  },
-  {
-   "name": "Twist Diamond Bangle",
-   "category": "Bracelets",
-   "image": "/images/catalog/twist-diamond-bangle.webp",
-   "source": "bracelets/bracelet13"
-  },
-  {
-   "name": "Open Cuff Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/open-cuff-bracelet.webp",
-   "source": "bracelets/bracelet14"
-  },
-  {
-   "name": "Blossom Diamond Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/blossom-diamond-bracelet.webp",
-   "source": "bracelets/bracelet15"
-  },
-  {
-   "name": "Clover Charm Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/clover-charm-bracelet.webp",
-   "source": "bracelets/bracelet16"
-  },
-  {
-   "name": "Paperclip Chain Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/paperclip-chain-bracelet.webp",
-   "source": "bracelets/bracelet17"
-  },
-  {
-   "name": "Rope Chain Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/rope-chain-bracelet.webp",
-   "source": "bracelets/bracelet18"
-  },
-  {
-   "name": "Bezel Diamond Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/bezel-diamond-bracelet.webp",
-   "source": "bracelets/bracelet19"
-  },
-  {
-   "name": "Heart Charm Bracelet",
-   "category": "Bracelets",
-   "image": "/images/catalog/heart-charm-bracelet.webp",
-   "source": "bracelets/bracelet20"
-  },
-  {
    "name": "Two-Tone Braided Band",
    "category": "Wedding Bands",
    "image": "/images/bands/band-01.webp",
@@ -713,6 +599,246 @@
    "category": "Wedding Bands",
    "image": "/images/bands/band-40.webp",
    "source": "bands/wedding-band-40"
+  },
+  {
+   "name": "Rose Gold Diamond Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-01.webp",
+   "source": "bracelets/bracelet-01"
+  },
+  {
+   "name": "Rose Gold Tennis Bracelet Worn",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-02.webp",
+   "source": "bracelets/bracelet-02"
+  },
+  {
+   "name": "Mixed-Cut Diamond Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-03.webp",
+   "source": "bracelets/bracelet-03"
+  },
+  {
+   "name": "Sapphire Station Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-04.webp",
+   "source": "bracelets/bracelet-04"
+  },
+  {
+   "name": "Classic Diamond Line Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-05.webp",
+   "source": "bracelets/bracelet-05"
+  },
+  {
+   "name": "Yellow Gold Diamond Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-06.webp",
+   "source": "bracelets/bracelet-06"
+  },
+  {
+   "name": "Rose Gold Diamond Line Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-07.webp",
+   "source": "bracelets/bracelet-07"
+  },
+  {
+   "name": "Gold Pavé Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-08.webp",
+   "source": "bracelets/bracelet-08"
+  },
+  {
+   "name": "Platinum Diamond Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-09.webp",
+   "source": "bracelets/bracelet-09"
+  },
+  {
+   "name": "Sapphire Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-10.webp",
+   "source": "bracelets/bracelet-10"
+  },
+  {
+   "name": "Gold Paperclip Chain Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-11.webp",
+   "source": "bracelets/bracelet-11"
+  },
+  {
+   "name": "Rose and White Gold Link Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-12.webp",
+   "source": "bracelets/bracelet-12"
+  },
+  {
+   "name": "Black Hammered Gold Cuff",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-13.webp",
+   "source": "bracelets/bracelet-13"
+  },
+  {
+   "name": "Rose Gold Pavé Bangle",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-14.webp",
+   "source": "bracelets/bracelet-14"
+  },
+  {
+   "name": "Polished Gold Twist Bangle",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-15.webp",
+   "source": "bracelets/bracelet-15"
+  },
+  {
+   "name": "Brushed Silver Groove Cuff",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-16.webp",
+   "source": "bracelets/bracelet-16"
+  },
+  {
+   "name": "Gold Curb Chain Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-17.webp",
+   "source": "bracelets/bracelet-17"
+  },
+  {
+   "name": "Gold Diamond-Cut Wave Bangle",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-18.webp",
+   "source": "bracelets/bracelet-18"
+  },
+  {
+   "name": "Brushed Gold Wide Cuff",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-19.webp",
+   "source": "bracelets/bracelet-19"
+  },
+  {
+   "name": "Diamond Tennis Bracelet Worn",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-20.webp",
+   "source": "bracelets/bracelet-20"
+  },
+  {
+   "name": "Sapphire and Diamond Line Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-21.webp",
+   "source": "bracelets/bracelet-21"
+  },
+  {
+   "name": "Gold Initial Charm Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-22.webp",
+   "source": "bracelets/bracelet-22"
+  },
+  {
+   "name": "Onyx Bead Mens Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-23.webp",
+   "source": "bracelets/bracelet-23"
+  },
+  {
+   "name": "Pavé Edge Silver Cuff",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-24.webp",
+   "source": "bracelets/bracelet-24"
+  },
+  {
+   "name": "Pink Gemstone Tennis Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-25.webp",
+   "source": "bracelets/bracelet-25"
+  },
+  {
+   "name": "Pearl Strand Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-26.webp",
+   "source": "bracelets/bracelet-26"
+  },
+  {
+   "name": "Silver Snake Chain Charm Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-27.webp",
+   "source": "bracelets/bracelet-27"
+  },
+  {
+   "name": "Emerald Cluster Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-28.webp",
+   "source": "bracelets/bracelet-28"
+  },
+  {
+   "name": "Black Leather Gold Accent Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-29.webp",
+   "source": "bracelets/bracelet-29"
+  },
+  {
+   "name": "Matte Bead Steel Bar Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-30.webp",
+   "source": "bracelets/bracelet-30"
+  },
+  {
+   "name": "Two-Tone Diamond Paperclip Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-31.webp",
+   "source": "bracelets/bracelet-31"
+  },
+  {
+   "name": "Black Braided Leather Gold Accent Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-32.webp",
+   "source": "bracelets/bracelet-32"
+  },
+  {
+   "name": "Baroque Pearl Star Charm Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-33.webp",
+   "source": "bracelets/bracelet-33"
+  },
+  {
+   "name": "Hammered Gold Diamond Edge Cuff",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-34.webp",
+   "source": "bracelets/bracelet-34"
+  },
+  {
+   "name": "Sapphire Diamond Bezel Bangle",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-35.webp",
+   "source": "bracelets/bracelet-35"
+  },
+  {
+   "name": "Pink Gemstone Infinity Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-36.webp",
+   "source": "bracelets/bracelet-36"
+  },
+  {
+   "name": "Rose Gold Floral Pearl Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-37.webp",
+   "source": "bracelets/bracelet-37"
+  },
+  {
+   "name": "Two-Tone Sculpted Chain Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-38.webp",
+   "source": "bracelets/bracelet-38"
+  },
+  {
+   "name": "Black Onyx Gold Spacer Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-39.webp",
+   "source": "bracelets/bracelet-39"
+  },
+  {
+   "name": "Emerald Trio Bolo Bracelet",
+   "category": "Bracelets",
+   "image": "/images/bracelets/bracelet-40.webp",
+   "source": "bracelets/bracelet-40"
   }
  ],
  "tiles": {

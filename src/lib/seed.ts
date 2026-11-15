@@ -38,7 +38,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-05T23:00:00.000Z"
+    "createdAt": "2026-01-06T20:00:00.000Z"
   },
   {
     "id": "PH-WED-001",
@@ -70,7 +70,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T22:00:00.000Z"
+    "createdAt": "2026-01-06T19:00:00.000Z"
   },
   {
     "id": "PH-RNG-001",
@@ -106,7 +106,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T21:00:00.000Z"
+    "createdAt": "2026-01-06T18:00:00.000Z"
   },
   {
     "id": "PH-NCK-001",
@@ -138,7 +138,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T20:00:00.000Z"
+    "createdAt": "2026-01-06T17:00:00.000Z"
   },
   {
     "id": "PH-PND-001",
@@ -170,7 +170,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T19:00:00.000Z"
+    "createdAt": "2026-01-06T16:00:00.000Z"
   },
   {
     "id": "PH-EAR-001",
@@ -198,14 +198,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T18:00:00.000Z"
+    "createdAt": "2026-01-06T15:00:00.000Z"
   },
   {
     "id": "PH-BRC-001",
-    "slug": "classic-diamond-tennis-bracelet",
-    "name": "Classic Diamond Tennis Bracelet",
+    "slug": "rose-gold-diamond-tennis-bracelet",
+    "name": "Rose Gold Diamond Tennis Bracelet",
     "category": "Bracelets",
-    "description": "Classic Diamond Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rose Gold Diamond Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -223,14 +223,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/classic-diamond-tennis-bracelet.webp"
+      "/images/bracelets/bracelet-01.webp"
     ],
     "available": true,
     "isNew": false,
-    "bestSeller": true,
+    "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T17:00:00.000Z"
+    "createdAt": "2026-01-06T14:00:00.000Z"
   },
   {
     "id": "PH-ENG-002",
@@ -266,7 +266,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T16:00:00.000Z"
+    "createdAt": "2026-01-06T13:00:00.000Z"
   },
   {
     "id": "PH-WED-002",
@@ -298,7 +298,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T15:00:00.000Z"
+    "createdAt": "2026-01-06T12:00:00.000Z"
   },
   {
     "id": "PH-RNG-002",
@@ -334,7 +334,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T14:00:00.000Z"
+    "createdAt": "2026-01-06T11:00:00.000Z"
   },
   {
     "id": "PH-NCK-002",
@@ -362,7 +362,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T13:00:00.000Z"
+    "createdAt": "2026-01-06T10:00:00.000Z"
   },
   {
     "id": "PH-PND-002",
@@ -394,7 +394,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-05T12:00:00.000Z"
+    "createdAt": "2026-01-06T09:00:00.000Z"
   },
   {
     "id": "PH-EAR-002",
@@ -422,14 +422,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T11:00:00.000Z"
+    "createdAt": "2026-01-06T08:00:00.000Z"
   },
   {
     "id": "PH-BRC-002",
-    "slug": "baguette-tennis-bracelet",
-    "name": "Baguette Tennis Bracelet",
+    "slug": "rose-gold-tennis-bracelet-worn",
+    "name": "Rose Gold Tennis Bracelet Worn",
     "category": "Bracelets",
-    "description": "Baguette Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rose Gold Tennis Bracelet Worn — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -447,14 +447,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/baguette-tennis-bracelet.webp"
+      "/images/bracelets/bracelet-02.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T10:00:00.000Z"
+    "createdAt": "2026-01-06T07:00:00.000Z"
   },
   {
     "id": "PH-ENG-003",
@@ -490,7 +490,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T09:00:00.000Z"
+    "createdAt": "2026-01-06T06:00:00.000Z"
   },
   {
     "id": "PH-WED-003",
@@ -525,7 +525,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T08:00:00.000Z"
+    "createdAt": "2026-01-06T05:00:00.000Z"
   },
   {
     "id": "PH-RNG-003",
@@ -561,7 +561,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T07:00:00.000Z"
+    "createdAt": "2026-01-06T04:00:00.000Z"
   },
   {
     "id": "PH-NCK-003",
@@ -593,7 +593,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T06:00:00.000Z"
+    "createdAt": "2026-01-06T03:00:00.000Z"
   },
   {
     "id": "PH-PND-003",
@@ -624,7 +624,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T05:00:00.000Z"
+    "createdAt": "2026-01-06T02:00:00.000Z"
   },
   {
     "id": "PH-EAR-003",
@@ -650,14 +650,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T04:00:00.000Z"
+    "createdAt": "2026-01-06T01:00:00.000Z"
   },
   {
     "id": "PH-BRC-003",
-    "slug": "floral-diamond-bracelet",
-    "name": "Floral Diamond Bracelet",
+    "slug": "mixed-cut-diamond-tennis-bracelet",
+    "name": "Mixed-Cut Diamond Tennis Bracelet",
     "category": "Bracelets",
-    "description": "Floral Diamond Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Mixed-Cut Diamond Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
@@ -675,14 +675,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/floral-diamond-bracelet.webp"
+      "/images/bracelets/bracelet-03.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T03:00:00.000Z"
+    "createdAt": "2026-01-06T00:00:00.000Z"
   },
   {
     "id": "PH-ENG-004",
@@ -718,7 +718,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T02:00:00.000Z"
+    "createdAt": "2026-01-05T23:00:00.000Z"
   },
   {
     "id": "PH-WED-004",
@@ -750,7 +750,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T01:00:00.000Z"
+    "createdAt": "2026-01-05T22:00:00.000Z"
   },
   {
     "id": "PH-RNG-004",
@@ -786,7 +786,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-05T00:00:00.000Z"
+    "createdAt": "2026-01-05T21:00:00.000Z"
   },
   {
     "id": "PH-NCK-004",
@@ -814,7 +814,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T23:00:00.000Z"
+    "createdAt": "2026-01-05T20:00:00.000Z"
   },
   {
     "id": "PH-PND-004",
@@ -845,7 +845,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T22:00:00.000Z"
+    "createdAt": "2026-01-05T19:00:00.000Z"
   },
   {
     "id": "PH-EAR-004",
@@ -873,14 +873,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T21:00:00.000Z"
+    "createdAt": "2026-01-05T18:00:00.000Z"
   },
   {
     "id": "PH-BRC-004",
-    "slug": "sapphire-tennis-bracelet",
-    "name": "Sapphire Tennis Bracelet",
+    "slug": "sapphire-station-tennis-bracelet",
+    "name": "Sapphire Station Tennis Bracelet",
     "category": "Bracelets",
-    "description": "Sapphire Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Sapphire Station Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Blue Sapphire with diamond accents (configurable)",
     "price": null,
@@ -897,14 +897,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/sapphire-tennis-bracelet.webp"
+      "/images/bracelets/bracelet-04.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T20:00:00.000Z"
+    "createdAt": "2026-01-05T17:00:00.000Z"
   },
   {
     "id": "PH-ENG-005",
@@ -940,7 +940,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-04T19:00:00.000Z"
+    "createdAt": "2026-01-05T16:00:00.000Z"
   },
   {
     "id": "PH-WED-005",
@@ -975,7 +975,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T18:00:00.000Z"
+    "createdAt": "2026-01-05T15:00:00.000Z"
   },
   {
     "id": "PH-RNG-005",
@@ -1011,7 +1011,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T17:00:00.000Z"
+    "createdAt": "2026-01-05T14:00:00.000Z"
   },
   {
     "id": "PH-NCK-005",
@@ -1043,7 +1043,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T16:00:00.000Z"
+    "createdAt": "2026-01-05T13:00:00.000Z"
   },
   {
     "id": "PH-PND-005",
@@ -1074,7 +1074,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T15:00:00.000Z"
+    "createdAt": "2026-01-05T12:00:00.000Z"
   },
   {
     "id": "PH-EAR-005",
@@ -1102,16 +1102,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T14:00:00.000Z"
+    "createdAt": "2026-01-05T11:00:00.000Z"
   },
   {
     "id": "PH-BRC-005",
-    "slug": "ruby-tennis-bracelet",
-    "name": "Ruby Tennis Bracelet",
+    "slug": "classic-diamond-line-bracelet",
+    "name": "Classic Diamond Line Bracelet",
     "category": "Bracelets",
-    "description": "Ruby Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Classic Diamond Line Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Ruby with diamond accents (configurable)",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -1121,19 +1121,20 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Ruby",
-      "Lab-Created Ruby"
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/ruby-tennis-bracelet.webp"
+      "/images/bracelets/bracelet-05.webp"
     ],
     "available": true,
-    "isNew": true,
+    "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T13:00:00.000Z"
+    "createdAt": "2026-01-05T10:00:00.000Z"
   },
   {
     "id": "PH-ENG-006",
@@ -1169,7 +1170,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T12:00:00.000Z"
+    "createdAt": "2026-01-05T09:00:00.000Z"
   },
   {
     "id": "PH-WED-006",
@@ -1205,7 +1206,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-04T11:00:00.000Z"
+    "createdAt": "2026-01-05T08:00:00.000Z"
   },
   {
     "id": "PH-RNG-006",
@@ -1240,7 +1241,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T10:00:00.000Z"
+    "createdAt": "2026-01-05T07:00:00.000Z"
   },
   {
     "id": "PH-NCK-006",
@@ -1272,7 +1273,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-04T09:00:00.000Z"
+    "createdAt": "2026-01-05T06:00:00.000Z"
   },
   {
     "id": "PH-PND-006",
@@ -1304,7 +1305,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T08:00:00.000Z"
+    "createdAt": "2026-01-05T05:00:00.000Z"
   },
   {
     "id": "PH-EAR-006",
@@ -1332,16 +1333,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T07:00:00.000Z"
+    "createdAt": "2026-01-05T04:00:00.000Z"
   },
   {
     "id": "PH-BRC-006",
-    "slug": "emerald-tennis-bracelet",
-    "name": "Emerald Tennis Bracelet",
+    "slug": "yellow-gold-diamond-tennis-bracelet",
+    "name": "Yellow Gold Diamond Tennis Bracelet",
     "category": "Bracelets",
-    "description": "Emerald Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Yellow Gold Diamond Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Emerald with diamond accents (configurable)",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -1351,19 +1352,20 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Emerald",
-      "Lab-Created Emerald"
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/emerald-tennis-bracelet.webp"
+      "/images/bracelets/bracelet-06.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T06:00:00.000Z"
+    "createdAt": "2026-01-05T03:00:00.000Z"
   },
   {
     "id": "PH-ENG-007",
@@ -1399,7 +1401,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T05:00:00.000Z"
+    "createdAt": "2026-01-05T02:00:00.000Z"
   },
   {
     "id": "PH-WED-007",
@@ -1435,7 +1437,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T04:00:00.000Z"
+    "createdAt": "2026-01-05T01:00:00.000Z"
   },
   {
     "id": "PH-NCK-007",
@@ -1467,7 +1469,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T03:00:00.000Z"
+    "createdAt": "2026-01-05T00:00:00.000Z"
   },
   {
     "id": "PH-PND-007",
@@ -1499,7 +1501,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T02:00:00.000Z"
+    "createdAt": "2026-01-04T23:00:00.000Z"
   },
   {
     "id": "PH-EAR-007",
@@ -1523,16 +1525,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T01:00:00.000Z"
+    "createdAt": "2026-01-04T22:00:00.000Z"
   },
   {
     "id": "PH-BRC-007",
-    "slug": "multi-gemstone-bracelet",
-    "name": "Multi-Gemstone Bracelet",
+    "slug": "rose-gold-diamond-line-bracelet",
+    "name": "Rose Gold Diamond Line Bracelet",
     "category": "Bracelets",
-    "description": "Multi-Gemstone Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rose Gold Diamond Line Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Mixed coloured gemstones (configurable)",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -1542,18 +1544,20 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Mixed Gemstones"
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/multi-gemstone-bracelet.webp"
+      "/images/bracelets/bracelet-07.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-04T00:00:00.000Z"
+    "createdAt": "2026-01-04T21:00:00.000Z"
   },
   {
     "id": "PH-ENG-008",
@@ -1589,7 +1593,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T23:00:00.000Z"
+    "createdAt": "2026-01-04T20:00:00.000Z"
   },
   {
     "id": "PH-WED-008",
@@ -1625,7 +1629,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T22:00:00.000Z"
+    "createdAt": "2026-01-04T19:00:00.000Z"
   },
   {
     "id": "PH-PND-008",
@@ -1657,7 +1661,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T21:00:00.000Z"
+    "createdAt": "2026-01-04T18:00:00.000Z"
   },
   {
     "id": "PH-EAR-008",
@@ -1685,16 +1689,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T20:00:00.000Z"
+    "createdAt": "2026-01-04T17:00:00.000Z"
   },
   {
     "id": "PH-BRC-008",
-    "slug": "classic-pearl-bracelet",
-    "name": "Classic Pearl Bracelet",
+    "slug": "gold-pave-tennis-bracelet",
+    "name": "Gold Pavé Tennis Bracelet",
     "category": "Bracelets",
-    "description": "Classic Pearl Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Gold Pavé Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Cultured pearl",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -1704,18 +1708,20 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Cultured Pearl"
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/classic-pearl-bracelet.webp"
+      "/images/bracelets/bracelet-08.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
-    "featured": true,
+    "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T19:00:00.000Z"
+    "createdAt": "2026-01-04T16:00:00.000Z"
   },
   {
     "id": "PH-ENG-009",
@@ -1751,7 +1757,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T18:00:00.000Z"
+    "createdAt": "2026-01-04T15:00:00.000Z"
   },
   {
     "id": "PH-WED-009",
@@ -1787,7 +1793,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T17:00:00.000Z"
+    "createdAt": "2026-01-04T14:00:00.000Z"
   },
   {
     "id": "PH-PND-009",
@@ -1819,7 +1825,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T16:00:00.000Z"
+    "createdAt": "2026-01-04T13:00:00.000Z"
   },
   {
     "id": "PH-EAR-009",
@@ -1847,16 +1853,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T15:00:00.000Z"
+    "createdAt": "2026-01-04T12:00:00.000Z"
   },
   {
     "id": "PH-BRC-009",
-    "slug": "double-strand-pearl-bracelet",
-    "name": "Double-Strand Pearl Bracelet",
+    "slug": "platinum-diamond-tennis-bracelet",
+    "name": "Platinum Diamond Tennis Bracelet",
     "category": "Bracelets",
-    "description": "Double-Strand Pearl Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Platinum Diamond Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Cultured pearl",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -1866,18 +1872,20 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Cultured Pearl"
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/double-strand-pearl-bracelet.webp"
+      "/images/bracelets/bracelet-09.webp"
     ],
     "available": true,
     "isNew": false,
-    "bestSeller": false,
+    "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T14:00:00.000Z"
+    "createdAt": "2026-01-04T11:00:00.000Z"
   },
   {
     "id": "PH-ENG-010",
@@ -1913,7 +1921,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T13:00:00.000Z"
+    "createdAt": "2026-01-04T10:00:00.000Z"
   },
   {
     "id": "PH-WED-010",
@@ -1948,7 +1956,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T12:00:00.000Z"
+    "createdAt": "2026-01-04T09:00:00.000Z"
   },
   {
     "id": "PH-PND-010",
@@ -1980,7 +1988,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T11:00:00.000Z"
+    "createdAt": "2026-01-04T08:00:00.000Z"
   },
   {
     "id": "PH-EAR-010",
@@ -2006,39 +2014,38 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T10:00:00.000Z"
+    "createdAt": "2026-01-04T07:00:00.000Z"
   },
   {
     "id": "PH-BRC-010",
-    "slug": "gold-diamond-bangle",
-    "name": "Gold Diamond Bangle",
+    "slug": "sapphire-tennis-bracelet",
+    "name": "Sapphire Tennis Bracelet",
     "category": "Bracelets",
-    "description": "Gold Diamond Bangle — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Sapphire Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
-      "Small",
-      "Medium",
-      "Large"
+      "6.5\"",
+      "7\"",
+      "7.5\""
     ],
     "metals": [],
     "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
     ],
     "customization": true,
     "images": [
-      "/images/catalog/gold-diamond-bangle.webp"
+      "/images/bracelets/bracelet-10.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T09:00:00.000Z"
+    "createdAt": "2026-01-04T06:00:00.000Z"
   },
   {
     "id": "PH-ENG-011",
@@ -2074,7 +2081,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T08:00:00.000Z"
+    "createdAt": "2026-01-04T05:00:00.000Z"
   },
   {
     "id": "PH-WED-011",
@@ -2110,7 +2117,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T07:00:00.000Z"
+    "createdAt": "2026-01-04T04:00:00.000Z"
   },
   {
     "id": "PH-PND-011",
@@ -2140,7 +2147,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-03T06:00:00.000Z"
+    "createdAt": "2026-01-04T03:00:00.000Z"
   },
   {
     "id": "PH-EAR-011",
@@ -2168,39 +2175,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T05:00:00.000Z"
+    "createdAt": "2026-01-04T02:00:00.000Z"
   },
   {
     "id": "PH-BRC-011",
-    "slug": "pave-diamond-bangle",
-    "name": "Pavé Diamond Bangle",
+    "slug": "gold-paperclip-chain-bracelet",
+    "name": "Gold Paperclip Chain Bracelet",
     "category": "Bracelets",
-    "description": "Pavé Diamond Bangle — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Gold Paperclip Chain Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
-      "Small",
-      "Medium",
-      "Large"
+      "6.5\"",
+      "7\"",
+      "7.5\""
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/pave-diamond-bangle.webp"
+      "/images/bracelets/bracelet-11.webp"
     ],
     "available": true,
     "isNew": false,
-    "bestSeller": true,
+    "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T04:00:00.000Z"
+    "createdAt": "2026-01-04T01:00:00.000Z"
   },
   {
     "id": "PH-ENG-012",
@@ -2236,7 +2239,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T03:00:00.000Z"
+    "createdAt": "2026-01-04T00:00:00.000Z"
   },
   {
     "id": "PH-WED-012",
@@ -2272,7 +2275,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T02:00:00.000Z"
+    "createdAt": "2026-01-03T23:00:00.000Z"
   },
   {
     "id": "PH-EAR-012",
@@ -2300,22 +2303,22 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T01:00:00.000Z"
+    "createdAt": "2026-01-03T22:00:00.000Z"
   },
   {
     "id": "PH-BRC-012",
-    "slug": "twist-diamond-bangle",
-    "name": "Twist Diamond Bangle",
+    "slug": "rose-and-white-gold-link-bracelet",
+    "name": "Rose and White Gold Link Bracelet",
     "category": "Bracelets",
-    "description": "Twist Diamond Bangle — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rose and White Gold Link Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
-      "Small",
-      "Medium",
-      "Large"
+      "6.5\"",
+      "7\"",
+      "7.5\""
     ],
     "metals": [],
     "gemstoneOptions": [
@@ -2325,14 +2328,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/twist-diamond-bangle.webp"
+      "/images/bracelets/bracelet-12.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-03T00:00:00.000Z"
+    "createdAt": "2026-01-03T21:00:00.000Z"
   },
   {
     "id": "PH-ENG-013",
@@ -2368,7 +2371,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T23:00:00.000Z"
+    "createdAt": "2026-01-03T20:00:00.000Z"
   },
   {
     "id": "PH-WED-013",
@@ -2404,7 +2407,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T22:00:00.000Z"
+    "createdAt": "2026-01-03T19:00:00.000Z"
   },
   {
     "id": "PH-EAR-013",
@@ -2432,16 +2435,16 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T21:00:00.000Z"
+    "createdAt": "2026-01-03T18:00:00.000Z"
   },
   {
     "id": "PH-BRC-013",
-    "slug": "open-cuff-bracelet",
-    "name": "Open Cuff Bracelet",
+    "slug": "black-hammered-gold-cuff",
+    "name": "Black Hammered Gold Cuff",
     "category": "Bracelets",
-    "description": "Open Cuff Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Black Hammered Gold Cuff — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
@@ -2450,21 +2453,17 @@ export const SEED_PRODUCTS: Product[] = [
       "Large"
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/open-cuff-bracelet.webp"
+      "/images/bracelets/bracelet-13.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T20:00:00.000Z"
+    "createdAt": "2026-01-03T17:00:00.000Z"
   },
   {
     "id": "PH-ENG-014",
@@ -2500,7 +2499,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T19:00:00.000Z"
+    "createdAt": "2026-01-03T16:00:00.000Z"
   },
   {
     "id": "PH-WED-014",
@@ -2536,7 +2535,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T18:00:00.000Z"
+    "createdAt": "2026-01-03T15:00:00.000Z"
   },
   {
     "id": "PH-EAR-014",
@@ -2564,22 +2563,22 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T17:00:00.000Z"
+    "createdAt": "2026-01-03T14:00:00.000Z"
   },
   {
     "id": "PH-BRC-014",
-    "slug": "blossom-diamond-bracelet",
-    "name": "Blossom Diamond Bracelet",
+    "slug": "rose-gold-pave-bangle",
+    "name": "Rose Gold Pavé Bangle",
     "category": "Bracelets",
-    "description": "Blossom Diamond Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Rose Gold Pavé Bangle — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "Diamond or lab-grown diamond (configurable)",
     "price": null,
     "showPrice": false,
     "sizes": [
-      "6.5\"",
-      "7\"",
-      "7.5\""
+      "Small",
+      "Medium",
+      "Large"
     ],
     "metals": [],
     "gemstoneOptions": [
@@ -2589,14 +2588,14 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "customization": true,
     "images": [
-      "/images/catalog/blossom-diamond-bracelet.webp"
+      "/images/bracelets/bracelet-14.webp"
     ],
     "available": true,
     "isNew": false,
-    "bestSeller": false,
+    "bestSeller": true,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T16:00:00.000Z"
+    "createdAt": "2026-01-03T13:00:00.000Z"
   },
   {
     "id": "PH-ENG-015",
@@ -2632,7 +2631,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T15:00:00.000Z"
+    "createdAt": "2026-01-03T12:00:00.000Z"
   },
   {
     "id": "PH-WED-015",
@@ -2668,7 +2667,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T14:00:00.000Z"
+    "createdAt": "2026-01-03T11:00:00.000Z"
   },
   {
     "id": "PH-EAR-015",
@@ -2696,35 +2695,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": true,
     "placeholder": true,
-    "createdAt": "2026-01-02T13:00:00.000Z"
+    "createdAt": "2026-01-03T10:00:00.000Z"
   },
   {
     "id": "PH-BRC-015",
-    "slug": "clover-charm-bracelet",
-    "name": "Clover Charm Bracelet",
+    "slug": "polished-gold-twist-bangle",
+    "name": "Polished Gold Twist Bangle",
     "category": "Bracelets",
-    "description": "Clover Charm Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Polished Gold Twist Bangle — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Mother-of-pearl motifs",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
-      "6.5\"",
-      "7\"",
-      "7.5\""
+      "Small",
+      "Medium",
+      "Large"
     ],
     "metals": [],
     "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/clover-charm-bracelet.webp"
+      "/images/bracelets/bracelet-15.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T12:00:00.000Z"
+    "createdAt": "2026-01-03T09:00:00.000Z"
   },
   {
     "id": "PH-ENG-016",
@@ -2760,7 +2759,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T11:00:00.000Z"
+    "createdAt": "2026-01-03T08:00:00.000Z"
   },
   {
     "id": "PH-WED-016",
@@ -2796,7 +2795,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T10:00:00.000Z"
+    "createdAt": "2026-01-03T07:00:00.000Z"
   },
   {
     "id": "PH-EAR-016",
@@ -2822,35 +2821,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T09:00:00.000Z"
+    "createdAt": "2026-01-03T06:00:00.000Z"
   },
   {
     "id": "PH-BRC-016",
-    "slug": "paperclip-chain-bracelet",
-    "name": "Paperclip Chain Bracelet",
+    "slug": "brushed-silver-groove-cuff",
+    "name": "Brushed Silver Groove Cuff",
     "category": "Bracelets",
-    "description": "Paperclip Chain Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Brushed Silver Groove Cuff — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
-      "6.5\"",
-      "7\"",
-      "7.5\""
+      "Small",
+      "Medium",
+      "Large"
     ],
     "metals": [],
     "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/paperclip-chain-bracelet.webp"
+      "/images/bracelets/bracelet-16.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T08:00:00.000Z"
+    "createdAt": "2026-01-03T05:00:00.000Z"
   },
   {
     "id": "PH-ENG-017",
@@ -2886,7 +2885,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T07:00:00.000Z"
+    "createdAt": "2026-01-03T04:00:00.000Z"
   },
   {
     "id": "PH-WED-017",
@@ -2921,7 +2920,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T06:00:00.000Z"
+    "createdAt": "2026-01-03T03:00:00.000Z"
   },
   {
     "id": "PH-EAR-017",
@@ -2949,14 +2948,14 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T05:00:00.000Z"
+    "createdAt": "2026-01-03T02:00:00.000Z"
   },
   {
     "id": "PH-BRC-017",
-    "slug": "rope-chain-bracelet",
-    "name": "Rope Chain Bracelet",
+    "slug": "gold-curb-chain-bracelet",
+    "name": "Gold Curb Chain Bracelet",
     "category": "Bracelets",
-    "description": "Rope Chain Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Gold Curb Chain Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
     "gemstone": "None",
     "price": null,
@@ -2970,14 +2969,14 @@ export const SEED_PRODUCTS: Product[] = [
     "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/rope-chain-bracelet.webp"
+      "/images/bracelets/bracelet-17.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T04:00:00.000Z"
+    "createdAt": "2026-01-03T01:00:00.000Z"
   },
   {
     "id": "PH-WED-018",
@@ -3009,7 +3008,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T03:00:00.000Z"
+    "createdAt": "2026-01-03T00:00:00.000Z"
   },
   {
     "id": "PH-EAR-018",
@@ -3037,39 +3036,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T02:00:00.000Z"
+    "createdAt": "2026-01-02T23:00:00.000Z"
   },
   {
     "id": "PH-BRC-018",
-    "slug": "bezel-diamond-bracelet",
-    "name": "Bezel Diamond Bracelet",
+    "slug": "gold-diamond-cut-wave-bangle",
+    "name": "Gold Diamond-Cut Wave Bangle",
     "category": "Bracelets",
-    "description": "Bezel Diamond Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Gold Diamond-Cut Wave Bangle — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
-      "6.5\"",
-      "7\"",
-      "7.5\""
+      "Small",
+      "Medium",
+      "Large"
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/bezel-diamond-bracelet.webp"
+      "/images/bracelets/bracelet-18.webp"
     ],
     "available": true,
     "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T01:00:00.000Z"
+    "createdAt": "2026-01-02T22:00:00.000Z"
   },
   {
     "id": "PH-WED-019",
@@ -3101,7 +3096,7 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-02T00:00:00.000Z"
+    "createdAt": "2026-01-02T21:00:00.000Z"
   },
   {
     "id": "PH-EAR-019",
@@ -3129,39 +3124,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T23:00:00.000Z"
+    "createdAt": "2026-01-02T20:00:00.000Z"
   },
   {
     "id": "PH-BRC-019",
-    "slug": "heart-charm-bracelet",
-    "name": "Heart Charm Bracelet",
+    "slug": "brushed-gold-wide-cuff",
+    "name": "Brushed Gold Wide Cuff",
     "category": "Bracelets",
-    "description": "Heart Charm Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "description": "Brushed Gold Wide Cuff — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
     "materials": "Fine jewelry — metal and stones confirmed by our team",
-    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "gemstone": "None",
     "price": null,
     "showPrice": false,
     "sizes": [
-      "6.5\"",
-      "7\"",
-      "7.5\""
+      "Small",
+      "Medium",
+      "Large"
     ],
     "metals": [],
-    "gemstoneOptions": [
-      "Natural Diamond",
-      "Lab-Grown Diamond",
-      "Moissanite"
-    ],
+    "gemstoneOptions": [],
     "customization": true,
     "images": [
-      "/images/catalog/heart-charm-bracelet.webp"
+      "/images/bracelets/bracelet-19.webp"
     ],
     "available": true,
-    "isNew": true,
+    "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T22:00:00.000Z"
+    "createdAt": "2026-01-02T19:00:00.000Z"
   },
   {
     "id": "PH-WED-020",
@@ -3196,7 +3187,39 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T21:00:00.000Z"
+    "createdAt": "2026-01-02T18:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-020",
+    "slug": "diamond-tennis-bracelet-worn",
+    "name": "Diamond Tennis Bracelet Worn",
+    "category": "Bracelets",
+    "description": "Diamond Tennis Bracelet Worn — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-20.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-02T17:00:00.000Z"
   },
   {
     "id": "PH-WED-021",
@@ -3231,7 +3254,38 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T20:00:00.000Z"
+    "createdAt": "2026-01-02T16:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-021",
+    "slug": "sapphire-and-diamond-line-bracelet",
+    "name": "Sapphire and Diamond Line Bracelet",
+    "category": "Bracelets",
+    "description": "Sapphire and Diamond Line Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-21.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-02T15:00:00.000Z"
   },
   {
     "id": "PH-WED-022",
@@ -3267,7 +3321,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T19:00:00.000Z"
+    "createdAt": "2026-01-02T14:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-022",
+    "slug": "gold-initial-charm-bracelet",
+    "name": "Gold Initial Charm Bracelet",
+    "category": "Bracelets",
+    "description": "Gold Initial Charm Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "None",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-22.webp"
+    ],
+    "available": true,
+    "isNew": true,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-02T13:00:00.000Z"
   },
   {
     "id": "PH-WED-023",
@@ -3302,7 +3384,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T18:00:00.000Z"
+    "createdAt": "2026-01-02T12:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-023",
+    "slug": "onyx-bead-mens-bracelet",
+    "name": "Onyx Bead Mens Bracelet",
+    "category": "Bracelets",
+    "description": "Onyx Bead Mens Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "None",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-23.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-02T11:00:00.000Z"
   },
   {
     "id": "PH-WED-024",
@@ -3337,7 +3447,39 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T17:00:00.000Z"
+    "createdAt": "2026-01-02T10:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-024",
+    "slug": "pave-edge-silver-cuff",
+    "name": "Pavé Edge Silver Cuff",
+    "category": "Bracelets",
+    "description": "Pavé Edge Silver Cuff — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-24.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-02T09:00:00.000Z"
   },
   {
     "id": "PH-WED-025",
@@ -3373,7 +3515,38 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T16:00:00.000Z"
+    "createdAt": "2026-01-02T08:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-025",
+    "slug": "pink-gemstone-tennis-bracelet",
+    "name": "Pink Gemstone Tennis Bracelet",
+    "category": "Bracelets",
+    "description": "Pink Gemstone Tennis Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Pink Sapphire with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Pink Sapphire",
+      "Lab-Created Pink Sapphire"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-25.webp"
+    ],
+    "available": true,
+    "isNew": true,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-02T07:00:00.000Z"
   },
   {
     "id": "PH-WED-026",
@@ -3408,7 +3581,37 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T15:00:00.000Z"
+    "createdAt": "2026-01-02T06:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-026",
+    "slug": "pearl-strand-bracelet",
+    "name": "Pearl Strand Bracelet",
+    "category": "Bracelets",
+    "description": "Pearl Strand Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Cultured pearl",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Cultured Pearl"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-26.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": true,
+    "placeholder": true,
+    "createdAt": "2026-01-02T05:00:00.000Z"
   },
   {
     "id": "PH-WED-027",
@@ -3444,7 +3647,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T14:00:00.000Z"
+    "createdAt": "2026-01-02T04:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-027",
+    "slug": "silver-snake-chain-charm-bracelet",
+    "name": "Silver Snake Chain Charm Bracelet",
+    "category": "Bracelets",
+    "description": "Silver Snake Chain Charm Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "None",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-27.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-02T03:00:00.000Z"
   },
   {
     "id": "PH-WED-028",
@@ -3479,7 +3710,38 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T13:00:00.000Z"
+    "createdAt": "2026-01-02T02:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-028",
+    "slug": "emerald-cluster-bracelet",
+    "name": "Emerald Cluster Bracelet",
+    "category": "Bracelets",
+    "description": "Emerald Cluster Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Emerald with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Emerald",
+      "Lab-Created Emerald"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-28.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-02T01:00:00.000Z"
   },
   {
     "id": "PH-WED-029",
@@ -3515,7 +3777,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T12:00:00.000Z"
+    "createdAt": "2026-01-02T00:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-029",
+    "slug": "black-leather-gold-accent-bracelet",
+    "name": "Black Leather Gold Accent Bracelet",
+    "category": "Bracelets",
+    "description": "Black Leather Gold Accent Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "None",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-29.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T23:00:00.000Z"
   },
   {
     "id": "PH-WED-030",
@@ -3547,7 +3837,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T11:00:00.000Z"
+    "createdAt": "2026-01-01T22:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-030",
+    "slug": "matte-bead-steel-bar-bracelet",
+    "name": "Matte Bead Steel Bar Bracelet",
+    "category": "Bracelets",
+    "description": "Matte Bead Steel Bar Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "None",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-30.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T21:00:00.000Z"
   },
   {
     "id": "PH-WED-031",
@@ -3579,7 +3897,39 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T10:00:00.000Z"
+    "createdAt": "2026-01-01T20:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-031",
+    "slug": "two-tone-diamond-paperclip-bracelet",
+    "name": "Two-Tone Diamond Paperclip Bracelet",
+    "category": "Bracelets",
+    "description": "Two-Tone Diamond Paperclip Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-31.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T19:00:00.000Z"
   },
   {
     "id": "PH-WED-032",
@@ -3611,7 +3961,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T09:00:00.000Z"
+    "createdAt": "2026-01-01T18:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-032",
+    "slug": "black-braided-leather-gold-accent-bracelet",
+    "name": "Black Braided Leather Gold Accent Bracelet",
+    "category": "Bracelets",
+    "description": "Black Braided Leather Gold Accent Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "None",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-32.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T17:00:00.000Z"
   },
   {
     "id": "PH-WED-033",
@@ -3643,7 +4021,37 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T08:00:00.000Z"
+    "createdAt": "2026-01-01T16:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-033",
+    "slug": "baroque-pearl-star-charm-bracelet",
+    "name": "Baroque Pearl Star Charm Bracelet",
+    "category": "Bracelets",
+    "description": "Baroque Pearl Star Charm Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Cultured pearl",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Cultured Pearl"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-33.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T15:00:00.000Z"
   },
   {
     "id": "PH-WED-034",
@@ -3678,7 +4086,39 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T07:00:00.000Z"
+    "createdAt": "2026-01-01T14:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-034",
+    "slug": "hammered-gold-diamond-edge-cuff",
+    "name": "Hammered Gold Diamond Edge Cuff",
+    "category": "Bracelets",
+    "description": "Hammered Gold Diamond Edge Cuff — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-34.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T13:00:00.000Z"
   },
   {
     "id": "PH-WED-035",
@@ -3710,7 +4150,38 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T06:00:00.000Z"
+    "createdAt": "2026-01-01T12:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-035",
+    "slug": "sapphire-diamond-bezel-bangle",
+    "name": "Sapphire Diamond Bezel Bangle",
+    "category": "Bracelets",
+    "description": "Sapphire Diamond Bezel Bangle — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Blue Sapphire with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Blue Sapphire",
+      "Lab-Created Blue Sapphire"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-35.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T11:00:00.000Z"
   },
   {
     "id": "PH-WED-036",
@@ -3746,7 +4217,38 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T05:00:00.000Z"
+    "createdAt": "2026-01-01T10:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-036",
+    "slug": "pink-gemstone-infinity-bracelet",
+    "name": "Pink Gemstone Infinity Bracelet",
+    "category": "Bracelets",
+    "description": "Pink Gemstone Infinity Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Pink Sapphire with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Pink Sapphire",
+      "Lab-Created Pink Sapphire"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-36.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T09:00:00.000Z"
   },
   {
     "id": "PH-WED-037",
@@ -3782,7 +4284,37 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T04:00:00.000Z"
+    "createdAt": "2026-01-01T08:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-037",
+    "slug": "rose-gold-floral-pearl-bracelet",
+    "name": "Rose Gold Floral Pearl Bracelet",
+    "category": "Bracelets",
+    "description": "Rose Gold Floral Pearl Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Cultured pearl",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Cultured Pearl"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-37.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T07:00:00.000Z"
   },
   {
     "id": "PH-WED-038",
@@ -3814,7 +4346,39 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T03:00:00.000Z"
+    "createdAt": "2026-01-01T06:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-038",
+    "slug": "two-tone-sculpted-chain-bracelet",
+    "name": "Two-Tone Sculpted Chain Bracelet",
+    "category": "Bracelets",
+    "description": "Two-Tone Sculpted Chain Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Diamond or lab-grown diamond (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Natural Diamond",
+      "Lab-Grown Diamond",
+      "Moissanite"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-38.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T05:00:00.000Z"
   },
   {
     "id": "PH-WED-039",
@@ -3849,7 +4413,35 @@ export const SEED_PRODUCTS: Product[] = [
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
-    "createdAt": "2026-01-01T02:00:00.000Z"
+    "createdAt": "2026-01-01T04:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-039",
+    "slug": "black-onyx-gold-spacer-bracelet",
+    "name": "Black Onyx Gold Spacer Bracelet",
+    "category": "Bracelets",
+    "description": "Black Onyx Gold Spacer Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "None",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-39.webp"
+    ],
+    "available": true,
+    "isNew": false,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T03:00:00.000Z"
   },
   {
     "id": "PH-WED-040",
@@ -3881,6 +4473,37 @@ export const SEED_PRODUCTS: Product[] = [
     ],
     "available": true,
     "isNew": true,
+    "bestSeller": false,
+    "featured": false,
+    "placeholder": true,
+    "createdAt": "2026-01-01T02:00:00.000Z"
+  },
+  {
+    "id": "PH-BRC-040",
+    "slug": "emerald-trio-bolo-bracelet",
+    "name": "Emerald Trio Bolo Bracelet",
+    "category": "Bracelets",
+    "description": "Emerald Trio Bolo Bracelet — a bracelet from our collection. Metal, size and stone options are confirmed with you by our team.",
+    "materials": "Fine jewelry — metal and stones confirmed by our team",
+    "gemstone": "Emerald with diamond accents (configurable)",
+    "price": null,
+    "showPrice": false,
+    "sizes": [
+      "6.5\"",
+      "7\"",
+      "7.5\""
+    ],
+    "metals": [],
+    "gemstoneOptions": [
+      "Emerald",
+      "Lab-Created Emerald"
+    ],
+    "customization": true,
+    "images": [
+      "/images/bracelets/bracelet-40.webp"
+    ],
+    "available": true,
+    "isNew": false,
     "bestSeller": false,
     "featured": false,
     "placeholder": true,
