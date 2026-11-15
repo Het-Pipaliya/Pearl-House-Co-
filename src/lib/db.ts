@@ -11,7 +11,11 @@ type Row = { id: string; createdAt: string; [k: string]: unknown };
 
 /* ---------- backend: Supabase (production) or local JSON file (development only) ---------- */
 let sb: SupabaseClient | null = null;
-const client = () => (sb ??= createClient(cfg.supabaseUrl, cfg.supabaseKey, { auth: { persistSession: false } }));
+const client = () => (sb ??= createClient(cfg.supabaseUrl, cfg.supabaseKey, {
+  auth: { persistSession: false },
+  // Next.js caches fetch() responses by default; database reads must always be live.
+  global: { fetch: (input, init) => fetch(input, { ...init, cache: "no-store" }) },
+}));
 
 const FILE = path.join(process.cwd(), ".data", "db.json");
 let queue: Promise<unknown> = Promise.resolve();
