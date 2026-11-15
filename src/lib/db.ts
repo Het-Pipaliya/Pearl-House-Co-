@@ -89,6 +89,37 @@ async function seedCatalogue() {
   for (const s of SEED_PRODUCTS) await insertNew("products", s as Product & Row);
 }
 
+let lastSync = 0;
+const SEED_ID = /^PH-[A-Z]{3}-\d{3}$/;
+/**
+ * Keeps the built-in catalogue in step with the database after the catalogue changes in code (e.g. new photos):
+ *  - built-in products still marked as placeholders whose photo changed are replaced; ones that no longer exist are removed;
+ *  - when anything changed, built-in products missing from the database are added.
+ * Products you edited with a real photo in /admin (placeholder switched off) or created yourself are never touched.
+ */
+async function syncCatalogue(rows: (Product & Row)[]): Promise<boolean> {
+  const seedById = new Map(SEED_PRODUCTS.map((p) => [p.id, p]));
+  const replace: Product[] = [], drop: string[] = [];
+  for (const r of rows) {
+    if (!SEED_ID.test(r.id) || !r.placeholder) continue;
+    const sp = seedById.get(r.id);
+    if (!sp) drop.push(r.id);
+    else if (sp.images[0] !== r.images[0] || sp.name !== r.name) replace.push(sp);
+  }
+  if (!replace.length && !drop.length) return false;
+  const have = new Set(rows.map((r) => r.id));
+  const add = SEED_PRODUCTS.filter((p) => !have.has(p.id));
+  const upserts = [...replace, ...add].map((p) => ({ id: p.id, data: p, created_at: p.createdAt }));
+  if (usingSupabase()) {
+    if (drop.length) { const { error } = await client().from("products").delete().in("id", drop); if (error) throw new Error(error.message); }
+    if (upserts.length) { const { error } = await client().from("products").upsert(upserts, { onConflict: "id" }); if (error) throw new Error(error.message); }
+  } else {
+    for (const id of drop) await remove("products", id);
+    for (const p of [...replace, ...add]) await put("products", p as Product & Row);
+  }
+  return true;
+}
+
 /**
  * The shop must never be empty or crash because of the database:
  *  - products are read from the database;
@@ -102,6 +133,10 @@ export async function getProducts(): Promise<Product[]> {
   if (readable && !rows.length && Date.now() - lastSeedTry > 60_000) {
     lastSeedTry = Date.now();
     try { await seedCatalogue(); rows = await list<Product & Row>("products"); } catch (e) { console.error("products: seeding failed —", (e as Error).message); }
+  }
+  if (readable && rows.length && Date.now() - lastSync > 60_000) {
+    lastSync = Date.now();
+    try { if (await syncCatalogue(rows)) rows = await list<Product & Row>("products"); } catch (e) { console.error("products: catalogue sync failed —", (e as Error).message); }
   }
   if (!rows.length) rows = SEED_PRODUCTS as (Product & Row)[];
   rows = rows.map(tidy);

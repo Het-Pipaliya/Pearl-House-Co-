@@ -139,210 +139,6 @@
    "source": "engagement-rings/engagement-ring10"
   },
   {
-   "name": "Gold Oval Eternity Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/gold-oval-eternity-band.webp",
-   "source": "rings/ring04"
-  },
-  {
-   "name": "Marquise Eternity Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/marquise-eternity-band.webp",
-   "source": "rings/ring08"
-  },
-  {
-   "name": "Brushed Gold Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/brushed-gold-band.webp",
-   "source": "rings/ring09"
-  },
-  {
-   "name": "Baguette Channel Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/baguette-channel-band.webp",
-   "source": "rings/ring12"
-  },
-  {
-   "name": "Milgrain Filigree Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/milgrain-filigree-band.webp",
-   "source": "rings/ring14"
-  },
-  {
-   "name": "Classic Gold Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/classic-gold-band.webp",
-   "source": "rings/ring15"
-  },
-  {
-   "name": "Oval Stone Eternity Ring",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/oval-stone-eternity-ring.webp",
-   "source": "rings/ring16"
-  },
-  {
-   "name": "Round Eternity Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/round-eternity-band.webp",
-   "source": "engagement-rings/engagement-ring05"
-  },
-  {
-   "name": "Baguette Pavé Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/baguette-pave-band.webp",
-   "source": "engagement-rings/engagement-ring08"
-  },
-  {
-   "name": "Marble Eternity Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/marble-eternity-band.webp",
-   "source": "engagement-rings/engagement-ring11"
-  },
-  {
-   "name": "Twisted Stack Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/twisted-stack-band.webp",
-   "source": "engagement-rings/engagement-ring15"
-  },
-  {
-   "name": "Brushed Platinum Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/brushed-platinum-band.webp",
-   "source": "engagement-rings/engagement-ring16"
-  },
-  {
-   "name": "Curved Contour Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/curved-contour-band.webp",
-   "source": "engagement-rings/engagement-ring18"
-  },
-  {
-   "name": "Chevron Pavé Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/chevron-pave-band.webp",
-   "source": "engagement-rings/engagement-ring19"
-  },
-  {
-   "name": "Slim Pavé Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/slim-pave-band.webp",
-   "source": "engagement-rings/engagement-ring20"
-  },
-  {
-   "name": "Gold Eternity Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/gold-eternity-band.webp",
-   "source": "wedding-bands/wedding-band01"
-  },
-  {
-   "name": "Twist Pavé Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/twist-pave-band.webp",
-   "source": "wedding-bands/wedding-band02"
-  },
-  {
-   "name": "Platinum Eternity Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/platinum-eternity-band.webp",
-   "source": "wedding-bands/wedding-band03"
-  },
-  {
-   "name": "Baguette Half-Eternity Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/baguette-half-eternity-band.webp",
-   "source": "wedding-bands/wedding-band04"
-  },
-  {
-   "name": "Satin Gold Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/satin-gold-band.webp",
-   "source": "wedding-bands/wedding-band05"
-  },
-  {
-   "name": "Wave Pavé Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/wave-pave-band.webp",
-   "source": "wedding-bands/wedding-band06"
-  },
-  {
-   "name": "Vintage Milgrain Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/vintage-milgrain-band.webp",
-   "source": "wedding-bands/wedding-band07"
-  },
-  {
-   "name": "Triple Row Pavé Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/triple-row-pave-band.webp",
-   "source": "wedding-bands/wedding-band08"
-  },
-  {
-   "name": "Hammered Gold Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/hammered-gold-band.webp",
-   "source": "wedding-bands/wedding-band10"
-  },
-  {
-   "name": "Wide Pavé Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/wide-pave-band.webp",
-   "source": "wedding-bands/wedding-band11"
-  },
-  {
-   "name": "Two-Tone Brushed Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/two-tone-brushed-band.webp",
-   "source": "wedding-bands/wedding-band12"
-  },
-  {
-   "name": "Bezel Eternity Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/bezel-eternity-band.webp",
-   "source": "wedding-bands/wedding-band13"
-  },
-  {
-   "name": "Crossover Pavé Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/crossover-pave-band.webp",
-   "source": "wedding-bands/wedding-band14"
-  },
-  {
-   "name": "Baguette Eternity Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/baguette-eternity-band.webp",
-   "source": "wedding-bands/wedding-band15"
-  },
-  {
-   "name": "Filigree Gold Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/filigree-gold-band.webp",
-   "source": "wedding-bands/wedding-band16"
-  },
-  {
-   "name": "Princess Channel Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/princess-channel-band.webp",
-   "source": "wedding-bands/wedding-band17"
-  },
-  {
-   "name": "Tri-Colour Stack",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/tri-colour-stack.webp",
-   "source": "wedding-bands/wedding-band18"
-  },
-  {
-   "name": "Petite Pavé Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/petite-pave-band.webp",
-   "source": "wedding-bands/wedding-band19"
-  },
-  {
-   "name": "Diamond Profile Band",
-   "category": "Wedding Bands",
-   "image": "/images/catalog/diamond-profile-band.webp",
-   "source": "wedding-bands/wedding-band20"
-  },
-  {
    "name": "Diamond Tennis Necklace",
    "category": "Necklaces",
    "image": "/images/catalog/diamond-tennis-necklace.webp",
@@ -677,6 +473,246 @@
    "category": "Bracelets",
    "image": "/images/catalog/heart-charm-bracelet.webp",
    "source": "bracelets/bracelet20"
+  },
+  {
+   "name": "Two-Tone Braided Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-01.webp",
+   "source": "bands/wedding-band-01"
+  },
+  {
+   "name": "Black Brushed Mens Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-02.webp",
+   "source": "bands/wedding-band-02"
+  },
+  {
+   "name": "Sapphire Accent Mens Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-03.webp",
+   "source": "bands/wedding-band-03"
+  },
+  {
+   "name": "Hammered Yellow Gold Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-04.webp",
+   "source": "bands/wedding-band-04"
+  },
+  {
+   "name": "Pink Gemstone Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-05.webp",
+   "source": "bands/wedding-band-05"
+  },
+  {
+   "name": "Platinum Diamond Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-06.webp",
+   "source": "bands/wedding-band-06"
+  },
+  {
+   "name": "Yellow Gold Diamond Half Eternity",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-07.webp",
+   "source": "bands/wedding-band-07"
+  },
+  {
+   "name": "White Gold Infinity Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-08.webp",
+   "source": "bands/wedding-band-08"
+  },
+  {
+   "name": "Rose Gold Baguette Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-09.webp",
+   "source": "bands/wedding-band-09"
+  },
+  {
+   "name": "Blue Sapphire Diamond Eternity",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-10.webp",
+   "source": "bands/wedding-band-10"
+  },
+  {
+   "name": "Marquise Diamond Vine Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-11.webp",
+   "source": "bands/wedding-band-11"
+  },
+  {
+   "name": "Two Tone Rope Diamond Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-12.webp",
+   "source": "bands/wedding-band-12"
+  },
+  {
+   "name": "Brushed Two Tone Diamond Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-13.webp",
+   "source": "bands/wedding-band-13"
+  },
+  {
+   "name": "Emerald-Cut Diamond Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-14.webp",
+   "source": "bands/wedding-band-14"
+  },
+  {
+   "name": "Platinum Infinity Diamond Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-15.webp",
+   "source": "bands/wedding-band-15"
+  },
+  {
+   "name": "Yellow Gold Infinity Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-16.webp",
+   "source": "bands/wedding-band-16"
+  },
+  {
+   "name": "Rose Gold Pink Gemstone Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-17.webp",
+   "source": "bands/wedding-band-17"
+  },
+  {
+   "name": "Black Brushed Silver Stripe Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-18.webp",
+   "source": "bands/wedding-band-18"
+  },
+  {
+   "name": "Hammered Gold Wedding Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-19.webp",
+   "source": "bands/wedding-band-19"
+  },
+  {
+   "name": "Sapphire Accent Brushed Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-20.webp",
+   "source": "bands/wedding-band-20"
+  },
+  {
+   "name": "Alternating Sapphire and Diamond Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-21.webp",
+   "source": "bands/wedding-band-21"
+  },
+  {
+   "name": "Classic Platinum Diamond Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-22.webp",
+   "source": "bands/wedding-band-22"
+  },
+  {
+   "name": "Royal Blue Sapphire Pavé Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-23.webp",
+   "source": "bands/wedding-band-23"
+  },
+  {
+   "name": "Princess Sapphire Diamond Border Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-24.webp",
+   "source": "bands/wedding-band-24"
+  },
+  {
+   "name": "Brushed Platinum Princess Diamond Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-25.webp",
+   "source": "bands/wedding-band-25"
+  },
+  {
+   "name": "Sapphire Diamond Infinity Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-26.webp",
+   "source": "bands/wedding-band-26"
+  },
+  {
+   "name": "Brushed Diamond Station Wedding Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-27.webp",
+   "source": "bands/wedding-band-27"
+  },
+  {
+   "name": "Square Sapphire Diamond Channel Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-28.webp",
+   "source": "bands/wedding-band-28"
+  },
+  {
+   "name": "Rose Rope Diamond Wedding Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-29.webp",
+   "source": "bands/wedding-band-29"
+  },
+  {
+   "name": "Hammered Yellow Gold Wedding Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-30.webp",
+   "source": "bands/wedding-band-30"
+  },
+  {
+   "name": "Brushed Platinum Classic Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-31.webp",
+   "source": "bands/wedding-band-31"
+  },
+  {
+   "name": "Golden Chevron Engraved Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-32.webp",
+   "source": "bands/wedding-band-32"
+  },
+  {
+   "name": "Black Silver Stripe Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-33.webp",
+   "source": "bands/wedding-band-33"
+  },
+  {
+   "name": "Royal Sapphire Gold Channel Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-34.webp",
+   "source": "bands/wedding-band-34"
+  },
+  {
+   "name": "Rose Gold Braided Heritage Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-35.webp",
+   "source": "bands/wedding-band-35"
+  },
+  {
+   "name": "Platinum Diamond Eternity Ring",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-36.webp",
+   "source": "bands/wedding-band-36"
+  },
+  {
+   "name": "Geometric Platinum Diamond Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-37.webp",
+   "source": "bands/wedding-band-37"
+  },
+  {
+   "name": "Classic Brushed Band Worn",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-38.webp",
+   "source": "bands/wedding-band-38"
+  },
+  {
+   "name": "Rose Gold Sapphire Diamond Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-39.webp",
+   "source": "bands/wedding-band-39"
+  },
+  {
+   "name": "Emerald Bezel Eternity Band",
+   "category": "Wedding Bands",
+   "image": "/images/bands/band-40.webp",
+   "source": "bands/wedding-band-40"
   }
  ],
  "tiles": {
